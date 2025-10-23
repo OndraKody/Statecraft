@@ -11,6 +11,6 @@ public class ScenaLouder : MonoBehaviour
     public void QuitGame()
     {
         Application.Quit();
-        Debug.Log("Game closed."); // funguje jen mimo editor
+        
     }
 }

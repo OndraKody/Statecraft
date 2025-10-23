@@ -1,6 +1,6 @@
 using System;
 
-[System.Serializable]
+
 public class Party
 {
     public string name;          
