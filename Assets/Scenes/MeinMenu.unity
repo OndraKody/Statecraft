@@ -688,8 +688,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Nasteveni
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: ba6aea62a607a9e4382632442090faaf, type: 2}
-  m_sharedMaterial: {fileID: 7105481920162771492, guid: ba6aea62a607a9e4382632442090faaf, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 6c1a5a589f0ecdd43b53d1e988bb8d85, type: 2}
+  m_sharedMaterial: {fileID: -9000358358292133093, guid: 6c1a5a589f0ecdd43b53d1e988bb8d85, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -713,13 +713,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 14
-  m_fontSizeBase: 14
+  m_fontSize: 17
+  m_fontSizeBase: 17
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
+  m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -961,8 +961,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Konec
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: ba6aea62a607a9e4382632442090faaf, type: 2}
-  m_sharedMaterial: {fileID: 7105481920162771492, guid: ba6aea62a607a9e4382632442090faaf, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 6c1a5a589f0ecdd43b53d1e988bb8d85, type: 2}
+  m_sharedMaterial: {fileID: -9000358358292133093, guid: 6c1a5a589f0ecdd43b53d1e988bb8d85, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -986,13 +986,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 14
-  m_fontSizeBase: 14
+  m_fontSize: 17
+  m_fontSizeBase: 17
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
+  m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -1234,8 +1234,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Start
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: ba6aea62a607a9e4382632442090faaf, type: 2}
-  m_sharedMaterial: {fileID: 7105481920162771492, guid: ba6aea62a607a9e4382632442090faaf, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 6c1a5a589f0ecdd43b53d1e988bb8d85, type: 2}
+  m_sharedMaterial: {fileID: -9000358358292133093, guid: 6c1a5a589f0ecdd43b53d1e988bb8d85, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1259,13 +1259,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 14
-  m_fontSizeBase: 14
+  m_fontSize: 17
+  m_fontSizeBase: 17
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
+  m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -1473,7 +1473,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f864a88e48ee045459becf25670a3422, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 42a49f724b220574cb76c308e709c63f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
