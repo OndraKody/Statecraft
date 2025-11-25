@@ -1,0 +1,55 @@
+{
+  "parties": [
+    {
+      "name": "Národní Unie",
+      "partyColor": "#0044AA",
+      "ideology": "konzervatismus",
+      "secundery_ideology": ["křesťanská demokracie", "liberální konzervatismus"],
+      "power": 23,
+      "seats": 46,
+      "goals": [
+        "Snížit daně",
+        "Zvýšit rozpočet na obranu",
+        "Podpora rodin"
+      ]
+    },
+
+    {
+      "name": "Progresivní Hnutí",
+      "partyColor": "#D1006A",
+      "ideology": "socialismus",
+      "secundery_ideology": ["progresivismus", ""],
+      "power": 18,
+      "seats": 35,
+      "goals": [
+        "Zvýšit minimální mzdu",
+        "Reforma zdravotnictví",
+        "Podpora sociálního bydlení"
+      ]
+    },
+
+    {
+      "name": "Strany Svobody",
+      "partyColor": "#FFFF00",
+      "ideology": "liberalismus",
+      "secundery_ideology": ["Progresivní liberalismus", "Neoliberalismus"],
+      "power": 15,
+      "seats": 30,
+      "goals": [
+        "Legalizace potratů",
+        "Manželství pro všechny",
+        ""
+      ]
+    },
+
+    {
+      "name": "",
+      "partyColor": "",
+      "ideology": "",
+      "secundery_ideology": ["", ""],
+      "power": 0,
+      "seats": 0,
+      "goals": ["", "", ""]
+    }
+  ]
+}

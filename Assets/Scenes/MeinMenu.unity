@@ -130,6 +130,7 @@ GameObject:
   - component: {fileID: 42589261}
   - component: {fileID: 42589260}
   - component: {fileID: 42589262}
+  - component: {fileID: 42589263}
   m_Layer: 0
   m_Name: GameManeger
   m_TagString: Untagged
@@ -176,10 +177,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2692f5a659b35434890b094c31580c59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
+  selectedParty:
+    name: 
+    partyColor: 
+    ideology: 
+    secundery_ideology: []
+    power: 0
+    seats: 0
+    goals: []
   expenses: 0
   income: 0
   dept: 0
   gamePhase: 
+--- !u!114 &42589263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 42589259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0700bfad3738af14889c9d967fc3252b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::JsonLouder
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
