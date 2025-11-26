@@ -18,7 +18,7 @@
       "name": "Progresivní Hnutí",
       "partyColor": "#D1006A",
       "ideology": "socialismus",
-      "secundery_ideology": ["progresivismus", ""],
+      "secundery_ideology": ["progresivismus", "socialní demokaracie"],
       "power": 18,
       "seats": 35,
       "goals": [
@@ -38,18 +38,18 @@
       "goals": [
         "Legalizace potratů",
         "Manželství pro všechny",
-        ""
+        "Legalizace drog"
       ]
     },
 
     {
-      "name": "",
-      "partyColor": "",
-      "ideology": "",
-      "secundery_ideology": ["", ""],
+      "name": "test",
+      "partyColor": "#FFFF00",
+      "ideology": "test",
+      "secundery_ideology": ["tets", "test"],
       "power": 0,
       "seats": 0,
-      "goals": ["", "", ""]
+      "goals": ["test", "test", "test"]
     }
   ]
 }

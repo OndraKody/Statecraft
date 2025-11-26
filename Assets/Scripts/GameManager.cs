@@ -2,9 +2,9 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public static GameManager Instance; 
+    public static GameManager Instance;
 
-    public Party selectedParty;
+    public JsonLouder.Party selectedParty;
     public double expenses;
     public double income;
     public double dept;
