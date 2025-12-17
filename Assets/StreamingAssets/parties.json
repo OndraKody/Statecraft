@@ -42,6 +42,45 @@
       ]
     },
 
+     {
+    "name": "Levá cesta",
+    "partyColor": "#99004C",
+    "ideology": "komunismus",
+    "secundery_ideology": ["demokratický socialismus", "anti-fašismus"],
+    "power": 15,
+    "seats": 30,
+    "goals": [
+      "Progresivní daně",
+      "Znárodnění podniků",
+      "Vyšší sociální dávky"
+    ]
+  },
+  {
+    "name": "Zelená budoucnost",
+    "partyColor": "#00AA44",
+    "ideology": "zelená politika",
+    "secundery_ideology": ["environmentalismus", "sociální progresivismus"],
+    "power": 12,
+    "seats": 22,
+    "goals": [
+      "Obnovitelné zdroje",
+      "Daň z emisí CO₂",
+      "Podpora veřejné dopravy"
+    ]
+  },
+  {
+    "name": "Vlastenecká fronta",
+    "partyColor": "#002266",
+    "ideology": "národní konzervatismus",
+    "secundery_ideology": ["euroskepticismus", "nacionalismus"],
+    "power": 17,
+    "seats": 28,
+    "goals": [
+      "Pevné hranice",
+      "Snížit dávky",
+      "Silnější policie"
+    ]
+  },
     {
       "name": "test",
       "partyColor": "#FFFF00",

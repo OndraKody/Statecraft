@@ -28,7 +28,7 @@ public class GameScenaInfo : MonoBehaviour
             governmentStatusText.text = "Jsi v OPOZICI";
     }
 
-    // Jednoduchá logika – vysvìtlím níže
+    
     private bool DetermineGovernment(JsonLouder.Party party)
     {
         return party.seats >= 46; // -> hranici si mùžeš nastavit vlastní

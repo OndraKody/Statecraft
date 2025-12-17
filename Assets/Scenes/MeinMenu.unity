@@ -1859,6 +1859,7 @@ GameObject:
   - component: {fileID: 842242491}
   - component: {fileID: 842242490}
   - component: {fileID: 842242489}
+  - component: {fileID: 842242492}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -1980,6 +1981,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 842242487}
   m_CullTransparentMesh: 1
+--- !u!114 &842242492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 842242487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 436ae7720dd397a469baf78998b7e114, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TextHoverColor
+  text: {fileID: 48691112}
+  normalHex: '#000000'
+  hoverHex: '#F62727'
 --- !u!1 &849477233
 GameObject:
   m_ObjectHideFlags: 0
