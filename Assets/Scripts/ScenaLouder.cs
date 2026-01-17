@@ -48,7 +48,7 @@ public class ScenaLouder : MonoBehaviour
     {
         SceneManager.LoadScene("GameScene");
     }
-
+    
     public void QuitGame()
     {
         Application.Quit();

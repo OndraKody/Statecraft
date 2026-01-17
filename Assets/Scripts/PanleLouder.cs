@@ -18,7 +18,8 @@ public class PanleLouder : MonoBehaviour
     private GameObject ProjectPanel;
     [SerializeField]
     private GameObject GrafPanel;
-
+    [SerializeField]
+    private GameObject PousaPanel;
 
     void Start()
     {
@@ -30,6 +31,7 @@ public class PanleLouder : MonoBehaviour
         if (DeffensPanel != null) DeffensPanel.SetActive(false);
         if (ProjectPanel != null) ProjectPanel.SetActive(false);
         if (GrafPanel != null) GrafPanel.SetActive(false);
+        if (PousaPanel != null) PousaPanel.SetActive(false);
     }
     public void OpenProjekt()
     {
@@ -46,6 +48,14 @@ public class PanleLouder : MonoBehaviour
     public void ClouseGraf()
     {
         if (GrafPanel != null) GrafPanel.SetActive(false);
+    }
+    public void OpenPousa()
+    {
+        if (PousaPanel != null) PousaPanel.SetActive(true);
+    }
+    public void ClousePouse()
+    {
+        if (PousaPanel != null)  PousaPanel.SetActive(false);
     }
     public void Finance()
     {

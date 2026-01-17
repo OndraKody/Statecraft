@@ -9,18 +9,8 @@ public class PartySlotGenerator : MonoBehaviour
     private ScenaLouder scenaLouder;
     public void GenerateSlots()
     {
-        if (jsonLoader == null)
-        {
-            Debug.LogError("[PartySlotGenerator] jsonLoader chybí!");
-            return;
-        }
 
         var parties = jsonLoader.LoadedParties;
-        if (parties == null)
-        {
-            Debug.LogError("[PartySlotGenerator] LoadedParties je null!");
-            return;
-        }
 
         for (int i = 0; i < parties.Length; i++)
         {
