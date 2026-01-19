@@ -7,8 +7,8 @@ public class TextHoverColor : MonoBehaviour, IPointerEnterHandler, IPointerExitH
     public TextMeshProUGUI text;
 
     [Tooltip("Hex color format: #RRGGBB or #RRGGBBAA")]
-    public string normalHex = "#FFFFFF";
-    public string hoverHex = "#FFFF00";
+    public string normalHex = "#000000";
+    public string hoverHex = "#F62727";
 
     private Color normalColor;
     private Color hoverColor;

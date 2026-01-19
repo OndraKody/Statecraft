@@ -20,6 +20,12 @@ public class PanleLouder : MonoBehaviour
     private GameObject GrafPanel;
     [SerializeField]
     private GameObject PousaPanel;
+    [SerializeField]
+    private GameObject DataPanel;
+    [SerializeField]
+    private GameObject GroupPanel;
+    [SerializeField]
+    private GameObject PartyPanel;
 
     void Start()
     {
@@ -32,6 +38,9 @@ public class PanleLouder : MonoBehaviour
         if (ProjectPanel != null) ProjectPanel.SetActive(false);
         if (GrafPanel != null) GrafPanel.SetActive(false);
         if (PousaPanel != null) PousaPanel.SetActive(false);
+        if (DataPanel != null) DataPanel.SetActive(false);
+        if (GroupPanel != null) GroupPanel.SetActive(false);
+        if (PartyPanel != null) PartyPanel.SetActive(false);
     }
     public void OpenProjekt()
     {
@@ -56,6 +65,30 @@ public class PanleLouder : MonoBehaviour
     public void ClousePouse()
     {
         if (PousaPanel != null)  PousaPanel.SetActive(false);
+    }
+    public void OpenData()
+    {
+        if (DataPanel != null) DataPanel.SetActive(true);
+    }
+    public void CloseData()
+    {
+        if (DataPanel != null) DataPanel.SetActive(false);
+    }
+    public void OpenParty()
+    {
+        if (PartyPanel != null) PartyPanel.SetActive(true);
+    }
+    public void CloseParty()
+    {
+        if (PartyPanel != null) PartyPanel.SetActive(false);
+    }
+    public void OpenGroups()
+    {
+        if (GroupPanel != null) GroupPanel.SetActive(true);
+    }
+    public void CloseGroups()
+    {
+        if (GroupPanel != null) GroupPanel.SetActive(false);
     }
     public void Finance()
     {
