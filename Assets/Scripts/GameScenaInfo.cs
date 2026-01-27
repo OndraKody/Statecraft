@@ -8,24 +8,7 @@ public class GameScenaInfo : MonoBehaviour
 
     private void Start()
     {
-        var selected = GameManager.Instance.selectedParty;
-
-        if (selected == null)
-        {
-            partyNameText.text = "Žádná strana nevybrána!";
-            return;
-        }
-
-        // Ukáže název strany
-        partyNameText.text = "Hraješ za: " + selected.name;
-
-        // Zavoláme funkci, která urèí vládu / opozici
-        bool jeVlada = DetermineGovernment(selected);
-
-        if (jeVlada)
-            governmentStatusText.text = "Tvoje strana je VE VLÁDÌ";
-        else
-            governmentStatusText.text = "Jsi v OPOZICI";
+        
     }
 
     

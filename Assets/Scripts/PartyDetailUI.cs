@@ -6,7 +6,7 @@ public class PartyDetailUI : MonoBehaviour
 {
     public TextMeshProUGUI nameText;
 
-
+    private JsonLouder.Party selectedParty;
     public TextMeshProUGUI ideologyMainText;       // Hhalvní ideologie
     
 
@@ -37,7 +37,7 @@ public class PartyDetailUI : MonoBehaviour
     private void OnSelectParty(JsonLouder.Party data)
     {
         Debug.Log("Vybral jsi FINÁLNÌ stranu: " + data.name);
-        GameManager.Instance.selectedParty = data;
+        selectedParty = data;
     }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

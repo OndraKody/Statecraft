@@ -11,30 +11,33 @@ public class PolyciPanelUI : MonoBehaviour
     {
         public string name;
         public string description;
-        public float income;          // základní pøíjem
-        public float cost;            // základní výdaj
-        public float baseValue;       // síla posunu slideru
-        public float actionPointCost; // cena za 1 bod slideru
+        public float income;
+        public float cost;
+        public float actionPointCost;
     }
 
-    // ===== UI PRVKY =====
+    // ===== UI =====
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI descriptionText;
-
-    public TextMeshProUGUI costInput;
     public TextMeshProUGUI incomeInput;
-
+    public TextMeshProUGUI costInput;
     public TextMeshProUGUI actionPointInput;
 
     public Slider slider;
+    public Button confirmButton;
 
-    // ===== AKTUÁLNÍ DATA =====
+    // ===== DATA =====
     private PolicyItem currentItem;
 
-    // ===== NASTAVENÍ DAT =====
+    private float previewIncome;
+    private float previewCost;
+    private float apCost;
+
+    // ===== SETUP =====
     public void Setup(PolicyItem item)
     {
         currentItem = item;
+        gameObject.SetActive(true);
 
         nameText.text = item.name;
         descriptionText.text = item.description;
@@ -43,53 +46,68 @@ public class PolyciPanelUI : MonoBehaviour
         slider.maxValue = 100;
         slider.value = 0;
 
-        UpdateValues(0);
+        incomeInput.text = item.income.ToString("0");
+        costInput.text = item.cost.ToString("0");
+        actionPointInput.text = "0";
 
         slider.onValueChanged.RemoveAllListeners();
-        slider.onValueChanged.AddListener(UpdateValues);
+        slider.onValueChanged.AddListener(UpdatePreview);
+
+        confirmButton.onClick.RemoveAllListeners();
+        confirmButton.onClick.AddListener(Confirm);
     }
 
-    // ===== AKTUALIZACE HODNOT =====
-    private void UpdateValues(float sliderValue)
+    // ===== NÁHLED =====
+    private void UpdatePreview(float value)
     {
         if (currentItem == null) return;
 
-        float changePercent = sliderValue / 200f; // -50% až +50%
+        float percent = value / 200f; // -50 % až +50 %
 
-        float finalIncome = currentItem.income > 0
-            ? currentItem.income + (currentItem.income * changePercent)
-            : 0;
+        previewIncome = currentItem.income * (1 + percent);
+        previewCost = currentItem.cost * (1 + percent);
 
-        float finalCost = currentItem.cost > 0
-            ? currentItem.cost + (currentItem.cost * changePercent)
-            : 0;
+        apCost = Mathf.Abs(value) * currentItem.actionPointCost;
 
-        incomeInput.text = finalIncome.ToString("0");
-        costInput.text = finalCost.ToString("0");
-
-        float apCost = Mathf.Abs(sliderValue) * currentItem.actionPointCost;
+        incomeInput.text = previewIncome.ToString("0");
+        costInput.text = previewCost.ToString("0");
         actionPointInput.text = apCost.ToString("0");
+    }
 
-        if (GameManager.Instance != null)
+    // ===== POTVRZENÍ =====
+    private void Confirm()
+    {
+        if (GameManager.Instance == null) return;
+
+        if (!GameManager.Instance.HasEnoughActionPoints(apCost))
         {
-            GameManager.Instance.income += finalIncome;
-            GameManager.Instance.expenses += finalCost;
+            Debug.Log("Nedostatek akèních bodù");
+            return;
         }
+
+        
+        float incomeDelta = previewIncome - currentItem.income;
+        float costDelta = previewCost - currentItem.cost;
+
+       
+        GameManager.Instance.UseActionPoints(apCost);
+
+       
+        GameManager.Instance.IncomeChanger(incomeDelta);
+        GameManager.Instance.Expenseschanger(costDelta);
+
+        
+        currentItem.income = previewIncome;
+        currentItem.cost = previewCost;
+
+        // reset UI
+        slider.value = 0;
+        actionPointInput.text = "0";
+
+        incomeInput.text = currentItem.income.ToString("0");
+        costInput.text = currentItem.cost.ToString("0");
     }
 
     // ===== TEST DATA =====
-    public PolicyItem testItem1 = new PolicyItem
-    {
-        name = "Daò z pøíjmu",
-        description = "Daò z pøíjmù ovlivòuje státní rozpoèet a ekonomiku.",
-        income = 500,
-        cost = 0,
-        baseValue = 50,
-        actionPointCost = 2
-    };
 
-    private void Start()
-    {
-        Setup(testItem1);
-    }
 }
