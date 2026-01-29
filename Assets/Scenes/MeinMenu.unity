@@ -312,18 +312,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2692f5a659b35434890b094c31580c59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
-  selectedParty:
-    name: 
-    partyColor: 
-    ideology: 
-    secundery_ideology: []
-    power: 0
-    seats: 0
-    goals: []
-  expenses: 0
-  income: 0
-  dept: 0
-  gamePhase: 
 --- !u!114 &42589263
 MonoBehaviour:
   m_ObjectHideFlags: 0

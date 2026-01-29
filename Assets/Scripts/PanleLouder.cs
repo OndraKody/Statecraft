@@ -28,7 +28,19 @@ public class PanleLouder : MonoBehaviour
     private GameObject PartyPanel;
     [SerializeField]
     private GameObject PolicyPanel;
-
+    [SerializeField]
+    private GameObject EventPanel;
+    [SerializeField]
+    private PartyPanelUI partyPanel;
+    private void Awake()
+    {
+        if (FinancePanel != null) FinancePanel.SetActive(true);
+        if (JusticePanel != null) JusticePanel.SetActive(true);
+        if (ForeighPanel != null) ForeighPanel.SetActive(true);
+        if (SocialHealtPanel != null) SocialHealtPanel.SetActive(true);
+        if (TransportPanel != null) TransportPanel.SetActive(true);
+        if (DeffensPanel != null) DeffensPanel.SetActive(true);
+    }
     void Start()
     {
         if (FinancePanel != null) FinancePanel.SetActive(true);
@@ -44,6 +56,7 @@ public class PanleLouder : MonoBehaviour
         if (GroupPanel != null) GroupPanel.SetActive(false);
         if (PartyPanel != null) PartyPanel.SetActive(false);
         if (PolicyPanel != null) PolicyPanel.SetActive(false);
+        if (EventPanel != null) EventPanel.SetActive(false);
     }
     public void OpenProjekt()
     {
@@ -79,7 +92,9 @@ public class PanleLouder : MonoBehaviour
     }
     public void OpenParty()
     {
+        
         if (PartyPanel != null) PartyPanel.SetActive(true);
+        partyPanel.Open();
     }
     public void CloseParty()
     {

@@ -19,6 +19,8 @@ public class PartyDetailUI : MonoBehaviour
 
     public Button selectButton;
 
+    
+
     public void Show(JsonLouder.Party data)
     {
         gameObject.SetActive(true);
@@ -37,15 +39,15 @@ public class PartyDetailUI : MonoBehaviour
     private void OnSelectParty(JsonLouder.Party data)
     {
         Debug.Log("Vybral jsi FINÁLNÌ stranu: " + data.name);
-        selectedParty = data;
+        GameSession.SelectedParty = data;
+        Debug.Log("Ahoj");
     }
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+
     void Start()
     {
         
     }
 
-    // Update is called once per frame
     void Update()
     {
         

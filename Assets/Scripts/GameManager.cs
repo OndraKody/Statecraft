@@ -60,6 +60,26 @@ public class GameManager : MonoBehaviour
     {
         return actionPoints;
     }
+    public void AddDebt(double value)
+    {
+        dept += value;
+    }
+
+    public void AddActionPoints(double value)
+    {
+        actionPoints += value;
+    }
+
+    public JsonLouder.Party GetSelectedParty()
+    {
+        return selectedParty;
+    }
+    public void SetParty(JsonLouder.Party party)
+    {
+        selectedParty = party;
+        Debug.Log("GameManager: Uložena strana -> " + party.name);
+    }
+
     private void Awake()
     {
 
@@ -67,14 +87,12 @@ public class GameManager : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
+            
         }
         else
         {
             Destroy(gameObject);
         }
-    }
-    private void Start()
-    {
         PolicyButtonUI[] buttons = FindObjectsOfType<PolicyButtonUI>();
 
         float totalIncome = 0f;
@@ -84,6 +102,10 @@ public class GameManager : MonoBehaviour
         {
             if (btn.policyData == null) continue;
 
+            Debug.Log(
+                $"POLICY: {btn.policyData.name} | income: {btn.policyData.income} | cost: {btn.policyData.cost}"
+            );
+
             totalIncome += btn.policyData.income;
             totalExpenses += btn.policyData.cost;
         }
@@ -92,5 +114,12 @@ public class GameManager : MonoBehaviour
         expenses = totalExpenses;
 
         Debug.Log($"[INIT] Income: {income}, Expenses: {expenses}");
+    }
+    private void Start()
+    {
+        if (GameSession.SelectedParty != null)
+        {
+            selectedParty = GameSession.SelectedParty;
+        }
     }
 }
