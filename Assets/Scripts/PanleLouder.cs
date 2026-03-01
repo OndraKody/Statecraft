@@ -40,6 +40,7 @@ public class PanleLouder : MonoBehaviour
         if (SocialHealtPanel != null) SocialHealtPanel.SetActive(true);
         if (TransportPanel != null) TransportPanel.SetActive(true);
         if (DeffensPanel != null) DeffensPanel.SetActive(true);
+        if (GrafPanel != null) GrafPanel.SetActive(true);
     }
     void Start()
     {
@@ -69,6 +70,7 @@ public class PanleLouder : MonoBehaviour
     public void OpenGraf()
     {
         if (GrafPanel != null) GrafPanel.SetActive(true);
+        FindObjectOfType<PolicyGraphManager>().UpdateGraphs();
     }
     public void ClouseGraf()
     {

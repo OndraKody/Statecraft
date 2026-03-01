@@ -1,37 +1,41 @@
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
+
 public class PieChart : MonoBehaviour
 {
-    public Image[] image;
-    public float[] value;
+    public Image[] images;                 // výseèe
+    public TextMeshProUGUI[] legendTexts;  // text legendy (stejné poøadí)
 
-    void Start()
+    public void SetValues(float[] values, string[] names)
     {
-        SetValues(value);
-    }
+        if (values.Length != images.Length)
+        {
+            Debug.LogError("Poèet hodnot neodpovídá poètu výseèí!");
+            return;
+        }
 
-    void Update()
-    {
-        
-    }
-    public void SetValues(float[] valuesToSet)
-    {
-        float totalValues = 0;
-        for (int i = 0; i < valuesToSet.Length; i++)
+        float total = 0f;
+        for (int i = 0; i < values.Length; i++)
+            total += values[i];
+
+        float currentRotation = 0f;
+
+        for (int i = 0; i < values.Length; i++)
         {
-            totalValues += FindPercentage(valuesToSet, i);
-            image[i].fillAmount = totalValues;
-            
+            float percent = total == 0 ? 0 : values[i] / total;
+
+            images[i].fillAmount = percent;
+            images[i].transform.rotation =
+                Quaternion.Euler(0, 0, -360f * currentRotation);
+
+            currentRotation += percent;
+
+            if (legendTexts != null && i < legendTexts.Length)
+            {
+                legendTexts[i].text =
+                    names[i] + " - " + (percent * 100f).ToString("0.0") + " %";
+            }
         }
-    }
-    private float FindPercentage(float[] valueToSet, int index)
-    {
-        float totalAmnount = 0;
-        for(int i = 0;i < valueToSet.Length;i++)
-        {
-            totalAmnount += valueToSet[i];
-        }
-        return valueToSet[index] / totalAmnount;
     }
 }

@@ -17,14 +17,20 @@ public class PolyciPanelUI : MonoBehaviour
     }
 
     // ===== UI =====
-    public TextMeshProUGUI nameText;
-    public TextMeshProUGUI descriptionText;
-    public TextMeshProUGUI incomeInput;
-    public TextMeshProUGUI costInput;
-    public TextMeshProUGUI actionPointInput;
-
-    public Slider slider;
-    public Button confirmButton;
+    [SerializeField]
+    private TextMeshProUGUI nameText;
+    [SerializeField]
+    private TextMeshProUGUI descriptionText;
+    [SerializeField]
+    private TextMeshProUGUI incomeInput;
+    [SerializeField]
+    private TextMeshProUGUI costInput;
+    [SerializeField]
+    private TextMeshProUGUI actionPointInput;
+    [SerializeField]
+    private Slider slider;
+    [SerializeField]
+    private Button confirmButton;
 
     // ===== DATA =====
     private PolicyItem currentItem;
@@ -99,7 +105,7 @@ public class PolyciPanelUI : MonoBehaviour
         
         currentItem.income = previewIncome;
         currentItem.cost = previewCost;
-
+        
         // reset UI
         slider.value = 0;
         actionPointInput.text = "0";

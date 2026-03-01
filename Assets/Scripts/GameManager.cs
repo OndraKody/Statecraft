@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -10,8 +11,32 @@ public class GameManager : MonoBehaviour
     private double deficit;
     private double dept;
     private double actionPoints = 100;
-    private string gamePhase; 
+    private string gamePhase;
+    private List<ActiveProject> activeProjects = new List<ActiveProject>();
+    private PolicyButtonUI[] buttons;
 
+    public class ActiveProject
+    {
+        public ProjectPanelUI.ProjectItem data;
+        public int remainingTurns;
+
+        public ActiveProject(ProjectPanelUI.ProjectItem item)
+        {
+            data = item;
+            remainingTurns = item.durationInTurns;
+        }
+    }
+
+    public void AddProject(ProjectPanelUI.ProjectItem item)
+    {
+        activeProjects.Add(new ActiveProject(item));
+        Expenseschanger(item.expenseBonus);
+    }
+
+    public List<ActiveProject> GetActiveProjects()
+    {
+        return activeProjects;
+    }
     public void IncomeChanger(float IncomeChange)
     {
         income += IncomeChange;
@@ -79,7 +104,10 @@ public class GameManager : MonoBehaviour
         selectedParty = party;
         Debug.Log("GameManager: Uložena strana -> " + party.name);
     }
-
+    public PolicyButtonUI[] GetPolicy()
+    {
+        return buttons;
+    }
     private void Awake()
     {
 
@@ -112,7 +140,7 @@ public class GameManager : MonoBehaviour
 
         income = totalIncome;
         expenses = totalExpenses;
-
+        
         Debug.Log($"[INIT] Income: {income}, Expenses: {expenses}");
     }
     private void Start()
@@ -122,4 +150,5 @@ public class GameManager : MonoBehaviour
             selectedParty = GameSession.SelectedParty;
         }
     }
+   
 }

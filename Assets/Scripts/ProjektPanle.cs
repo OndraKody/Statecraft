@@ -14,6 +14,8 @@ public class ProjektPanle : MonoBehaviour
     private GameObject TransportPanelPT;
     [SerializeField]
     private GameObject DeffensPanelPT;
+    [SerializeField]
+    private GameObject Contetnt;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -23,6 +25,7 @@ public class ProjektPanle : MonoBehaviour
         if (SocialHealtPanelPT != null) SocialHealtPanelPT.SetActive(false);
         if (TransportPanelPT != null) TransportPanelPT.SetActive(false);
         if (DeffensPanelPT != null) DeffensPanelPT.SetActive(false);
+        if (Contetnt != null) Contetnt.SetActive(false);
     }
     public void FinancePT()
     {

@@ -21,6 +21,9 @@ public class TurnManeger : MonoBehaviour
     {
         ApplyEconomy();
         StartNewTurn();
+        UpdateProjects();
+        
+
     }
 
     private void ApplyEconomy()
@@ -43,4 +46,30 @@ public class TurnManeger : MonoBehaviour
 
         Debug.Log($"Zaèalo kolo {currentTurn}");
     }
+    private void UpdateProjects()
+    {
+        var projects = GameManager.Instance.GetActiveProjects();
+
+        for (int i = projects.Count - 1; i >= 0; i--)
+        {
+            projects[i].remainingTurns--;
+
+            if (projects[i].remainingTurns <= 0)
+            {
+                EndProject(projects[i]);
+                projects.RemoveAt(i);
+            }
+        }
+    }
+
+    private void EndProject(GameManager.ActiveProject project)
+    {
+      
+        GameManager.Instance.Expenseschanger(-project.data.expenseBonus);
+
+        Debug.Log("Projekt dokonèen: " + project.data.name);
+
+        
+    }
+
 }
