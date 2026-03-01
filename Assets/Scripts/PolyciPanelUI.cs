@@ -112,6 +112,7 @@ public class PolyciPanelUI : MonoBehaviour
 
         incomeInput.text = currentItem.income.ToString("0");
         costInput.text = currentItem.cost.ToString("0");
+        FindObjectOfType<PolicyGraphManager>().UpdateGraphs();
     }
 
     // ===== TEST DATA =====

@@ -4,7 +4,7 @@ using static PolyciPanelUI;
 
 public class PolicyButtonUI : MonoBehaviour
 {
-    public PolicyItem policyData;        // data této politiky
+    public PolyciPanelUI.PolicyItem policyData;        // data této politiky
     public PolyciPanelUI policyPanel;    // spoleèný panel se sliderem
 
     private Button button;
@@ -14,6 +14,8 @@ public class PolicyButtonUI : MonoBehaviour
         button = GetComponent<Button>();
         button.onClick.AddListener(OnClick);
         
+        
+
     }
     
     private void OnClick()

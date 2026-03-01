@@ -13,7 +13,19 @@ public class GameManager : MonoBehaviour
     private double actionPoints = 100;
     private string gamePhase;
     private List<ActiveProject> activeProjects = new List<ActiveProject>();
-    private PolicyButtonUI[] buttons;
+    [SerializeField]
+    private List<PolyciPanelUI.PolicyItem> allPolicies;
+
+    public void RegisterPolicy(PolyciPanelUI.PolicyItem policy)
+    {
+        if (!allPolicies.Contains(policy))
+            allPolicies.Add(policy);
+    }
+
+    public List<PolyciPanelUI.PolicyItem> GetAllPolicies()
+    {
+        return allPolicies;
+    }
 
     public class ActiveProject
     {
@@ -104,10 +116,7 @@ public class GameManager : MonoBehaviour
         selectedParty = party;
         Debug.Log("GameManager: Uložena strana -> " + party.name);
     }
-    public PolicyButtonUI[] GetPolicy()
-    {
-        return buttons;
-    }
+    
     private void Awake()
     {
 
