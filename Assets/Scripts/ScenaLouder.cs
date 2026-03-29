@@ -3,8 +3,13 @@ using UnityEngine.SceneManagement;
 
 public class ScenaLouder : MonoBehaviour
 {
-    public GameObject partySelectPanel;
-    public GameObject partyDetailPanel;
+    [SerializeField]
+    private GameObject partySelectPanel;
+    [SerializeField]
+    private GameObject partyDetailPanel;
+    [SerializeField]
+    private GameObject settingsPanel;
+
 
     private void Awake()
     {
@@ -15,6 +20,7 @@ public class ScenaLouder : MonoBehaviour
         // Na zaèátku chceme vidìt jen výbìr stran
         if (partySelectPanel != null) partySelectPanel.SetActive(false);
         if (partyDetailPanel != null) partyDetailPanel.SetActive(false);
+        if (settingsPanel != null) settingsPanel.SetActive(false);
     }
 
     // Otevøe výbìr stran
@@ -48,7 +54,14 @@ public class ScenaLouder : MonoBehaviour
     {
         SceneManager.LoadScene("GameScene");
     }
-    
+    public void OpenSettings()
+    {
+        if (settingsPanel != null) settingsPanel.SetActive(true);
+    }
+    public void CloseSettings()
+    {
+        if (settingsPanel != null) settingsPanel.SetActive(false);
+    }
     public void QuitGame()
     {
         Application.Quit();
