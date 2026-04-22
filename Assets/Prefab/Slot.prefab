@@ -96,6 +96,7 @@ MonoBehaviour:
   selectButton: {fileID: 6096763003066497984}
   detailPanel: {fileID: 0}
   scenaLouder: {fileID: 0}
+  tableName: jsonParty
 --- !u!1 &4840191213981638585
 GameObject:
   m_ObjectHideFlags: 0

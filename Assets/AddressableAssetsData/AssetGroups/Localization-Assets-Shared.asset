@@ -25,6 +25,11 @@ MonoBehaviour:
     m_ReadOnly: 1
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ce32fcbbbcb29104d9b66bf17d8ff267
+    m_Address: Assets/Lokaliace/jsonParty Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: e806aa9804eea4949bc94c39b504cf93, type: 2}
   m_SchemaSet:

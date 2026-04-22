@@ -1,7 +1,4 @@
-using System;
 using System.IO;
-using System.Security.Cryptography;
-using System.Text;
 using UnityEngine;
 
 public class JsonLouder : MonoBehaviour
@@ -9,13 +6,13 @@ public class JsonLouder : MonoBehaviour
     [System.Serializable]
     public class Party
     {
-        public string name;
-        public string partyColor; // bude jse používat k reprezentacy strany
-        public string ideology;
-        public string[] secundery_ideology;
-        public int power; // sila v porocen tech ve volbách
-        public int seats; //poèet realných pozic v parlamentu
-        public string[] goals;
+        public string name; // Teï obsahuje klíè (napø. party_national_union_name)
+        public string partyColor;
+        public string ideology; // Klíè pro ideologii
+        public string[] secundery_ideology; // Pole klíèù
+        public int power;
+        public int seats;
+        public string[] goals; // Pole klíèù
     }
 
     [System.Serializable]
@@ -25,7 +22,6 @@ public class JsonLouder : MonoBehaviour
     }
 
     public Party[] LoadedParties { get; private set; }
-
     private string filePath;
 
     private void Awake()
@@ -36,32 +32,9 @@ public class JsonLouder : MonoBehaviour
 
     public void LoadParties()
     {
-        if (!File.Exists(filePath))
-        {
-            Debug.LogError("Soubor parties.json nenalezen!");
-            return;
-        }
-
+        if (!File.Exists(filePath)) return;
         string json = File.ReadAllText(filePath);
-
         PartyWrapper wrapper = JsonUtility.FromJson<PartyWrapper>(json);
         LoadedParties = wrapper.parties;
-
-        Debug.Log("Naèteno stran: " + LoadedParties.Length);
-
-        // výpis do konzole
-        for (int i = 0; i < LoadedParties.Length; i++)
-        {
-            Party p = LoadedParties[i];
-
-            if (string.IsNullOrWhiteSpace(p.name))
-            {
-                Debug.Log($"Slot #{i}: prázdné místo pro hráèskou stranu");
-                continue;
-            }
-
-            Debug.Log($"Strana #{i}: {p.name} | Ideologie: {p.ideology} | Mandáty: {p.seats}");
-        }
     }
-
 }

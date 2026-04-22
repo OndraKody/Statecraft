@@ -1,94 +1,100 @@
 {
   "parties": [
     {
-      "name": "Národní Unie",
+      "name": "party_national_union",
       "partyColor": "#0044AA",
-      "ideology": "konzervatismus",
-      "secundery_ideology": ["křesťanská demokracie", "liberální konzervatismus"],
+      "ideology": "ideo_conservatism",
+      "secundery_ideology": [
+        "ideo_christian_dem",
+        "ideo_lib_cons"
+      ],
       "power": 23,
       "seats": 46,
       "goals": [
-        "Snížit daně",
-        "Zvýšit rozpočet na obranu",
-        "Podpora rodin"
+        "goal_lower_taxes",
+        "goal_defense_budget",
+        "goal_family_support"
       ]
     },
-
     {
-      "name": "Progresivní Hnutí",
+      "name": "party_progressive_movement",
       "partyColor": "#D1006A",
-      "ideology": "socialismus",
-      "secundery_ideology": ["progresivismus", "socialní demokaracie"],
+      "ideology": "ideo_socialism",
+      "secundery_ideology": [
+        "ideo_progressivism",
+        "ideo_social_dem"
+      ],
       "power": 18,
       "seats": 44,
       "goals": [
-        "Zvýšit minimální mzdu",
-        "Reforma zdravotnictví",
-        "Podpora sociálního bydlení"
+        "goal_min_wage",
+        "goal_health_reform",
+        "goal_social_housing"
       ]
     },
-
     {
-      "name": "Strany Svobody",
+      "name": "party_freedom_party",
       "partyColor": "#FFFF00",
-      "ideology": "liberalismus",
-      "secundery_ideology": ["Progresivní liberalismus", "Neoliberalismus"],
+      "ideology": "ideo_liberalism",
+      "secundery_ideology": [
+        "ideo_prog_liberalism",
+        "ideo_neoliberalism"
+      ],
       "power": 15,
       "seats": 30,
       "goals": [
-        "Legalizace potratů",
-        "Manželství pro všechny",
-        "Legalizace drog"
+        "goal_abortion_legal",
+        "goal_marriage_equality",
+        "goal_drug_legalization"
       ]
     },
-
-     {
-    "name": "Levá cesta",
-    "partyColor": "#99004C",
-    "ideology": "komunismus",
-    "secundery_ideology": ["demokratický socialismus", "anti-fašismus"],
-    "power": 15,
-    "seats": 30,
-    "goals": [
-      "Progresivní daně",
-      "Znárodnění podniků",
-      "Vyšší sociální dávky"
-    ]
-  },
-  {
-    "name": "Zelená budoucnost",
-    "partyColor": "#00AA44",
-    "ideology": "zelená politika",
-    "secundery_ideology": ["environmentalismus", "sociální progresivismus"],
-    "power": 12,
-    "seats": 22,
-    "goals": [
-      "Obnovitelné zdroje",
-      "Daň z emisí CO₂",
-      "Podpora veřejné dopravy"
-    ]
-  },
-  {
-    "name": "Vlastenecká fronta",
-    "partyColor": "#002266",
-    "ideology": "národní konzervatismus",
-    "secundery_ideology": ["euroskepticismus", "nacionalismus"],
-    "power": 17,
-    "seats": 28,
-    "goals": [
-      "Pevné hranice",
-      "Snížit dávky",
-      "Silnější policie"
-    ]
-  },
     {
-      "name": "test",
-      "partyColor": "#FFFF00",
-      "ideology": "test",
-      "secundery_ideology": ["tets", "test"],
-      "power": 0,
-      "seats": 0,
-      "goals": ["test", "test", "test"]
+      "name": "party_left_way",
+      "partyColor": "#99004C",
+      "ideology": "ideo_communism",
+      "secundery_ideology": [
+        "ideo_dem_socialism",
+        "ideo_antifa"
+      ],
+      "power": 15,
+      "seats": 30,
+      "goals": [
+        "goal_progressive_tax",
+        "goal_nationalization",
+        "goal_higher_welfare"
+      ]
+    },
+    {
+      "name": "party_green_future",
+      "partyColor": "#00AA44",
+      "ideology": "ideo_green_politics",
+      "secundery_ideology": [
+        "ideo_environmentalism",
+        "ideo_soc_progressivism"
+      ],
+      "power": 12,
+      "seats": 22,
+      "goals": [
+        "goal_renewables",
+        "goal_co2_tax",
+        "goal_public_transport"
+      ]
+    },
+    {
+      "name": "party_patriotic_front",
+      "partyColor": "#002266",
+      "ideology": "ideo_nat_conservatism",
+      "secundery_ideology": [
+        "ideo_euroskepticism",
+        "ideo_nationalism"
+      ],
+      "power": 17,
+      "seats": 28,
+      "goals": [
+        "goal_hard_borders",
+        "goal_lower_benefits",
+        "goal_strong_police"
+      ]
     }
   ]
 }

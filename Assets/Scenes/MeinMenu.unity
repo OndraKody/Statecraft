@@ -493,6 +493,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
   allPolicies: []
+  references:
+    version: 2
+    RefIds: []
 --- !u!114 &42589263
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5856,6 +5859,7 @@ MonoBehaviour:
   goal2Text: {fileID: 543363271}
   goal3Text: {fileID: 47415120}
   selectButton: {fileID: 842242489}
+  tableName: jsonParty
 --- !u!1 &1993256540
 GameObject:
   m_ObjectHideFlags: 0

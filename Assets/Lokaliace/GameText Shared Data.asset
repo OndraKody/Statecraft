@@ -19,6 +19,158 @@ MonoBehaviour:
     m_Key: text_income
     m_Metadata:
       m_Items: []
+  - m_Id: 176675872501760
+    m_Key: text_outcome
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176859956310016
+    m_Key: text_debt
+    m_Metadata:
+      m_Items: []
+  - m_Id: 177202203127808
+    m_Key: btn_SP
+    m_Metadata:
+      m_Items: []
+  - m_Id: 177615392403456
+    m_Key: btn_FP
+    m_Metadata:
+      m_Items: []
+  - m_Id: 177823090143232
+    m_Key: btn_SH
+    m_Metadata:
+      m_Items: []
+  - m_Id: 178055827877888
+    m_Key: btn_transport
+    m_Metadata:
+      m_Items: []
+  - m_Id: 178208429240320
+    m_Key: btn_defence
+    m_Metadata:
+      m_Items: []
+  - m_Id: 182571553976320
+    m_Key: btn_DisKryp
+    m_Metadata:
+      m_Items: []
+  - m_Id: 182760700309504
+    m_Key: btn_StateR
+    m_Metadata:
+      m_Items: []
+  - m_Id: 183106663280640
+    m_Key: btn_cla
+    m_Metadata:
+      m_Items: []
+  - m_Id: 183570129678336
+    m_Key: btn_drogs
+    m_Metadata:
+      m_Items: []
+  - m_Id: 183757841559552
+    m_Key: btn_speedRails
+    m_Metadata:
+      m_Items: []
+  - m_Id: 183928579092480
+    m_Key: btn_drons
+    m_Metadata:
+      m_Items: []
+  - m_Id: 184937124655104
+    m_Key: text_exe
+    m_Metadata:
+      m_Items: []
+  - m_Id: 185124530352128
+    m_Key: text_cost
+    m_Metadata:
+      m_Items: []
+  - m_Id: 185271414878208
+    m_Key: btn_conforn
+    m_Metadata:
+      m_Items: []
+  - m_Id: 186908426563584
+    m_Key: text_MainId
+    m_Metadata:
+      m_Items: []
+  - m_Id: 187105609183232
+    m_Key: text_power
+    m_Metadata:
+      m_Items: []
+  - m_Id: 187217571934208
+    m_Key: text_seat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 187574624645120
+    m_Key: text_last_el
+    m_Metadata:
+      m_Items: []
+  - m_Id: 188926926974976
+    m_Key: btn_BackMenu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 190041752006656
+    m_Key: text_inco
+    m_Metadata:
+      m_Items: []
+  - m_Id: 192327064678400
+    m_Key: text_incomeTax
+    m_Metadata:
+      m_Items: []
+  - m_Id: 192875818053632
+    m_Key: polici_incomeTaxDes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 197093358497792
+    m_Key: policy_judges_salaries
+    m_Metadata:
+      m_Items: []
+  - m_Id: 197413237092352
+    m_Key: policy_judges_salariesText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 198243373740032
+    m_Key: policy_Border_Guard
+    m_Metadata:
+      m_Items: []
+  - m_Id: 198378229002240
+    m_Key: policy_Border_GuardText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 199177105502208
+    m_Key: policy_Healt_invest
+    m_Metadata:
+      m_Items: []
+  - m_Id: 199518236635136
+    m_Key: policy_Healt_investText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 200295395028992
+    m_Key: policy_RoudTex
+    m_Metadata:
+      m_Items: []
+  - m_Id: 200470041653248
+    m_Key: policy_RoudTexText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 200874057986048
+    m_Key: policy_deffens
+    m_Metadata:
+      m_Items: []
+  - m_Id: 201016496549888
+    m_Key: policy_deffensText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 307975912615936
+    m_Key: event_strike
+    m_Metadata:
+      m_Items: []
+  - m_Id: 308195522179072
+    m_Key: event_strikeText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 308579439407104
+    m_Key: event_strikeOptinoA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 308827616374784
+    m_Key: event_strikeOptinoB
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

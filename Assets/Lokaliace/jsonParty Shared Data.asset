@@ -1,0 +1,196 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: jsonParty Shared Data
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.SharedTableData
+  m_TableCollectionName: jsonParty
+  m_TableCollectionNameGuidString: ce32fcbbbcb29104d9b66bf17d8ff267
+  m_Entries:
+  - m_Id: 6868103168
+    m_Key: party_national_union
+    m_Metadata:
+      m_Items: []
+  - m_Id: 139991117824
+    m_Key: party_progressive_movement
+    m_Metadata:
+      m_Items: []
+  - m_Id: 291132862464
+    m_Key: party_freedom_party
+    m_Metadata:
+      m_Items: []
+  - m_Id: 627436351488
+    m_Key: party_left_way
+    m_Metadata:
+      m_Items: []
+  - m_Id: 913789874176
+    m_Key: party_green_future
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1128940892160
+    m_Key: party_patriotic_front
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1259174031360
+    m_Key: ideo_conservatism
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1397728669696
+    m_Key: ideo_christian_dem
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3413616029696
+    m_Key: ideo_lib_cons
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3570277478400
+    m_Key: ideo_socialism
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3658420776960
+    m_Key: ideo_progressivism
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3738821390336
+    m_Key: ideo_social_dem
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4033823567872
+    m_Key: ideo_liberalism
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4148571336704
+    m_Key: ideo_prog_liberalism
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4330612518912
+    m_Key: ideo_neoliberalism
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4448006893568
+    m_Key: ideo_communism
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4573919899648
+    m_Key: ideo_dem_socialism
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4705251946496
+    m_Key: ideo_antifa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4916183494656
+    m_Key: ideo_green_politics
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5005287288832
+    m_Key: ideo_environmentalism
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20596224094208
+    m_Key: ideo_soc_progressivism
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20705502490624
+    m_Key: ideo_nat_conservatism
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20824889159680
+    m_Key: ideo_euroskepticism
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20958309969920
+    m_Key: ideo_nationalism
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21200036098048
+    m_Key: goal_lower_taxes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21309645844480
+    m_Key: goal_defense_budget
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21429984620544
+    m_Key: goal_family_support
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21669479378944
+    m_Key: goal_min_wage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21829223641088
+    m_Key: goal_health_reform
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21915437559808
+    m_Key: goal_social_housing
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22026842468352
+    m_Key: goal_abortion_legal
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22125790294016
+    m_Key: goal_marriage_equality
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22217142235136
+    m_Key: goal_drug_legalization
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22552879493120
+    m_Key: goal_progressive_tax
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22741354737664
+    m_Key: goal_nationalization
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22833839140864
+    m_Key: goal_higher_welfare
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23210248564736
+    m_Key: goal_renewables
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23313365528576
+    m_Key: goal_co2_tax
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23424934014976
+    m_Key: goal_public_transport
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23525265960960
+    m_Key: goal_hard_borders
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23784096460800
+    m_Key: goal_lower_benefits
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23903646707712
+    m_Key: goal_strong_police
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 7759465125453758464
+  references:
+    version: 2
+    RefIds:
+    - rid: 7759465125453758464
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1776677613345

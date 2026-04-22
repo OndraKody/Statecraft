@@ -1,6 +1,7 @@
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Localization; // Dùležité!
 
 public class PartySlotUI : MonoBehaviour
 {
@@ -8,63 +9,56 @@ public class PartySlotUI : MonoBehaviour
     public Image logoImage;
     public Button selectButton;
 
-    public PartyDetailUI detailPanel;
-    public ScenaLouder scenaLouder;
+    [HideInInspector] public PartyDetailUI detailPanel;
+    [HideInInspector] public ScenaLouder scenaLouder;
+
     private JsonLouder.Party partyData;
+
+    // --- LOKALIZACE ---
+    [SerializeField] private string tableName = "StringTable"; // Název tvé tabulky v Unity
+    private LocalizedString localizedName;
+
     public void Setup(JsonLouder.Party data)
     {
         partyData = data;
-        nameText.text = data.name;
 
-        // Nastaví barvu loga
-        Color color;
-        if (ColorUtility.TryParseHtmlString(data.partyColor, out color))
+        // Nastavení lokalizace jména
+        CleanupSubscriptions();
+        if (!string.IsNullOrEmpty(data.name))
         {
+            localizedName = new LocalizedString(tableName, data.name);
+            localizedName.StringChanged += UpdateNameText;
+        }
+
+        // Nastavení barvy loga
+        if (ColorUtility.TryParseHtmlString(data.partyColor, out Color color))
             logoImage.color = color;
-        }
         else
-        {
-            logoImage.color = Color.white; // fallback
-        }
+            logoImage.color = Color.white;
 
-        // Nastaví akci tlaèítka
+        // Akce tlaèítka
         selectButton.onClick.RemoveAllListeners();
         selectButton.onClick.AddListener(() => OnSelected(data));
     }
+
+    private void UpdateNameText(string translatedText)
+    {
+        nameText.text = translatedText;
+    }
+
     private void OnSelected(JsonLouder.Party data)
     {
-        Debug.Log($"[PartySlotUI] Clicked: {partyData?.name} | detailPanel={(detailPanel != null)} | scenaLouder={(scenaLouder != null)}");
-
-        // Nevolat nic, co je null
-        if (detailPanel != null)
-        {
-            detailPanel.Show(partyData);
-        }
-        else
-        {
-            Debug.LogWarning("[PartySlotUI] detailPanel je NULL!");
-        }
-
-        if (scenaLouder != null)
-        {
-            scenaLouder.OpenPartyDetail();
-        }
-        else
-        {
-            Debug.LogWarning("[PartySlotUI] scenaLouder je NULL! Nepøepínám panely.");
-        }
+        if (detailPanel != null) detailPanel.Show(partyData);
+        if (scenaLouder != null) scenaLouder.OpenPartyDetail();
     }
 
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    private void CleanupSubscriptions()
     {
-        
+        if (localizedName != null) localizedName.StringChanged -= UpdateNameText;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnDisable()
     {
-        
+        CleanupSubscriptions();
     }
 }

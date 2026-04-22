@@ -1,0 +1,191 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: jsonParty_en
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.StringTable
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: ce32fcbbbcb29104d9b66bf17d8ff267, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 6868103168
+    m_Localized: National Union
+    m_Metadata:
+      m_Items: []
+  - m_Id: 139991117824
+    m_Localized: Progressive Movement
+    m_Metadata:
+      m_Items: []
+  - m_Id: 291132862464
+    m_Localized: Freedom Party
+    m_Metadata:
+      m_Items: []
+  - m_Id: 627436351488
+    m_Localized: Left Way
+    m_Metadata:
+      m_Items: []
+  - m_Id: 913789874176
+    m_Localized: Green future
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1128940892160
+    m_Localized: Patriotic front
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1259174031360
+    m_Localized: Conservatism
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1397728669696
+    m_Localized: Christian Democracy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3413616029696
+    m_Localized: Liberal Conservatism
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3570277478400
+    m_Localized: Socialism
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3658420776960
+    m_Localized: Progressivism
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3738821390336
+    m_Localized: Social Democracy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4033823567872
+    m_Localized: Liberalism
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4148571336704
+    m_Localized: Progressive Liberalism
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4330612518912
+    m_Localized: Neoliberalism
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4448006893568
+    m_Localized: Communism
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4573919899648
+    m_Localized: Democratic Socialism
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4705251946496
+    m_Localized: Anti-fascism
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4916183494656
+    m_Localized: Green Politics
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5005287288832
+    m_Localized: Environmentalism
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20596224094208
+    m_Localized: Social Progressivism
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20705502490624
+    m_Localized: National Conservatism
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20824889159680
+    m_Localized: Euroskepticism
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20958309969920
+    m_Localized: Nationalism
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21200036098048
+    m_Localized: Lower Taxes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21309645844480
+    m_Localized: Increase Defense Budget
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21429984620544
+    m_Localized: Family Support
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21669479378944
+    m_Localized: Increase Minimum Wage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21829223641088
+    m_Localized: Healthcare Reform
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21915437559808
+    m_Localized: Social Housing Support
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22026842468352
+    m_Localized: Abortion Legalization
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22125790294016
+    m_Localized: Marriage Equality
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22217142235136
+    m_Localized: Drug Legalization
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22552879493120
+    m_Localized: Progressive Taxation
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22741354737664
+    m_Localized: Nationalization of Enterprises
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22833839140864
+    m_Localized: Higher Social Benefits
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23210248564736
+    m_Localized: Renewable Energy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23313365528576
+    m_Localized: Carbon Tax
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23424934014976
+    m_Localized: Public Transport Support
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23525265960960
+    m_Localized: Strong Borders
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23784096460800
+    m_Localized: Reduce Welfare Benefits
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23903646707712
+    m_Localized: Stronger Police Force
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

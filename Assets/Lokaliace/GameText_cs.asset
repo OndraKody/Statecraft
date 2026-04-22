@@ -22,6 +22,161 @@ MonoBehaviour:
     m_Localized: "P\u0159\xEDjemy"
     m_Metadata:
       m_Items: []
+  - m_Id: 176675872501760
+    m_Localized: "V\xFDdaje"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176859956310016
+    m_Localized: Dluh
+    m_Metadata:
+      m_Items: []
+  - m_Id: 177202203127808
+    m_Localized: "Spravedlnost a po\u0159\xE1dek"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 177615392403456
+    m_Localized: "Zahrani\u010Dni politika"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 177823090143232
+    m_Localized: "Socialn\xED a zdravotni"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 178055827877888
+    m_Localized: Doprava
+    m_Metadata:
+      m_Items: []
+  - m_Id: 178208429240320
+    m_Localized: Obrana
+    m_Metadata:
+      m_Items: []
+  - m_Id: 182571553976320
+    m_Localized: "Zak\xE1zat Kryptomn\u011Bny"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 182760700309504
+    m_Localized: "St\xE1tn\xED nabo\u017Eenstv\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 183106663280640
+    m_Localized: Uvalit cla
+    m_Metadata:
+      m_Items: []
+  - m_Id: 183570129678336
+    m_Localized: Legalizovat drogy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 183757841559552
+    m_Localized: "Vystavba vysokorychlostn\xEDch trat\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 183928579092480
+    m_Localized: "Zakoupen\xED dron\u016F"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 184937124655104
+    m_Localized: "V\xFDdaje:"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 185124530352128
+    m_Localized: 'Cena:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 185271414878208
+    m_Localized: Potvrdit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 186908426563584
+    m_Localized: "Hl\xE1vn\xED ideologie:"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 187105609183232
+    m_Localized: "Politick\xE1 s\xEDla:"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 187217571934208
+    m_Localized: "Po\u010Det k\u0159esel:"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 187574624645120
+    m_Localized: "Posledni v\xFDsledek ve volb\xE1ch:"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 188926926974976
+    m_Localized: "Vr\xE1tit se do menu"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 190041752006656
+    m_Localized: "P\u0159\xEDjmy:"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 192327064678400
+    m_Localized: "Da\u0148 z p\u0159\xEDjmu"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 192875818053632
+    m_Localized: "Da\u0148 z p\u0159\xEDjmu je povinn\xE1, z\xE1konem stanoven\xE1
+      p\u0159\xEDm\xE1 da\u0148, kterou fyzick\xE9 i pr\xE1vnick\xE9 osoby odv\xE1d\u011Bj\xED
+      st\xE1tu ze sv\xFDch v\xFDd\u011Blk\u016F."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 197093358497792
+    m_Localized: Platy soudcu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 197413237092352
+    m_Localized: "Soudci pot\u0159ebuji plat"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 198243373740032
+    m_Localized: Cla
+    m_Metadata:
+      m_Items: []
+  - m_Id: 198378229002240
+    m_Localized: neco
+    m_Metadata:
+      m_Items: []
+  - m_Id: 199177105502208
+    m_Localized: "Investive do zdravotnictv\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 199518236635136
+    m_Localized: "Investov\xE1ni do zdravotnictv\xED je velmi dule\u017Eit\xE9 a
+      zlep\u0161uje to zdrav\xFD tv\xFDch lidi"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 200295395028992
+    m_Localized: "Silni\u010Dni da\u0148"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 200470041653248
+    m_Localized: "v\u017Eum"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 200874057986048
+    m_Localized: "V\xFDdaje na arm\xE1du"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 201016496549888
+    m_Localized: "Armada je pot\u0159eba k zaji\u0161teni bezpe\u010Dnosti"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 307975912615936
+    m_Localized: "Delnick\xE1 st\xE1vka"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 308195522179072
+    m_Localized: "Delnic\xED stavkuji cht\u011Bj\xED v\xEDc pen\u011Bz"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 308579439407104
+    m_Localized: "Zv\xFD\u0161it platy"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 308827616374784
+    m_Localized: "Potla\u010Dit st\xE1vku"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

@@ -1,13 +1,13 @@
 using UnityEngine;
+using UnityEngine.Localization;
 
-public class EventManager : MonoBehaviour {
-
+public class EventManager : MonoBehaviour
+{
     [System.Serializable]
-    public class GameEvent 
+    public class GameEvent
     {
-        public string title;
-        [TextArea]
-        public string description;
+        public LocalizedString title;
+        public LocalizedString description;
 
         public EventOption optionA;
         public EventOption optionB;
@@ -16,17 +16,17 @@ public class EventManager : MonoBehaviour {
     [System.Serializable]
     public class EventOption
     {
-        public string text;
+        // ZMÌNA: Tady jsme zmìnili obyèejný string na LocalizedString!
+        public LocalizedString text;
 
         public float incomeChange;
         public float expenseChange;
-       
     }
 
     public static EventManager Instance;
 
     public GameEvent[] events;
-    public EventPanelUI eventPanel;
+    public EventPanelUI eventPanel; // Ten EventPanelUI skript z mé pøedchozí zprávy
 
     private void Awake()
     {

@@ -20,9 +20,16 @@ MonoBehaviour:
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-cs
+    - Preload
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 1f699f4991e4f214da447eb585f748c0
     m_Address: MenuText_cs
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-cs
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2433e857dbc2db241aeb905db8b7aaa3
+    m_Address: jsonParty_cs
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-cs

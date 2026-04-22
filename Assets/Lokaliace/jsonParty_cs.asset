@@ -1,0 +1,191 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: jsonParty_cs
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.StringTable
+  m_LocaleId:
+    m_Code: cs
+  m_SharedData: {fileID: 11400000, guid: ce32fcbbbcb29104d9b66bf17d8ff267, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 6868103168
+    m_Localized: "N\xE1rodn\xED Unie"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 139991117824
+    m_Localized: "Progresivn\xED Hnut\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 291132862464
+    m_Localized: Strana Svobody
+    m_Metadata:
+      m_Items: []
+  - m_Id: 627436351488
+    m_Localized: "Lev\xE1 cesta"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 913789874176
+    m_Localized: "Zelen\xE1 budoucnost"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1128940892160
+    m_Localized: "Vlasteneck\xE1 fronta"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1259174031360
+    m_Localized: konzervatismus
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1397728669696
+    m_Localized: "k\u0159es\u0165ansk\xE1 demokracie"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3413616029696
+    m_Localized: "liber\xE1ln\xED konzervatismus"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3570277478400
+    m_Localized: socialismus
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3658420776960
+    m_Localized: progresivismus
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3738821390336
+    m_Localized: "soci\xE1ln\xED demokracie"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4033823567872
+    m_Localized: liberalismus
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4148571336704
+    m_Localized: "progresivn\xED liberalismus"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4330612518912
+    m_Localized: neoliberalismus
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4448006893568
+    m_Localized: komunismus
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4573919899648
+    m_Localized: "demokratick\xFD socialismus"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4705251946496
+    m_Localized: "anti-fa\u0161ismus"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4916183494656
+    m_Localized: "zelen\xE1 politika"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5005287288832
+    m_Localized: environmentalismus
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20596224094208
+    m_Localized: "soci\xE1ln\xED progresivismus"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20705502490624
+    m_Localized: "n\xE1rodn\xED konzervatismus"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20824889159680
+    m_Localized: euroskepticismus
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20958309969920
+    m_Localized: nacionalismus
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21200036098048
+    m_Localized: "Sn\xED\u017Eit dan\u011B"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21309645844480
+    m_Localized: "Zv\xFD\u0161it rozpo\u010Det na obranu"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21429984620544
+    m_Localized: Podpora rodin
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21669479378944
+    m_Localized: "Zv\xFD\u0161it minim\xE1ln\xED mzdu"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21829223641088
+    m_Localized: "Reforma zdravotnictv\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21915437559808
+    m_Localized: "Podpora soci\xE1ln\xEDho bydlen\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22026842468352
+    m_Localized: "Legalizace potrat\u016F"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22125790294016
+    m_Localized: "Man\u017Eelstv\xED pro v\u0161echny"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22217142235136
+    m_Localized: Legalizace drog
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22552879493120
+    m_Localized: "Progresivn\xED dan\u011B"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22741354737664
+    m_Localized: "Zn\xE1rodn\u011Bn\xED podnik\u016F"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22833839140864
+    m_Localized: "Vy\u0161\u0161\xED soci\xE1ln\xED d\xE1vky"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23210248564736
+    m_Localized: "Obnoviteln\xE9 zdroje"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23313365528576
+    m_Localized: "Da\u0148 z emis\xED CO\u2082"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23424934014976
+    m_Localized: "Podpora ve\u0159ejn\xE9 dopravy"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23525265960960
+    m_Localized: "Pevn\xE9 hranice"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23784096460800
+    m_Localized: "Sn\xED\u017Eit d\xE1vky"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23903646707712
+    m_Localized: "Siln\u011Bj\u0161\xED policie"
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

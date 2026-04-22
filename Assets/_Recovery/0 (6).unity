@@ -3171,7 +3171,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 7556218253775424541, guid: eb39fb424ef3b194c92817e89a853aa9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f9f51e794bfec754abf61c28af69d4f7, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9779,7 +9779,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 7556218253775424541, guid: eb39fb424ef3b194c92817e89a853aa9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f9f51e794bfec754abf61c28af69d4f7, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -14935,7 +14935,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 7556218253775424541, guid: eb39fb424ef3b194c92817e89a853aa9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f9f51e794bfec754abf61c28af69d4f7, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -17851,7 +17851,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 7556218253775424541, guid: eb39fb424ef3b194c92817e89a853aa9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f9f51e794bfec754abf61c28af69d4f7, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -20847,7 +20847,6 @@ MonoBehaviour:
   goal3Text: {fileID: 1739282940}
   seatsText: {fileID: 852506461}
   powerText: {fileID: 1031517932}
-  tableName: jsonParty
 --- !u!1 &1390627941
 GameObject:
   m_ObjectHideFlags: 0
@@ -22042,7 +22041,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 7556218253775424541, guid: eb39fb424ef3b194c92817e89a853aa9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f9f51e794bfec754abf61c28af69d4f7, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -24816,7 +24815,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 7556218253775424541, guid: eb39fb424ef3b194c92817e89a853aa9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f9f51e794bfec754abf61c28af69d4f7, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1

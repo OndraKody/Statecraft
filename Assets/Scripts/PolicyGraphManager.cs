@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine.Localization; // Tohle možná budeš muset pøidat, pokud tu chybí
 
 public class PolicyGraphManager : MonoBehaviour
 {
@@ -9,7 +10,6 @@ public class PolicyGraphManager : MonoBehaviour
     public void UpdateGraphs()
     {
         PolicyButtonUI[] buttons = FindObjectsOfType<PolicyButtonUI>(true);
-        
 
         List<float> incomeValues = new List<float>();
         List<string> incomeNames = new List<string>();
@@ -22,16 +22,21 @@ public class PolicyGraphManager : MonoBehaviour
             if (button.policyData == null)
                 continue;
 
+            // Vytáhneme si aktuální pøeklad pro tento moment
+            string translatedName = button.policyData.name.GetLocalizedString();
+
             if (button.policyData.income > 0)
             {
                 incomeValues.Add(button.policyData.income);
-                incomeNames.Add(button.policyData.name);
+                // Použijeme získaný pøeklad
+                incomeNames.Add(translatedName);
             }
 
             if (button.policyData.cost > 0)
             {
                 expenseValues.Add(button.policyData.cost);
-                expenseNames.Add(button.policyData.name);
+                // Použijeme získaný pøeklad
+                expenseNames.Add(translatedName);
             }
         }
 

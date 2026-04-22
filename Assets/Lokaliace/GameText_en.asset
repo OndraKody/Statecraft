@@ -22,6 +22,160 @@ MonoBehaviour:
     m_Localized: Incomes
     m_Metadata:
       m_Items: []
+  - m_Id: 176675872501760
+    m_Localized: Expenses
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176859956310016
+    m_Localized: Debt
+    m_Metadata:
+      m_Items: []
+  - m_Id: 177202203127808
+    m_Localized: Law and order
+    m_Metadata:
+      m_Items: []
+  - m_Id: 177615392403456
+    m_Localized: Foreign policy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 177823090143232
+    m_Localized: Social and health
+    m_Metadata:
+      m_Items: []
+  - m_Id: 178055827877888
+    m_Localized: Transport
+    m_Metadata:
+      m_Items: []
+  - m_Id: 178208429240320
+    m_Localized: Defense
+    m_Metadata:
+      m_Items: []
+  - m_Id: 182571553976320
+    m_Localized: Disable cryptocurrencies
+    m_Metadata:
+      m_Items: []
+  - m_Id: 182760700309504
+    m_Localized: State religion
+    m_Metadata:
+      m_Items: []
+  - m_Id: 183106663280640
+    m_Localized: Impose tariffs
+    m_Metadata:
+      m_Items: []
+  - m_Id: 183570129678336
+    m_Localized: Legalize drugs
+    m_Metadata:
+      m_Items: []
+  - m_Id: 183757841559552
+    m_Localized: Construction of high-speed lines
+    m_Metadata:
+      m_Items: []
+  - m_Id: 183928579092480
+    m_Localized: Purchasing drones
+    m_Metadata:
+      m_Items: []
+  - m_Id: 184937124655104
+    m_Localized: 'Expenses:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 185124530352128
+    m_Localized: 'Cost:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 185271414878208
+    m_Localized: Confirm
+    m_Metadata:
+      m_Items: []
+  - m_Id: 186908426563584
+    m_Localized: 'Main ideology:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 187105609183232
+    m_Localized: 'Political power:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 187217571934208
+    m_Localized: 'Number of seats:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 187574624645120
+    m_Localized: 'Latest election results:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 188926926974976
+    m_Localized: Return to the menu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 190041752006656
+    m_Localized: 'Income:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 192327064678400
+    m_Localized: Income tax
+    m_Metadata:
+      m_Items: []
+  - m_Id: 192875818053632
+    m_Localized: Income tax is a mandatory, legally prescribed direct tax that individuals
+      and legal entities pay to the state from their earnings.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 197093358497792
+    m_Localized: Judges salaries
+    m_Metadata:
+      m_Items: []
+  - m_Id: 197413237092352
+    m_Localized: Judges need a salary
+    m_Metadata:
+      m_Items: []
+  - m_Id: 198243373740032
+    m_Localized: Tarrifs
+    m_Metadata:
+      m_Items: []
+  - m_Id: 198378229002240
+    m_Localized: somting
+    m_Metadata:
+      m_Items: []
+  - m_Id: 199177105502208
+    m_Localized: Invest in healthcare
+    m_Metadata:
+      m_Items: []
+  - m_Id: 199518236635136
+    m_Localized: Investing in healthcare is very important and improves the health
+      of your people.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 200295395028992
+    m_Localized: Road tax
+    m_Metadata:
+      m_Items: []
+  - m_Id: 200470041653248
+    m_Localized: brum
+    m_Metadata:
+      m_Items: []
+  - m_Id: 200874057986048
+    m_Localized: Military spending
+    m_Metadata:
+      m_Items: []
+  - m_Id: 201016496549888
+    m_Localized: The army is needed to ensure security.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 307975912615936
+    m_Localized: Workers strike
+    m_Metadata:
+      m_Items: []
+  - m_Id: 308195522179072
+    m_Localized: Workers on strike want more money
+    m_Metadata:
+      m_Items: []
+  - m_Id: 308579439407104
+    m_Localized: Raise salaries
+    m_Metadata:
+      m_Items: []
+  - m_Id: 308827616374784
+    m_Localized: Suppress the strike
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
