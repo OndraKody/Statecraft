@@ -176,6 +176,46 @@ MonoBehaviour:
     m_Localized: Suppress the strike
     m_Metadata:
       m_Items: []
+  - m_Id: 19518500915572736
+    m_Localized: Poor
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19518651503669248
+    m_Localized: Middle Class
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19518754566107136
+    m_Localized: Wealthy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19518880470724608
+    m_Localized: Nationalists
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19519184482267136
+    m_Localized: Liberals
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19519357723799552
+    m_Localized: Conservatives
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19519430922792960
+    m_Localized: Capitalists
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19519515115057152
+    m_Localized: Socialists
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19519624078880768
+    m_Localized: Religious
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19519819986432000
+    m_Localized: Environmentalists
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

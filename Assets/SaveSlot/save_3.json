@@ -1,0 +1,20 @@
+{
+  "slotIndex": 3,
+  "partyNameKey": "",
+  "dept": 0,
+  "actionPoints": 0,
+  "hdp": 0,
+  "crime": 0,
+  "health": 0,
+  "education": 0,
+  "poverty": 0,
+  "policies": [
+    {
+      "nameKey": "text_incomeTax",
+      "currentIncome": 0.0,
+      "currentCost": 0,
+      "savedHdpEffect": 0,
+      "savedCrimeEffect": 0
+    }
+  ]
+}
