@@ -115,8 +115,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 192875818053632
-    m_Localized: Income tax is a mandatory, legally prescribed direct tax that individuals
-      and legal entities pay to the state from their earnings.
+    m_Localized: Income tax is a portion of earnings that people and businesses pay
+      to the government. Higher taxes mean less money for taxpayers but more revenue
+      for the state.
     m_Metadata:
       m_Items: []
   - m_Id: 197093358497792
@@ -214,6 +215,178 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 19519819986432000
     m_Localized: Environmentalists
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24206223911874560
+    m_Localized: Payroll tax
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24210632389619712
+    m_Localized: Payroll tax is a tax paid on employees' wages. Higher payroll taxes
+      increase the cost of employing workers.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24216089086849024
+    m_Localized: Capital Gains Tax
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24216271971086336
+    m_Localized: Capital gains tax is a tax on profits earned from selling investments
+      such as stocks or property. Higher taxes reduce investors' profits.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24218456624656384
+    m_Localized: Corporate tax
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24218660262309888
+    m_Localized: Corporate tax is a tax that companies pay on their profits. Higher
+      corporate taxes reduce company profits but increase government revenue.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24220283277602816
+    m_Localized: Competition law
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24220515201642496
+    m_Localized: Competition law sets rules that prevent companies from abusing their
+      market power. Its goal is to maintain fair competition between businesses.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24225392636129280
+    m_Localized: Pollution controls
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24225602779148288
+    m_Localized: Pollution controls are rules that limit how much pollution companies
+      or people can produce. Stricter rules reduce pollution but can increase costs.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24226889616781312
+    m_Localized: Inheritance tax
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24227095435472896
+    m_Localized: Inheritance tax is a fee paid on property received from someone
+      who has died. Higher tax means heirs keep a smaller share of the inheritance.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24227214486597632
+    m_Localized: Work safety law
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24228639308443648
+    m_Localized: Work safety law sets rules to protect employees while working. Breaking
+      these rules can lead to fines or shutdowns.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24230188428488704
+    m_Localized: Labor laws
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24230305235660800
+    m_Localized: Labor laws define basic rules between employees and employers, such
+      as working hours, wages, and working conditions. They help maintain balance
+      between both sides.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24232565642555392
+    m_Localized: Recycling
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24232775588442112
+    m_Localized: Recycling support means policies that encourage people and companies
+      to sort and reuse waste more. Stronger support usually reduces the amount of
+      waste.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24260600139804672
+    m_Localized: Prisons
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24260913676611584
+    m_Localized: Investment in prisons means funding for building, expanding, or
+      improving prison facilities. Higher investment improves capacity and conditions
+      in prisons.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24262079743455232
+    m_Localized: Police Force
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24262483675901952
+    m_Localized: Police budget is the amount of money the state allocates to the
+      police for its operations. A higher budget can mean more officers and better
+      equipment.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24263626384666624
+    m_Localized: Race discrimination law
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24264021853007872
+    m_Localized: The race discrimination law prohibits people from being treated
+      unfairly because of their race or origin. Breaking this law can lead to fines
+      or other penalties.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24265391133880320
+    m_Localized: ID cards
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24265552354537472
+    m_Localized: ID cards are identity documents that help governments register and
+      identify residents. They can make it easier to verify identity in security
+      situations.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24266553069334528
+    m_Localized: Gender transition
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24266721533554688
+    m_Localized: Gender transition is the process where a person changes their appearance,
+      name, or lifestyle to better match their gender identity. It can include social
+      and medical steps.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24267930768175104
+    m_Localized: Intelligence services
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24268131713085440
+    m_Localized: Intelligence services are government agencies that collect information
+      about threats to national security. They help the government prevent dangerous
+      situations.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24269472309112832
+    m_Localized: Right to privacy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24269839289741312
+    m_Localized: "The right to privacy means people have control over their personal
+      information and who can see or use it. Governments and companies must respect
+      citizens\u2019 privacy."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24461115742154752
+    m_Localized: Drug regulation
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24461524368027648
+    m_Localized: Drug regulation determines which drugs are legal, restricted, or
+      prohibited. Stricter regulation usually means tighter control over their production,
+      sale, and use.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24463682656202752
+    m_Localized: Fines for law violations
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24463899078094848
+    m_Localized: Law violation fines are financial penalties given for illegal actions.
+      Higher fines can discourage people from breaking the rules.
     m_Metadata:
       m_Items: []
   references:

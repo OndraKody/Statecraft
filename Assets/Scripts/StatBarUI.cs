@@ -17,21 +17,25 @@ public class StatBarUI : MonoBehaviour
     private float maxBarWidth = 200f;
     private float savedEffect = 0f;
 
-    // Priznak ze objekt byl zrusen - zamezi chybam pri volani po Destroy
+    // Hodnota pri ktere je bar plny (100%)
+    // Pro statistiky = 100, pro skupiny = 2 * baseEffect
+    private float scaleMax = 100f;
+
     private bool isDestroyed = false;
 
-    private void OnDestroy()
-    {
-        isDestroyed = true;
-    }
+    private void OnDestroy() { isDestroyed = true; }
 
-    public void Init(string name, float savedValue, float maxWidth)
+    // scaleMax = hodnota pri ktere je bar plny
+    // Pro stat bary: scaleMax = 100
+    // Pro group bary: scaleMax = Mathf.Abs(baseEffect) * 2
+    public void Init(string name, float savedValue, float maxWidth, float scaleMax = 100f)
     {
         if (isDestroyed) return;
 
         statNameText.text = name;
         maxBarWidth = maxWidth;
         savedEffect = savedValue;
+        this.scaleMax = Mathf.Max(scaleMax, 1f); // min 1 aby nedoslo k deleni nulou
 
         if (positiveBarImage != null) positiveBarImage.color = positiveColor;
         if (negativeBarImage != null) negativeBarImage.color = negativeColor;
@@ -40,7 +44,6 @@ public class StatBarUI : MonoBehaviour
         UpdateText(savedEffect);
     }
 
-    // Slider se pohybuje - aktualizuj graf i text
     public void UpdatePreview(float currentEffect)
     {
         if (isDestroyed || this == null) return;
@@ -48,12 +51,14 @@ public class StatBarUI : MonoBehaviour
         UpdateText(currentEffect);
     }
 
-    // Potvrzeno - uloz novy efekt a zkrat max sirku
     public void Confirm(float newEffect)
     {
         if (isDestroyed || this == null) return;
         savedEffect = newEffect;
-        maxBarWidth = Mathf.Max(maxBarWidth * 0.5f, 5f);
+
+        // TENTO ØÁDEK VYMAŽ NEBO ZAKOMENTUJ:
+        // maxBarWidth = Mathf.Max(maxBarWidth * 0.5f, 5f); 
+
         UpdateBars(savedEffect);
         UpdateText(savedEffect);
     }
@@ -67,13 +72,14 @@ public class StatBarUI : MonoBehaviour
 
         if (value > 0f)
         {
-            float width = Mathf.Clamp01(value / 100f) * maxBarWidth;
+            // Dela se scaleMax misto pevneho 100
+            float width = Mathf.Clamp01(value / scaleMax) * maxBarWidth;
             SetBarWidth(positiveBar, width);
             SetBarWidth(negativeBar, 0f);
         }
         else if (value < 0f)
         {
-            float width = Mathf.Clamp01(-value / 100f) * maxBarWidth;
+            float width = Mathf.Clamp01(-value / scaleMax) * maxBarWidth;
             SetBarWidth(negativeBar, width);
             SetBarWidth(positiveBar, 0f);
         }
@@ -94,7 +100,6 @@ public class StatBarUI : MonoBehaviour
 
     private void SetBarWidth(RectTransform bar, float width)
     {
-        // Null check - zamezi MissingReferenceException po Destroy
         if (bar == null || isDestroyed) return;
         Vector2 size = bar.sizeDelta;
         size.x = width;

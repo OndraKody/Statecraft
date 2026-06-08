@@ -115,9 +115,10 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 192875818053632
-    m_Localized: "Da\u0148 z p\u0159\xEDjmu je povinn\xE1, z\xE1konem stanoven\xE1
-      p\u0159\xEDm\xE1 da\u0148, kterou fyzick\xE9 i pr\xE1vnick\xE9 osoby odv\xE1d\u011Bj\xED
-      st\xE1tu ze sv\xFDch v\xFDd\u011Blk\u016F."
+    m_Localized: "Da\u0148 z p\u0159\xEDjmu je \u010D\xE1st v\xFDd\u011Blku, kterou
+      lid\xE9 a firmy odv\xE1d\u011Bj\xED st\xE1tu. Vy\u0161\u0161\xED da\u0148 znamen\xE1
+      m\xE9n\u011B pen\u011Bz pro poplatn\xEDky, ale v\xEDce p\u0159\xEDjm\u016F
+      pro st\xE1t."
     m_Metadata:
       m_Items: []
   - m_Id: 197093358497792
@@ -215,6 +216,189 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 19519819986432000
     m_Localized: "Environmentalist\xE9"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24206223911874560
+    m_Localized: "Mzdov\xE1 da\u0148"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24210632389619712
+    m_Localized: "Mzdov\xE1 da\u0148 je da\u0148 placen\xE1 z mezd zam\u011Bstnanc\u016F.
+      Vy\u0161\u0161\xED mzdov\xE1 da\u0148 zvy\u0161uje n\xE1klady na zam\u011Bstn\xE1v\xE1n\xED
+      pracovn\xEDk\u016F."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24216089086849024
+    m_Localized: "Da\u0148 z kapit\xE1lov\xFDch v\xFDnos\u016F"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24216271971086336
+    m_Localized: "Da\u0148 z kapit\xE1lov\xFDch v\xFDnos\u016F je da\u0148 z zisku
+      z\xEDskan\xE9ho prodejem investic, jako jsou akcie nebo nemovitosti. Vy\u0161\u0161\xED
+      da\u0148 sni\u017Euje zisk investor\u016F."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24218456624656384
+    m_Localized: "Korpor\xE1tn\xED da\u0148"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24218660262309888
+    m_Localized: "Korpor\xE1tn\xED da\u0148 je da\u0148, kterou firmy plat\xED ze
+      sv\xE9ho zisku. Vy\u0161\u0161\xED korpor\xE1tn\xED da\u0148 sni\u017Euje zisky
+      firem, ale zvy\u0161uje p\u0159\xEDjmy st\xE1tu."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24220283277602816
+    m_Localized: "Z\xE1kon o hospod\xE1\u0159sk\xE9 sout\u011B\u017Ei"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24220515201642496
+    m_Localized: "Z\xE1kon o hospod\xE1\u0159sk\xE9 sout\u011B\u017Ei stanovuje pravidla,
+      kter\xE1 br\xE1n\xED firm\xE1m zneu\u017E\xEDvat sv\xE9 postaven\xED na trhu.
+      Jeho c\xEDlem je udr\u017Eet f\xE9rovou konkurenci mezi podniky."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24225392636129280
+    m_Localized: "Omezen\xED zne\u010Di\u0161t\u011Bn\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24225602779148288
+    m_Localized: "Omezen\xED zne\u010Di\u0161t\u011Bn\xED jsou pravidla, kter\xE1
+      stanovuj\xED, kolik \u0161kodlivin mohou firmy nebo lid\xE9 vypou\u0161t\u011Bt.
+      P\u0159\xEDsn\u011Bj\u0161\xED pravidla sni\u017Euj\xED zne\u010Di\u0161t\u011Bn\xED,
+      ale mohou zvy\u0161ovat n\xE1klady."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24226889616781312
+    m_Localized: "Da\u0148 z d\u011Bdictv\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24227095435472896
+    m_Localized: "D\u011Bdick\xE1 da\u0148 je poplatek, kter\xFD se plat\xED z majetku
+      z\xEDskan\xE9ho po zem\u0159el\xE9m. Vy\u0161\u0161\xED da\u0148 znamen\xE1,
+      \u017Ee si d\u011Bdic ponech\xE1 men\u0161\xED \u010D\xE1st majetku."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24227214486597632
+    m_Localized: "Z\xE1kon o bezpe\u010Dnosti pr\xE1ce"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24228639308443648
+    m_Localized: "Z\xE1kon o bezpe\u010Dnosti pr\xE1ce stanovuje pravidla, kter\xE1
+      maj\xED chr\xE1nit zam\u011Bstnance p\u0159i pr\xE1ci. Poru\u0161en\xED t\u011Bchto
+      pravidel m\u016F\u017Ee v\xE9st k pokut\xE1m nebo zastaven\xED provozu."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24230188428488704
+    m_Localized: "Pracovn\xED z\xE1kony"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24230305235660800
+    m_Localized: "Pracovn\xED z\xE1kony ur\u010Duj\xED z\xE1kladn\xED pravidla mezi
+      zam\u011Bstnanci a zam\u011Bstnavateli, jako jsou pracovn\xED doba, mzda a
+      podm\xEDnky pr\xE1ce. Pom\xE1haj\xED udr\u017Eet rovnov\xE1hu mezi ob\u011Bma
+      stranami."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24232565642555392
+    m_Localized: Recyklace
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24232775588442112
+    m_Localized: "Podpora recyklace znamen\xE1 opat\u0159en\xED, kter\xE1 motivuj\xED
+      lidi a firmy v\xEDce t\u0159\xEDdit a znovu vyu\u017E\xEDvat odpad. Vy\u0161\u0161\xED
+      podpora obvykle sni\u017Euje mno\u017Estv\xED odpadu."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24260600139804672
+    m_Localized: "V\u011Bznice"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24260913676611584
+    m_Localized: "Investice do v\u011Bznic znamen\xE1 pen\xEDze na stavbu, roz\u0161\xED\u0159en\xED
+      nebo zlep\u0161en\xED v\u011Bze\u0148sk\xFDch za\u0159\xEDzen\xED. Vy\u0161\u0161\xED
+      investice zlep\u0161uj\xED kapacitu a podm\xEDnky ve v\u011Bznic\xEDch."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24262079743455232
+    m_Localized: "Policejn\xED jednotky"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24262483675901952
+    m_Localized: "Rozpo\u010Det pro policii je mno\u017Estv\xED pen\u011Bz, kter\xE9
+      st\xE1t d\xE1v\xE1 policii na jej\xED fungov\xE1n\xED. Vy\u0161\u0161\xED rozpo\u010Det
+      m\u016F\u017Ee znamenat v\xEDce policist\u016F a lep\u0161\xED vybaven\xED."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24263626384666624
+    m_Localized: "Z\xE1kon proti rasov\xE9 diskriminaci"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24264021853007872
+    m_Localized: "Z\xE1kon proti rasov\xE9 diskriminaci zakazuje, aby byli lid\xE9
+      znev\xFDhod\u0148ov\xE1ni kv\u016Fli sv\xE9 rase nebo p\u016Fvodu. Poru\u0161en\xED
+      tohoto z\xE1kona m\u016F\u017Ee v\xE9st k pokut\xE1m nebo jin\xFDm trest\u016Fm."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24265391133880320
+    m_Localized: "Ob\u010Densk\xFD pr\u016Fkaz"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24265552354537472
+    m_Localized: "Ob\u010Dansk\xE9 pr\u016Fkazy jsou doklady toto\u017Enosti, kter\xE9
+      pom\xE1haj\xED st\xE1t\u016Fm evidovat a identifikovat obyvatele. Mohou zjednodu\u0161it
+      kontrolu identity p\u0159i bezpe\u010Dnostn\xEDch situac\xEDch."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24266553069334528
+    m_Localized: "Genderov\xE1 tranzice"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24266721533554688
+    m_Localized: "Genderov\xE1 tranzice je proces, kdy \u010Dlov\u011Bk m\u011Bn\xED
+      sv\u016Fj vzhled, jm\xE9no nebo zp\u016Fsob \u017Eivota tak, aby v\xEDc odpov\xEDdal
+      tomu, k\xFDm se c\xEDt\xED b\xFDt. M\u016F\u017Ee zahrnovat soci\xE1ln\xED
+      i l\xE9ka\u0159sk\xE9 kroky."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24267930768175104
+    m_Localized: "Zpravodajsk\xE9 slu\u017Eby"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24268131713085440
+    m_Localized: "Zpravodajsk\xE9 slu\u017Eby jsou st\xE1tn\xED organizace, kter\xE9
+      sb\xEDraj\xED informace o hrozb\xE1ch pro bezpe\u010Dnost st\xE1tu. Pom\xE1haj\xED
+      vl\xE1d\u011B p\u0159edch\xE1zet nebezpe\u010Dn\xFDm situac\xEDm."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24269472309112832
+    m_Localized: "Pr\xE1vo na soukrom\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24269839289741312
+    m_Localized: "Pr\xE1vo na soukrom\xED znamen\xE1, \u017Ee lid\xE9 maj\xED kontrolu
+      nad sv\xFDmi osobn\xEDmi informacemi a t\xEDm, kdo je m\u016F\u017Ee vid\u011Bt
+      nebo pou\u017E\xEDvat. St\xE1t i firmy mus\xED respektovat soukrom\xED ob\u010Dan\u016F."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24461115742154752
+    m_Localized: Regulace drog
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24461524368027648
+    m_Localized: "Regulace drog ur\u010Duje, kter\xE9 drogy jsou leg\xE1ln\xED, omezen\xE9
+      nebo zak\xE1zan\xE9. P\u0159\xEDsn\u011Bj\u0161\xED regulace obvykle znamen\xE1
+      p\u0159\xEDsn\u011Bj\u0161\xED kontrolu jejich v\xFDroby, prodeje a u\u017E\xEDv\xE1n\xED."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24463682656202752
+    m_Localized: "Pokuty za poru\u0161en\xED z\xE1kona"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24463899078094848
+    m_Localized: "Pokuty za poru\u0161en\xED z\xE1kona jsou finan\u010Dn\xED tresty
+      ud\u011Blovan\xE9 za nez\xE1konn\xE9 jedn\xE1n\xED. Vy\u0161\u0161\xED pokuty
+      mohou odradit lidi od poru\u0161ov\xE1n\xED pravidel."
     m_Metadata:
       m_Items: []
   references:

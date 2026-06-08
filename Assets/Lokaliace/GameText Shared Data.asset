@@ -211,6 +211,150 @@ MonoBehaviour:
     m_Key: group_Environmentalists
     m_Metadata:
       m_Items: []
+  - m_Id: 24206223911874560
+    m_Key: policy_payroll_tax
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24210632389619712
+    m_Key: policy_dec_payroll_tax
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24216089086849024
+    m_Key: polocy_CGT
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24216271971086336
+    m_Key: polocy_des_CGT
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24218456624656384
+    m_Key: policy_Corporation_Tax
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24218660262309888
+    m_Key: policy_des_Corporation_Tax
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24220283277602816
+    m_Key: policy_competition_law
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24220515201642496
+    m_Key: policy_des_competition_law
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24225392636129280
+    m_Key: policy_pollution_controls
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24225602779148288
+    m_Key: policy_des_pollution_controls
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24226889616781312
+    m_Key: policy_inheritance_tax
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24227095435472896
+    m_Key: policy_des_inheritance_tax
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24227214486597632
+    m_Key: policy_work_safety_law
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24228639308443648
+    m_Key: policy_des_work_safety_law
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24230188428488704
+    m_Key: policy_labor_laws
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24230305235660800
+    m_Key: policy_des_labor_laws
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24232565642555392
+    m_Key: policy_recycling
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24232775588442112
+    m_Key: policy_des_recycling
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24260600139804672
+    m_Key: policy_prisons
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24260913676611584
+    m_Key: policy_des_prisons
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24262079743455232
+    m_Key: policy_police_force
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24262483675901952
+    m_Key: policy_des_police_force
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24263626384666624
+    m_Key: policy_race_discrimination_act
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24264021853007872
+    m_Key: policy_des_race_discrimination_act
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24265391133880320
+    m_Key: policy_id_cards
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24265552354537472
+    m_Key: policy_des_id_cards
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24266553069334528
+    m_Key: policy_gender_transition
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24266721533554688
+    m_Key: policy_des_gender_transition
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24267930768175104
+    m_Key: policy_intelligence_services
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24268131713085440
+    m_Key: policy_des_intelligence_services
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24269472309112832
+    m_Key: policy_right_to_privacy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24269839289741312
+    m_Key: policy_des_right_to_privacy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24461115742154752
+    m_Key: policy_drogs_regilation
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24461524368027648
+    m_Key: policy_des_drogs_regilation
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24463682656202752
+    m_Key: policy_fine_revenue_desc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24463899078094848
+    m_Key: policy_des_fine_revenue_desc
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

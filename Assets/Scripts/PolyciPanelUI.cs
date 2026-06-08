@@ -6,14 +6,14 @@ using System.Collections.Generic;
 
 public class PolyciPanelUI : MonoBehaviour
 {
-    // ===== GROUP EFFECT - efekt policy na jednu skupinu =====
+    // ===== GROUP EFFECT =====
     [System.Serializable]
     public class GroupEffect
     {
         public GroupType groupType;
-        public float baseEffect; // Zakladni efekt nastaveny v Inspectoru
+        public float baseEffect;
 
-        [HideInInspector] public float savedEffect; // Ulozena hodnota po Confirm
+        [HideInInspector] public float savedEffect;
         [HideInInspector] public float maxWidth = 200f;
         [HideInInspector] public bool initialized = false;
 
@@ -37,7 +37,6 @@ public class PolyciPanelUI : MonoBehaviour
         public float cost;
         public float actionPointCost;
 
-        // Statistiky
         public float hdpEffect;
         public float crimeEffect;
         public float healthEffect;
@@ -56,7 +55,6 @@ public class PolyciPanelUI : MonoBehaviour
         [HideInInspector] public float maxWidthEducation = 200f;
         [HideInInspector] public float maxWidthPoverty = 200f;
 
-        // Socialni skupiny - nastavujes v Inspectoru
         public List<GroupEffect> groupEffects = new List<GroupEffect>();
 
         [HideInInspector] public bool initialized = false;
@@ -88,9 +86,8 @@ public class PolyciPanelUI : MonoBehaviour
     [SerializeField] private Slider slider;
     [SerializeField] private Button confirmButton;
 
-    // ===== BARY - jeden ScrollView pro statistiky i skupiny =====
     [SerializeField] private GameObject statBarPrefab;
-    [SerializeField] private Transform statBarsParent; // Content v ScrollView
+    [SerializeField] private Transform statBarsParent;
     [SerializeField] private float initialBarWidth = 200f;
 
     // ===== DATA =====
@@ -99,14 +96,12 @@ public class PolyciPanelUI : MonoBehaviour
     private float previewCost;
     private float apCost;
 
-    // Reference na stat bary
     private StatBarUI hdpBar;
     private StatBarUI crimeBar;
     private StatBarUI healthBar;
     private StatBarUI educationBar;
     private StatBarUI povertyBar;
 
-    // Reference na group bary - slovnik pro rychly pristup
     private Dictionary<GroupType, StatBarUI> groupBars = new Dictionary<GroupType, StatBarUI>();
 
     // ===== SETUP =====
@@ -163,59 +158,50 @@ public class PolyciPanelUI : MonoBehaviour
     // ===== GENEROVANI STAT BARU =====
     private void GenerateStatBars(PolicyItem item)
     {
-        if (statBarsParent == null)
-        {
-            Debug.LogWarning("statBarsParent neni prirazen v Inspectoru!");
-            return;
-        }
+        if (statBarsParent == null) { Debug.LogWarning("statBarsParent neni prirazen!"); return; }
 
         for (int i = statBarsParent.childCount - 1; i >= 0; i--)
         {
             GameObject child = statBarsParent.GetChild(i).gameObject;
-            if (child.scene.IsValid())
-                Destroy(child);
+            if (child.scene.IsValid()) Destroy(child);
         }
 
-        Debug.Log($"[StatBars] hdp={item.hdpEffect}, crime={item.crimeEffect}, health={item.healthEffect}, edu={item.educationEffect}, poverty={item.povertyEffect}");
-
-        hdpBar = CreateBar(statBarsParent, "HDP", item.savedHdpEffect, item.hdpEffect, item.maxWidthHdp);
-        crimeBar = CreateBar(statBarsParent, "Zlocin", item.savedCrimeEffect, item.crimeEffect, item.maxWidthCrime);
-        healthBar = CreateBar(statBarsParent, "Zdravi", item.savedHealthEffect, item.healthEffect, item.maxWidthHealth);
-        educationBar = CreateBar(statBarsParent, "Vzdelanost", item.savedEducationEffect, item.educationEffect, item.maxWidthEducation);
-        povertyBar = CreateBar(statBarsParent, "Chudoba", item.savedPovertyEffect, item.povertyEffect, item.maxWidthPoverty);
+        // Místo item.maxWidthHdp použijeme natvrdo initialBarWidth
+        hdpBar = CreateBar(statBarsParent, "HDP", item.savedHdpEffect, item.hdpEffect, initialBarWidth);
+        crimeBar = CreateBar(statBarsParent, "Zlocin", item.savedCrimeEffect, item.crimeEffect, initialBarWidth);
+        healthBar = CreateBar(statBarsParent, "Zdravi", item.savedHealthEffect, item.healthEffect, initialBarWidth);
+        educationBar = CreateBar(statBarsParent, "Vzdelanost", item.savedEducationEffect, item.educationEffect, initialBarWidth);
+        povertyBar = CreateBar(statBarsParent, "Chudoba", item.savedPovertyEffect, item.povertyEffect, initialBarWidth);
     }
 
     // ===== GENEROVANI GROUP BARU =====
     private void GenerateGroupBars(PolicyItem item)
     {
-        // Pouziva stejny parent jako stat bary - jeden ScrollView
-        if (statBarsParent == null)
-        {
-            Debug.LogWarning("statBarsParent neni prirazen v Inspectoru!");
-            return;
-        }
+        if (statBarsParent == null) return;
 
         groupBars.Clear();
 
         foreach (var ge in item.groupEffects)
         {
             if (ge.baseEffect == 0f) continue;
+
             string groupName = GetGroupName(ge.groupType);
-            StatBarUI bar = CreateBar(statBarsParent, groupName, ge.savedEffect, ge.baseEffect, ge.maxWidth);
+            float scaleMax = Mathf.Abs(ge.baseEffect) * 2f;
+
+            // Místo ge.maxWidth pøedáme initialBarWidth
+            StatBarUI bar = CreateBar(statBarsParent, groupName, ge.savedEffect, ge.baseEffect, initialBarWidth, scaleMax);
             if (bar != null)
                 groupBars[ge.groupType] = bar;
         }
     }
 
-    // Spolecna metoda pro vytvoreni baru (pouziva stejny prefab pro stat i group)
-    private StatBarUI CreateBar(Transform parent, string name, float savedValue, float baseEffect, float maxWidth)
+    // Vytvori bar - scaleMax defaultne 100 pro stat bary
+    private StatBarUI CreateBar(Transform parent, string name, float savedValue, float baseEffect, float maxWidth, float scaleMax = 100f)
     {
         if (baseEffect == 0f) return null;
-
-        // Overime ze parent je validni scene objekt
         if (parent == null || !parent.gameObject.scene.IsValid())
         {
-            Debug.LogWarning($"CreateBar: parent neni validni scene objekt!");
+            Debug.LogWarning("CreateBar: parent neni validni scene objekt!");
             return null;
         }
 
@@ -223,14 +209,14 @@ public class PolyciPanelUI : MonoBehaviour
         StatBarUI bar = barGO.GetComponent<StatBarUI>();
 
         if (bar != null)
-            bar.Init(name, savedValue, maxWidth);
+            bar.Init(name, savedValue, maxWidth, scaleMax);
         else
             Debug.LogWarning("StatBarUI komponenta chybi na prefabu!");
 
         return bar;
     }
 
-    // ===== NAHLED - realny cas =====
+    // ===== NAHLED =====
     private void UpdatePreview(float value)
     {
         if (currentItem == null) return;
@@ -245,14 +231,12 @@ public class PolyciPanelUI : MonoBehaviour
         costInput.text = previewCost.ToString("0");
         actionPointInput.text = apCost.ToString("0");
 
-        // Statistiky - jen pokud bar existuje a nebyl smazan
         if (hdpBar != null) hdpBar.UpdatePreview(currentItem.savedHdpEffect * (1f + percent));
         if (crimeBar != null) crimeBar.UpdatePreview(currentItem.savedCrimeEffect * (1f + percent));
         if (healthBar != null) healthBar.UpdatePreview(currentItem.savedHealthEffect * (1f + percent));
         if (educationBar != null) educationBar.UpdatePreview(currentItem.savedEducationEffect * (1f + percent));
         if (povertyBar != null) povertyBar.UpdatePreview(currentItem.savedPovertyEffect * (1f + percent));
 
-        // Socialni skupiny
         foreach (var ge in currentItem.groupEffects)
         {
             if (groupBars.TryGetValue(ge.groupType, out StatBarUI bar) && bar != null)
@@ -272,12 +256,10 @@ public class PolyciPanelUI : MonoBehaviour
 
         float percent = slider.value / 200f;
 
-        // Income / cost
         GameManager.Instance.UseActionPoints(apCost);
         GameManager.Instance.IncomeChanger(previewIncome - currentItem.income);
         GameManager.Instance.Expenseschanger(previewCost - currentItem.cost);
 
-        // Statistiky
         float newHdp = currentItem.savedHdpEffect * (1f + percent);
         float newCrime = currentItem.savedCrimeEffect * (1f + percent);
         float newHealth = currentItem.savedHealthEffect * (1f + percent);
@@ -310,16 +292,13 @@ public class PolyciPanelUI : MonoBehaviour
         if (educationBar != null) currentItem.maxWidthEducation = educationBar.GetMaxWidth();
         if (povertyBar != null) currentItem.maxWidthPoverty = povertyBar.GetMaxWidth();
 
-        // Socialni skupiny - stejna logika jako statistiky
         foreach (var ge in currentItem.groupEffects)
         {
             float newEffect = ge.savedEffect * (1f + percent);
             float delta = newEffect - ge.savedEffect;
 
-            // Aplikuj zmenu spokojenosti do GameManageru
             GameManager.Instance.ChangeSatisfaction(ge.groupType, delta);
 
-            // Potvrdt bar
             if (groupBars.TryGetValue(ge.groupType, out StatBarUI bar))
             {
                 bar.Confirm(newEffect);
@@ -329,7 +308,6 @@ public class PolyciPanelUI : MonoBehaviour
             ge.savedEffect = newEffect;
         }
 
-        // Reset slideru
         slider.value = 0;
         apCost = 0f;
         actionPointInput.text = "0";
@@ -338,13 +316,13 @@ public class PolyciPanelUI : MonoBehaviour
 
         FindObjectOfType<PolicyGraphManager>().UpdateGraphs();
 
-        // Aktualizuj panel socialnich skupin
-        var socialPanel = FindObjectOfType<SocialGroupPanelUI>();
-        if (socialPanel != null)
-            socialPanel.RefreshPanel();
+        var socialPanel = FindObjectOfType<SocialGroupPanelUI>(true);
+        if (socialPanel != null) socialPanel.RefreshPanel();
+
+        var statsPanel = FindObjectOfType<StatisticsPanelUI>(true);
+        if (statsPanel != null) statsPanel.RefreshPanel();
     }
 
-    // Prevede GroupType na zobrazovany nazev
     private string GetGroupName(GroupType type)
     {
         switch (type)
