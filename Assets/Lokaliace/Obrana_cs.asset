@@ -1,0 +1,112 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Obrana_cs
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.StringTable
+  m_LocaleId:
+    m_Code: cs
+  m_SharedData: {fileID: 11400000, guid: 76e354ae07cb248479fc278c10c338cb, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 29626396672
+    m_Localized: "Export zbran\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29672534016
+    m_Localized: "P\u0159\xEDjmy z prodeje zbran\xED do zahrani\u010D\xED. To stimuluje
+      dom\xE1c\xED obrann\xFD pr\u016Fmysl a zlep\u0161uje obchodn\xED bilanci."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29672534017
+    m_Localized: "Pron\xE1jem vojensk\xE9 p\u016Fdyp"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29672534018
+    m_Localized: "P\u0159\xEDjmy z pron\xE1jmu vojensk\xFDch za\u0159\xEDzen\xED
+      mezin\xE1rodn\xEDm spojenc\u016Fm. Posiluje to strategick\xE1 partnerstv\xED
+      a p\u0159in\xE1\u0161\xED dodate\u010Dn\xE9 finance."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29672534019
+    m_Localized: "Obrann\xE9 v\xFDzkumn\xE9 granty"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29672534020
+    m_Localized: "P\u0159\xEDjmy z obrann\xFDch v\xFDzkumn\xFDch program\u016F a
+      v\xFDvoje pokro\u010Dil\xFDch technologi\xED. To urychluje vojensk\xE9 inovace
+      a modernizaci."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29672534021
+    m_Localized: "P\u0159\xEDjmy z NATO"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29672534022
+    m_Localized: "P\u0159\xEDjmy z partnerstv\xED NATO a spole\u010Dn\xFDch bezpe\u010Dnostn\xEDch
+      fond\u016F. Tyto prost\u0159edky jsou vyhrazeny na pos\xEDlen\xED kolektivn\xEDch
+      obrann\xFDch schopnost\xED."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29672534023
+    m_Localized: "Rozpo\u010Det arm\xE1dy"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29672534024
+    m_Localized: "Financov\xE1n\xED pozemn\xEDch sil, taktick\xE9ho vybaven\xED a
+      pravideln\xFDch jednotek. Dob\u0159e financovan\xE1 arm\xE1da zaji\u0161\u0165uje
+      suverenitu a \xFAzemn\xED obranu."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29672534025
+    m_Localized: "Rozpo\u010Det n\xE1mo\u0159nictva"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29672534026
+    m_Localized: "Financov\xE1n\xED n\xE1mo\u0159n\xEDch sil, lod\xED pob\u0159e\u017En\xED
+      ochrany a n\xE1mo\u0159n\xED bezpe\u010Dnosti. Chr\xE1n\xED kl\xED\u010Dov\xE9
+      n\xE1mo\u0159n\xED trasy a \xFAzemn\xED vody."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29672534027
+    m_Localized: "Rozpo\u010Det letectva"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29672534028
+    m_Localized: "Financov\xE1n\xED vzdu\u0161n\xFDch sil, st\xEDhac\xEDch letoun\u016F
+      a kontroly vzdu\u0161n\xE9ho prostoru. Udr\u017Een\xED vzdu\u0161n\xE9 p\u0159evahy
+      je kl\xED\u010Dov\xE9 pro modern\xED v\xE1l\u010Den\xED."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29672534029
+    m_Localized: "Kybernetick\xE1 obrana"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29672534030
+    m_Localized: "Financov\xE1n\xED kybernetick\xE9 bezpe\u010Dnosti a neutralizace
+      digit\xE1ln\xEDch hrozeb. Chr\xE1n\xED kritick\xE9 n\xE1rodn\xED s\xEDt\u011B
+      p\u0159ed vn\u011Bj\u0161\xEDmi hackersk\xFDmi \xFAtoky."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29672534031
+    m_Localized: "Podpora veter\xE1n\u016F"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29672534032
+    m_Localized: "D\xE1vky a zdravotn\xED p\xE9\u010De pro vojensk\xE9 veter\xE1ny.
+      Poskytov\xE1n\xED siln\xE9 soci\xE1ln\xED podpory zvy\u0161uje ve\u0159ejnou
+      mor\xE1lku a \xFAsp\u011B\u0161nost n\xE1boru do arm\xE1dy."
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

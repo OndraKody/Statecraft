@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -14,6 +15,11 @@ public class GameManager : MonoBehaviour
     private string gamePhase;
     private List<ActiveProject> activeProjects = new List<ActiveProject>();
 
+    // Specialni promenne pro zmeny z udalosti - ukladaji se oddelene do JSON
+    private double eventIncome = 0;
+    private double eventExpenses = 0;
+    private List<EventStatEffectSaveData> eventStatEffects = new List<EventStatEffectSaveData>();
+    private List<EventGroupEffectSaveData> eventGroupEffects = new List<EventGroupEffectSaveData>();
     [SerializeField]
     private List<PolyciPanelUI.PolicyItem> allPolicies = new List<PolyciPanelUI.PolicyItem>();
 
@@ -43,14 +49,51 @@ public class GameManager : MonoBehaviour
             data = item;
             remainingTurns = item.durationInTurns;
         }
+
+        public ActiveProject(ProjectPanelUI.ProjectItem item, int turnsLeft)
+        {
+            data = item;
+            remainingTurns = turnsLeft;
+        }
     }
     public void AddProject(ProjectPanelUI.ProjectItem item)
     {
+        if (IsProjectActive(item)) return;
+
         activeProjects.Add(new ActiveProject(item));
         Expenseschanger(item.expenseBonus);
+        RefreshProjectButtons();
+    }
+
+    public bool IsProjectActive(ProjectPanelUI.ProjectItem item)
+    {
+        if (item == null) return false;
+        return activeProjects.Exists(project => project.data == item);
+    }
+
+    public int GetProjectRemainingTurns(ProjectPanelUI.ProjectItem item)
+    {
+        if (item == null) return 0;
+
+        ActiveProject activeProject = activeProjects.Find(project => project.data == item);
+        return activeProject != null ? activeProject.remainingTurns : 0;
+    }
+
+    public void RefreshProjectButtons()
+    {
+        ProjectButtonUI[] projectButtons = FindObjectsOfType<ProjectButtonUI>(true);
+        foreach (var projectButton in projectButtons)
+            if (projectButton != null)
+                projectButton.RefreshVisualState();
     }
     public List<ActiveProject> GetActiveProjects() => activeProjects;
 
+    private void AddLoadedProject(ProjectPanelUI.ProjectItem item, int remainingTurns)
+    {
+        if (item == null) return;
+        if (IsProjectActive(item)) return;
+        activeProjects.Add(new ActiveProject(item, Mathf.Max(1, remainingTurns)));
+    }
     // ===== EKONOMIKA =====
     public void IncomeChanger(float v) { income += v; }
     public void Expenseschanger(float v) { expenses += v; }
@@ -67,6 +110,31 @@ public class GameManager : MonoBehaviour
     public void AddActionPoints(double v) { actionPoints += v; }
     public JsonLouder.Party GetSelectedParty() => selectedParty;
 
+    // ===== EVENT INCOME/EXPENSE - specialni promenne pro zmeny z udalosti =====
+    public void AddEventIncome(float v)
+    {
+        eventIncome += v;
+    }
+    public void AddEventExpense(float v)
+    {
+        eventExpenses += v;
+    }
+    public double GetEventIncome() => eventIncome;
+    public double GetEventExpenses() => eventExpenses;
+
+    public void AddEventStatistic(StatType statType, float value)
+    {
+        var existing = eventStatEffects.Find(x => x.statType == statType);
+        if (existing != null) existing.value += value;
+        else eventStatEffects.Add(new EventStatEffectSaveData { statType = statType, value = value });
+    }
+
+    public void AddEventGroupEffect(GroupType groupType, float value)
+    {
+        var existing = eventGroupEffects.Find(x => x.groupType == groupType);
+        if (existing != null) existing.value += value;
+        else eventGroupEffects.Add(new EventGroupEffectSaveData { groupType = groupType, value = value });
+    }
     public void SetParty(JsonLouder.Party party)
     {
         selectedParty = party;
@@ -99,8 +167,6 @@ public class GameManager : MonoBehaviour
     }
 
     // ===== SOCIÁLNÍ SKUPINY =====
-
-    // Zmeni spokojenost skupiny podle GroupType - stejne jako ChangeStatistic
     public void ChangeSatisfaction(GroupType groupType, float amount)
     {
         var group = socialGroups.Find(g => g.type == groupType);
@@ -116,19 +182,14 @@ public class GameManager : MonoBehaviour
         return group != null ? group.satisfaction : 0f;
     }
 
-    // Celkova podpora = vazeny prumer spokojenosti podle zastoupeni (power)
-    // Pokud maji vsechny skupiny 50% spokojenost -> vysledek je 50%
     public float GetTotalSupport()
     {
-        float totalPower = 0f;
-        float weightedSum = 0f;
-
+        float totalPower = 0f, weightedSum = 0f;
         foreach (var g in socialGroups)
         {
             totalPower += g.power;
             weightedSum += g.satisfaction * g.power;
         }
-
         return totalPower == 0f ? 0f : weightedSum / totalPower;
     }
 
@@ -142,10 +203,11 @@ public class GameManager : MonoBehaviour
 
         allPolicies.Clear();
         PolicyButtonUI[] buttons = FindObjectsOfType<PolicyButtonUI>(true);
+        int loadedPolicies = PolicyJsonLoader.ApplyPoliciesToButtons(buttons);
+        if (loadedPolicies > 0)
+            Debug.Log($"[INIT] Policies nacteny z JSONu: {loadedPolicies}");
 
-        float totalIncome = 0f;
-        float totalExpenses = 0f;
-
+        float totalIncome = 0f, totalExpenses = 0f;
         foreach (var btn in buttons)
         {
             if (btn.policyData == null) continue;
@@ -157,7 +219,6 @@ public class GameManager : MonoBehaviour
 
         income = totalIncome;
         expenses = totalExpenses;
-
         Debug.Log($"[INIT] Income: {income}, Expenses: {expenses}, Pocet politik: {allPolicies.Count}");
     }
 
@@ -184,7 +245,12 @@ public class GameManager : MonoBehaviour
     public void SaveAndExit()
     {
         SaveGameData();
-        UnityEngine.SceneManagement.SceneManager.LoadScene("MainMenuScene");
+        UnityEngine.SceneManagement.SceneManager.LoadScene("MeinMenu");
+    }
+
+    public void SaveCurrentGame()
+    {
+        SaveGameData();
     }
 
     private void SaveGameData()
@@ -193,6 +259,9 @@ public class GameManager : MonoBehaviour
 
         SaveData data = new SaveData();
         data.slotIndex = GameSession.CurrentSaveSlot;
+        data.currentTurn = TurnManeger.Instance != null ? TurnManeger.Instance.currentTurn : 1;
+        data.lastResolvedElectionTurn = ElectionManager.Instance != null ? ElectionManager.Instance.LastResolvedElectionTurn : 0;
+        data.electionLost = ElectionManager.Instance != null && ElectionManager.Instance.IsGameLocked;
         data.partyNameKey = selectedParty != null ? selectedParty.name : "";
         data.savedPartyData = selectedParty;
         data.dept = dept;
@@ -203,15 +272,18 @@ public class GameManager : MonoBehaviour
         data.education = education;
         data.poverty = poverty;
 
-        // Uloz spokojenosti skupin
+        // Uloz event zmeny
+        data.eventIncome = eventIncome;
+        data.eventExpenses = eventExpenses;
+        data.eventStatEffects.AddRange(eventStatEffects);
+        data.eventGroupEffects.AddRange(eventGroupEffects);
         foreach (var g in socialGroups)
             data.groupSatisfactions.Add(new GroupSatisfactionSaveData
-            {
-                groupType = g.type,
-                satisfaction = g.satisfaction
-            });
+            { groupType = g.type, satisfaction = g.satisfaction });
 
-        // Uloz policy
+        SaveProjectStates(data);
+
+
         foreach (var policy in allPolicies)
         {
             if (policy.name == null || policy.name.IsEmpty) continue;
@@ -236,14 +308,9 @@ public class GameManager : MonoBehaviour
                 initialized = policy.initialized
             };
 
-            // Uloz efekty skupin
             foreach (var ge in policy.groupEffects)
                 pSave.groupEffects.Add(new GroupEffectSaveData
-                {
-                    groupType = ge.groupType,
-                    savedEffect = ge.savedEffect,
-                    maxWidth = ge.maxWidth
-                });
+                { groupType = ge.groupType, savedEffect = ge.savedEffect, maxWidth = ge.maxWidth });
 
             data.policies.Add(pSave);
         }
@@ -258,6 +325,8 @@ public class GameManager : MonoBehaviour
         if (data == null) { Debug.LogWarning("[LOAD] Save soubor nenalezen!"); return; }
 
         selectedParty = data.savedPartyData;
+        if (TurnManeger.Instance != null && data.currentTurn > 0)
+            TurnManeger.Instance.currentTurn = data.currentTurn;
         GameSession.SelectedParty = data.savedPartyData;
         dept = data.dept;
         actionPoints = data.actionPoints;
@@ -267,7 +336,14 @@ public class GameManager : MonoBehaviour
         education = data.education;
         poverty = data.poverty;
 
-        // Nacti spokojenosti skupin
+        // Nacti event zmeny
+        eventIncome = data.eventIncome;
+        eventExpenses = data.eventExpenses;
+        eventStatEffects = data.eventStatEffects ?? new List<EventStatEffectSaveData>();
+        eventGroupEffects = data.eventGroupEffects ?? new List<EventGroupEffectSaveData>();
+        if (data.groupSatisfactions == null) data.groupSatisfactions = new List<GroupSatisfactionSaveData>();
+        if (data.policies == null) data.policies = new List<PolicySaveData>();
+        if (data.projects == null) data.projects = new List<ProjectSaveData>();
         foreach (var gs in data.groupSatisfactions)
         {
             var group = socialGroups.Find(g => g.type == gs.groupType);
@@ -275,6 +351,7 @@ public class GameManager : MonoBehaviour
         }
 
         float totalIncome = 0f, totalExpenses = 0f;
+        activeProjects.Clear();
 
         foreach (var savedP in data.policies)
         {
@@ -282,11 +359,7 @@ public class GameManager : MonoBehaviour
                 x.name != null && !x.name.IsEmpty &&
                 x.name.TableEntryReference.ToString() == savedP.nameKey);
 
-            if (policy == null)
-            {
-                Debug.LogWarning($"[LOAD] Policy '{savedP.nameKey}' nenalezena!");
-                continue;
-            }
+            if (policy == null) { Debug.LogWarning($"[LOAD] Policy '{savedP.nameKey}' nenalezena!"); continue; }
 
             policy.income = savedP.currentIncome;
             policy.cost = savedP.currentCost;
@@ -302,7 +375,6 @@ public class GameManager : MonoBehaviour
             policy.maxWidthPoverty = savedP.maxWidthPoverty > 0 ? savedP.maxWidthPoverty : 200f;
             policy.initialized = savedP.initialized;
 
-            // Nacti efekty skupin
             foreach (var geSave in savedP.groupEffects)
             {
                 var ge = policy.groupEffects.Find(x => x.groupType == geSave.groupType);
@@ -317,9 +389,109 @@ public class GameManager : MonoBehaviour
             totalExpenses += policy.cost;
         }
 
-        income = totalIncome;
-        expenses = totalExpenses;
-        Debug.Log($"[LOAD] Uspesne nacteno. Income: {income}, Expenses: {expenses}");
+        RestoreActiveProjects(data.projects);
+        RefreshProjectButtons();
+
+        float activeProjectExpenses = 0f;
+        foreach (var project in activeProjects)
+            if (project.data != null)
+                activeProjectExpenses += project.data.expenseBonus;
+
+        // Pricti event zmeny a aktivni projekty k nactenym hodnotam
+        income = totalIncome + eventIncome;
+        expenses = totalExpenses + eventExpenses + activeProjectExpenses;
+        Debug.Log($"[LOAD] Income: {income} (event: {eventIncome}), Expenses: {expenses} (event: {eventExpenses})" );
+
+        if (ElectionManager.Instance != null)
+            ElectionManager.Instance.RestoreState(data.lastResolvedElectionTurn, data.electionLost);
+    }
+
+    private void RestoreActiveProjects(List<ProjectSaveData> savedProjects)
+    {
+        if (savedProjects == null || savedProjects.Count == 0) return;
+
+        ProjectButtonUI[] projectButtons = FindObjectsOfType<ProjectButtonUI>(true);
+
+        foreach (var savedProject in savedProjects)
+        {
+            if (savedProject == null || !savedProject.isActive) continue;
+
+            ProjectPanelUI.ProjectItem project = FindProjectByKey(projectButtons, savedProject.nameKey);
+            if (project == null)
+            {
+                Debug.LogWarning($"[LOAD] Projekt '{savedProject.nameKey}' nenalezen!");
+                continue;
+            }
+
+            AddLoadedProject(project, savedProject.remainingTurns);
+        }
+
+        Debug.Log($"[LOAD] Aktivni projekty: {activeProjects.Count}");
+    }
+
+    private void SaveProjectStates(SaveData data)
+    {
+        Dictionary<string, ActiveProject> activeByKey = new Dictionary<string, ActiveProject>();
+        foreach (var activeProject in activeProjects)
+        {
+            string activeKey = GetProjectKey(activeProject.data);
+            if (string.IsNullOrEmpty(activeKey)) continue;
+            if (!activeByKey.ContainsKey(activeKey))
+                activeByKey.Add(activeKey, activeProject);
+        }
+
+        HashSet<string> savedKeys = new HashSet<string>();
+        ProjectButtonUI[] projectButtons = FindObjectsOfType<ProjectButtonUI>(true);
+        foreach (var button in projectButtons)
+        {
+            ProjectPanelUI.ProjectItem project = button != null ? button.ProjectData : null;
+            string key = GetProjectKey(project);
+            if (string.IsNullOrEmpty(key) || savedKeys.Contains(key)) continue;
+
+            bool isActive = activeByKey.TryGetValue(key, out ActiveProject activeProject);
+            data.projects.Add(new ProjectSaveData
+            {
+                nameKey = key,
+                isActive = isActive,
+                remainingTurns = isActive ? activeProject.remainingTurns : 0
+            });
+            savedKeys.Add(key);
+        }
+
+        foreach (var activeProject in activeProjects)
+        {
+            string key = GetProjectKey(activeProject.data);
+            if (string.IsNullOrEmpty(key) || savedKeys.Contains(key)) continue;
+
+            data.projects.Add(new ProjectSaveData
+            {
+                nameKey = key,
+                isActive = true,
+                remainingTurns = activeProject.remainingTurns
+            });
+            savedKeys.Add(key);
+        }
+    }
+    private ProjectPanelUI.ProjectItem FindProjectByKey(ProjectButtonUI[] buttons, string nameKey)
+    {
+        if (buttons == null || string.IsNullOrEmpty(nameKey)) return null;
+
+        foreach (var button in buttons)
+        {
+            ProjectPanelUI.ProjectItem project = button != null ? button.ProjectData : null;
+            if (project == null || project.name == null || project.name.IsEmpty) continue;
+
+            if (GetProjectKey(project) == nameKey)
+                return project;
+        }
+
+        return null;
+    }
+
+    private string GetProjectKey(ProjectPanelUI.ProjectItem project)
+    {
+        if (project == null || project.name == null || project.name.IsEmpty) return "";
+        return project.name.TableEntryReference.ToString();
     }
 }
 

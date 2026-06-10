@@ -1,0 +1,321 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Project_en
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.StringTable
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: f26ed778c65762f4c8895826394f20a8, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 78758473728
+    m_Localized: Tax Reform
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999680
+    m_Localized: A comprehensive reform of the tax system aimed at simplifying tax
+      collection and reducing tax evasion. After completion, increases state revenues
+      and improves GDP.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999681
+    m_Localized: National Debt Reduction
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999682
+    m_Localized: A program of systematic reduction of the national debt through budget
+      cuts and optimisation of state spending. Improves the country's financial stability
+      in the long term.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999683
+    m_Localized: Digital Economy Support
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999684
+    m_Localized: Investment in digital infrastructure and support for technology
+      companies. Stimulates economic growth and creates new jobs in the technology
+      sector.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999685
+    m_Localized: Anti-Corruption Fund
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999686
+    m_Localized: Establishing a special fund and agency to combat corruption in public
+      administration. Improves public trust in state institutions and increases budget
+      efficiency.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999687
+    m_Localized: SME Support Program
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999688
+    m_Localized: Grants and low-interest loans for small and medium-sized enterprises.
+      Supports entrepreneurship, reduces unemployment and strengthens the middle
+      class.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999689
+    m_Localized: Police Reform
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999690
+    m_Localized: Modernisation of police equipment and introduction of new investigation
+      methods. After completion, leads to a significant reduction in crime and increased
+      public safety.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999691
+    m_Localized: Prison System Reform
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999692
+    m_Localized: Comprehensive reform of the prison system focusing on rehabilitation
+      and reintegration of prisoners. Reduces recidivism and long-term decreases
+      crime.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999693
+    m_Localized: Court Digitalisation
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999694
+    m_Localized: Introduction of electronic court proceedings and digital case management.
+      Speeds up the justice system and increases public confidence in the courts.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999695
+    m_Localized: Youth Crime Prevention
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999696
+    m_Localized: Programs focused on preventing criminal behaviour among young people
+      through education and leisure activities. Reduces long-term crime levels and
+      supports poorer communities.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999697
+    m_Localized: Border Technology Upgrade
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999698
+    m_Localized: Investment in modern technology for border control including surveillance
+      systems and biometric identification. Strengthens national security and reduces
+      illegal migration.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999699
+    m_Localized: New Trade Agreement
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999700
+    m_Localized: Negotiating and concluding a new trade agreement with key partners.
+      Increases exports, stimulates GDP growth and creates new jobs in the manufacturing
+      sector.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999701
+    m_Localized: Embassy Network Expansion
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999702
+    m_Localized: Opening new embassies and consulates in strategically important
+      countries. Strengthens diplomatic ties and creates better conditions for trade
+      and investment.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999703
+    m_Localized: Development Aid Program
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999704
+    m_Localized: Targeted aid to developing countries in the form of financial support
+      and expert assistance. Improves international reputation and strengthens diplomatic
+      relations with recipient countries.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999705
+    m_Localized: Tourism Promotion Campaign
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999706
+    m_Localized: An international marketing campaign promoting the country as an
+      attractive tourist destination. Increases tourist arrivals, boosts GDP and
+      creates jobs in the hospitality sector.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999707
+    m_Localized: International Summit Hosting
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999708
+    m_Localized: Organising an international summit bringing together world leaders
+      and experts. Raises the country's international profile and creates opportunities
+      for new agreements and partnerships.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999709
+    m_Localized: New Hospital Construction
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999710
+    m_Localized: A program for the construction and modernisation of hospitals and
+      healthcare facilities across the country. Significantly improves the availability
+      and quality of healthcare for all citizens.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999711
+    m_Localized: Mental Health Initiative
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999712
+    m_Localized: A nationwide initiative to improve mental health services including
+      new counselling centres and prevention programmes. Reduces social inequality
+      and improves the wellbeing of the most vulnerable.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999713
+    m_Localized: Social Housing Program
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999714
+    m_Localized: Construction of affordable housing for low-income families and the
+      homeless. Reduces poverty and social exclusion while improving living standards
+      for the most vulnerable groups.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999715
+    m_Localized: Pension System Reform
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999716
+    m_Localized: A comprehensive reform of the pension system to ensure its long-term
+      sustainability. Guarantees adequate pensions for future generations and stabilises
+      state finances.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999717
+    m_Localized: Childcare Expansion
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999718
+    m_Localized: Building new nurseries and kindergartens and increasing subsidies
+      for childcare. Enables more parents to return to work and reduces child poverty.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999719
+    m_Localized: Highway Construction
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999720
+    m_Localized: Construction of new motorway sections connecting key economic regions
+      of the country. Supports economic growth by reducing transport times and costs
+      for businesses and citizens.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999721
+    m_Localized: Railway Modernisation
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999722
+    m_Localized: Comprehensive modernisation of the rail network including tracks,
+      stations and rolling stock. Makes rail transport faster and more reliable,
+      encouraging a shift from road to rail.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999723
+    m_Localized: Electric Bus Fleet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999724
+    m_Localized: Replacing old diesel buses with modern electric vehicles in public
+      transport. Reduces air pollution, lowers operating costs and improves quality
+      of life in cities.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999725
+    m_Localized: Smart Traffic System
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999726
+    m_Localized: Implementation of intelligent traffic management systems in major
+      cities using sensors and AI. Reduces congestion, lowers emissions and improves
+      road safety.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999727
+    m_Localized: National Cycling Network
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999728
+    m_Localized: Building a nationwide network of cycle paths connecting cities and
+      regions. Promotes healthy transport, reduces car traffic and improves air quality
+      across the country.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999729
+    m_Localized: Army Modernisation
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999730
+    m_Localized: A comprehensive modernisation of armed forces equipment including
+      new weapons systems and communication technology. Significantly increases the
+      country's defence capability and deters potential aggressors.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999731
+    m_Localized: Cyber Defence Centre
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999732
+    m_Localized: Establishing a national cyber defence centre to protect critical
+      infrastructure from digital attacks. Strengthens national security and reduces
+      the risk of devastating cyberattacks.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999733
+    m_Localized: NATO Joint Exercise
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999734
+    m_Localized: Organising large-scale joint military exercises with NATO allies.
+      Strengthens alliance ties, improves interoperability of forces and boosts national
+      security.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999735
+    m_Localized: Veteran Support Program
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999736
+    m_Localized: A comprehensive support programme for military veterans including
+      healthcare, psychological support and reintegration into civilian life. Improves
+      wellbeing of veterans and strengthens public trust in the army.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999737
+    m_Localized: Border Fortification
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999738
+    m_Localized: Strengthening physical border protection through modern surveillance
+      systems and increased border guard personnel. Reduces illegal crossings and
+      strengthens national security.
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

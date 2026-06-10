@@ -389,6 +389,169 @@ MonoBehaviour:
       Higher fines can discourage people from breaking the rules.
     m_Metadata:
       m_Items: []
+  - m_Id: 25564649774575616
+    m_Localized: Border controls
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25564887264456704
+    m_Localized: Border controls are measures that monitor the movement of people
+      and goods across national borders. Stricter controls can increase security
+      but slow down travel and trade.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25565961769644032
+    m_Localized: Foreign aid
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25566243073224704
+    m_Localized: Foreign aid is money, equipment, or services that a country provides
+      to other nations. It can improve international relations and help during crises.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25568240509841408
+    m_Localized: Tourism Tax
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25568483322294272
+    m_Localized: Tourism tax is a fee paid by visitors staying in a country or region.
+      Higher taxes increase government revenue but may discourage some tourists.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25574595509547008
+    m_Localized: Export subsidies
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25576789117956096
+    m_Localized: Export subsidies are financial supports for companies that sell
+      their products abroad. They help domestic businesses compete in international
+      markets.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25576914846412800
+    m_Localized: Health Insurance Tax
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25578208726282240
+    m_Localized: Health insurance tax is a mandatory contribution that helps fund
+      healthcare services. Higher taxes increase healthcare funding but reduce taxpayers'
+      income.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25578428981768192
+    m_Localized: Hospital budget
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25579528908632064
+    m_Localized: Hospital budget determines how much money is available for running
+      and equipping hospitals. A higher budget can improve the quality and availability
+      of healthcare.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25580655381245952
+    m_Localized: Pension Budget
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25580727015763968
+    m_Localized: Pension budget determines how much money the government allocates
+      to pension payments. A higher budget can mean larger pensions for retirees.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25582450648215552
+    m_Localized: Childcare Support
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25582568529129472
+    m_Localized: Childcare support includes financial aid and services for families
+      with children. Greater support can make it easier for parents to care for their
+      children and return to work.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25583416613203968
+    m_Localized: Welfare Budget
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25583556434522112
+    m_Localized: Welfare budget determines how much money the government spends on
+      benefits and assistance for people in difficult situations. A higher budget
+      means greater support for those in need.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25652815445553152
+    m_Localized: Mental Health Programs
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25653251334402048
+    m_Localized: Mental health programs provide support for people with mental health
+      issues and help prevent them. Greater funding improves access to care and prevention
+      services.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25654296546570240
+    m_Localized: Vice Tax
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25654479158177792
+    m_Localized: Vice tax is a special tax on products such as cigarettes, alcohol,
+      or gambling. Higher taxes make these products more expensive and increase government
+      revenue.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25656990296371200
+    m_Localized: State schools
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25657123012538368
+    m_Localized: State schools are schools funded and operated by the government.
+      They are available to all citizens without direct tuition fees.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25658301913952256
+    m_Localized: Science funding
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25658494273122304
+    m_Localized: Science funding determines how much money the government invests
+      in research and development. Higher funding can lead to new discoveries and
+      technological progress.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25659322589442048
+    m_Localized: Art subsidies
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25659598251683840
+    m_Localized: Art subsidies are financial grants for artists and cultural projects.
+      They help create and preserve cultural works.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 26067368067133440
+    m_Localized: Number of rounds
+    m_Metadata:
+      m_Items: []
+  - m_Id: 26422026086313984
+    m_Localized: Victory
+    m_Metadata:
+      m_Items: []
+  - m_Id: 26422233125548032
+    m_Localized: Defeat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 26422450382106624
+    m_Localized: Continue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 26423465391091712
+    m_Localized: "Odej\xEDt"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 26427659766394880
+    m_Localized: State detail
+    m_Metadata:
+      m_Items: []
+  - m_Id: 26428229793280000
+    m_Localized: Political ideas
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

@@ -1,0 +1,97 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Events_cs
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.StringTable
+  m_LocaleId:
+    m_Code: cs
+  m_SharedData: {fileID: 11400000, guid: dada0a710277e264d937eeb1c884202c, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 26006712320
+    m_Localized: "Politick\xFD skand\xE1l"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 26069626880
+    m_Localized: "Vypukl z\xE1va\u017En\xFD korup\u010Dn\xED skand\xE1l spojen\xFD
+      s n\u011Bkolika ministry. Ve\u0159ejnost po\u017Eaduje \u0159e\u0161en\xED.
+      Jak zareagujete?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 26069626881
+    m_Localized: "Odvolat ministry a zah\xE1jit vy\u0161et\u0159ov\xE1n\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 26069626882
+    m_Localized: "Br\xE1nit ministry a bagatelizovat skand\xE1l"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 26069626883
+    m_Localized: "P\u0159\xEDrodn\xED katastrofa - Povodn\u011B"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 26069626884
+    m_Localized: "Siln\xE9 povodn\u011B zas\xE1hly n\u011Bkolik region\u016F zem\u011B
+      a zp\u016Fsobily zna\u010Dn\xE9 \u0161kody na infrastruktu\u0159e a domovech.
+      Tis\xEDce lid\xED pot\u0159ebuj\xED pomoc. Jak budete reagovat?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 26069626885
+    m_Localized: "Poskytnout nouzovou pomoc a zah\xE1jit obnovu"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 26069626886
+    m_Localized: "Vyhl\xE1sit stav nouze a po\u017E\xE1dat o mezin\xE1rodn\xED pomoc"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 26069626887
+    m_Localized: "Hospod\xE1\u0159sk\xFD boom"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 26069626888
+    m_Localized: "Ekonomika roste rychl\xFDm tempem a da\u0148ov\xE9 p\u0159\xEDjmy
+      p\u0159ekro\u010Dily o\u010Dek\xE1v\xE1n\xED. Tento ne\u010Dekan\xFD p\u0159ebytek
+      v\xE1m d\xE1v\xE1 p\u0159\xEDle\u017Eitost investovat. Kam nasm\u011Brujete
+      prost\u0159edky?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 26069626889
+    m_Localized: "Investovat do ve\u0159ejn\xFDch slu\u017Eeb a vzd\u011Bl\xE1v\xE1n\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 26069626890
+    m_Localized: "Sn\xED\u017Eit dan\u011B pro stimulaci dal\u0161\xEDho r\u016Fstu"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 26069626891
+    m_Localized: "Gener\xE1ln\xED st\xE1vka"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 26069626892
+    m_Localized: "Pracovn\xEDci po cel\xE9 zemi vyhl\xE1sili gener\xE1ln\xED st\xE1vku
+      po\u017Eaduj\xEDc\xED vy\u0161\u0161\xED mzdy a lep\u0161\xED pracovn\xED podm\xEDnky.
+      Ekonomika je ohro\u017Eena. Jak budete reagovat na st\xE1vkuj\xEDc\xED?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 26069626893
+    m_Localized: "Vyjednat s odbor\xE1\u0159i a souhlasit se zv\xFD\u0161en\xEDm
+      mezd"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 26069626894
+    m_Localized: "Odm\xEDtnout vyjedn\xE1v\xE1n\xED a pohrozit pr\xE1vn\xEDmi d\u016Fsledky"
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

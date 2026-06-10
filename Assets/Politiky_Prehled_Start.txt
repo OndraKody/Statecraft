@@ -1,0 +1,65 @@
+==================================================
+   DATA PRO VÝSEČOVÉ GRAFY (INCOME VS COST)      
+==================================================
+Vygenerováno: 10.06.2026 8:27:12
+
+--- 1. POLOŽKY PRO GRAF PŘÍJMŮ (INCOME) ---
+TableEntryReference(24226889616781312) = 95
+TableEntryReference(29672534023) = 80
+TableEntryReference(3329151135748) = 100
+TableEntryReference(3329151135752) = 25
+TableEntryReference(198243373740032) = 350
+TableEntryReference(192327064678400) = 500
+TableEntryReference(3329151135750) = 100
+TableEntryReference(25568240509841408) = 30
+TableEntryReference(25576914846412800) = 500
+TableEntryReference(24206223911874560) = 250
+TableEntryReference(24216089086849024) = 50
+TableEntryReference(24463682656202752) = 30
+TableEntryReference(3329151135746) = 65
+TableEntryReference(200295395028992) = 100
+TableEntryReference(25654296546570240) = 50
+TableEntryReference(24218456624656384) = 80
+TableEntryReference(3329151135744) = 80
+
+--------------------------------------------------
+
+--- 2. POLOŽKY PRO GRAF VÝDAJŮ (COST) ---
+TableEntryReference(25582450648215552) = 120
+TableEntryReference(3329151135758) = 95
+TableEntryReference(24230188428488704) = 500
+TableEntryReference(25564649774575616) = 150
+TableEntryReference(25565961769644032) = 75
+TableEntryReference(200874057986048) = 500
+TableEntryReference(199177105502208) = 750
+TableEntryReference(25580655381245952) = 300
+TableEntryReference(25574595509547008) = 50
+TableEntryReference(25652815445553152) = 50
+TableEntryReference(24220283277602816) = 100
+TableEntryReference(24227214486597632) = 180
+TableEntryReference(3329151135756) = 80
+TableEntryReference(24269472309112832) = 25
+TableEntryReference(25656990296371200) = 400
+TableEntryReference(24232565642555392) = 10
+TableEntryReference(3329151135754) = 100
+TableEntryReference(24267930768175104) = 30
+TableEntryReference(24266553069334528) = 50
+TableEntryReference(25583416613203968) = 200
+TableEntryReference(29672534019) = 20
+TableEntryReference(25578428981768192) = 250
+TableEntryReference(29672534017) = 50
+TableEntryReference(24265391133880320) = 100
+TableEntryReference(24262079743455232) = 450
+TableEntryReference(24260600139804672) = 500
+TableEntryReference(25658301913952256) = 10
+TableEntryReference(29672534025) = 50
+TableEntryReference(24262079743455232) = 100
+TableEntryReference(29672534027) = 60
+TableEntryReference(24218456624656384) = 95
+TableEntryReference(24461115742154752) = 25
+TableEntryReference(197093358497792) = 1000
+TableEntryReference(25659322589442048) = 10
+
+==================================================
+Konec exportu pro grafy.
+==================================================

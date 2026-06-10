@@ -1,32 +1,48 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Localization;
 
 public class EventManager : MonoBehaviour
 {
     [System.Serializable]
-    public class GameEvent
+    public class StatEffect
     {
-        public LocalizedString title;
-        public LocalizedString description;
+        public StatType statType;
+        public float value;
+    }
 
-        public EventOption optionA;
-        public EventOption optionB;
+    [System.Serializable]
+    public class GroupEffect
+    {
+        public GroupType groupType;
+        public float value;
     }
 
     [System.Serializable]
     public class EventOption
     {
-        // ZMÌNA: Tady jsme zmìnili obyèejný string na LocalizedString!
         public LocalizedString text;
-
         public float incomeChange;
         public float expenseChange;
+
+        // Dopady na statistiky a skupiny - stejne jako u projektu
+        public List<StatEffect> statEffects = new List<StatEffect>();
+        public List<GroupEffect> groupEffects = new List<GroupEffect>();
+    }
+
+    [System.Serializable]
+    public class GameEvent
+    {
+        public LocalizedString title;
+        public LocalizedString description;
+        public EventOption optionA;
+        public EventOption optionB;
     }
 
     public static EventManager Instance;
 
     public GameEvent[] events;
-    public EventPanelUI eventPanel; // Ten EventPanelUI skript z mé pøedchozí zprávy
+    public EventPanelUI eventPanel;
 
     private void Awake()
     {
@@ -35,8 +51,7 @@ public class EventManager : MonoBehaviour
 
     public void TriggerRandomEvent()
     {
-        if (events.Length == 0) return;
-
+        if (events == null || events.Length == 0) return;
         GameEvent randomEvent = events[Random.Range(0, events.Length)];
         eventPanel.Show(randomEvent);
     }

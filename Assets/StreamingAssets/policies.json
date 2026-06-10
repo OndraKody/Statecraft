@@ -1,0 +1,1389 @@
+{
+  "policies": [
+    {
+      "id": "policy_inheritance_tax",
+      "nameTable": "GameText",
+      "nameKey": "policy_inheritance_tax",
+      "nameKeyId": 24226889616781312,
+      "descriptionTable": "GameText",
+      "descriptionKey": "policy_des_inheritance_tax",
+      "descriptionKeyId": 24227095435472896,
+      "income": 95,
+      "cost": 0,
+      "actionPointCost": 2,
+      "hdpEffect": -5,
+      "crimeEffect": 0,
+      "healthEffect": 0,
+      "educationEffect": 0,
+      "povertyEffect": 0,
+      "groupEffects": [
+        {
+          "groupType": "Wealthy",
+          "baseEffect": -20
+        },
+        {
+          "groupType": "MiddleClass",
+          "baseEffect": -2
+        },
+        {
+          "groupType": "Socialists",
+          "baseEffect": 10
+        }
+      ]
+    },
+    {
+      "id": "policy_childcare",
+      "nameTable": "GameText",
+      "nameKey": "policy_childcare",
+      "nameKeyId": 25582450648215552,
+      "descriptionTable": "GameText",
+      "descriptionKey": "policy_des_childcare",
+      "descriptionKeyId": 25582568529129472,
+      "income": 0,
+      "cost": 120,
+      "actionPointCost": 1,
+      "hdpEffect": -5,
+      "crimeEffect": 0,
+      "healthEffect": 5,
+      "educationEffect": 0,
+      "povertyEffect": -10,
+      "groupEffects": [
+        {
+          "groupType": "Socialists",
+          "baseEffect": 10
+        },
+        {
+          "groupType": "Poor",
+          "baseEffect": 15
+        },
+        {
+          "groupType": "MiddleClass",
+          "baseEffect": 3
+        }
+      ]
+    },
+    {
+      "id": "policy_public_transit_name",
+      "nameTable": "Doprava",
+      "nameKey": "policy_public_transit_name",
+      "nameKeyId": 3329151135758,
+      "descriptionTable": "Doprava",
+      "descriptionKey": "policy_des_public_transit",
+      "descriptionKeyId": 3329151135759,
+      "income": 0,
+      "cost": 95,
+      "actionPointCost": 2,
+      "hdpEffect": 6,
+      "crimeEffect": 0,
+      "healthEffect": 0,
+      "educationEffect": 0,
+      "povertyEffect": -3,
+      "groupEffects": [
+        {
+          "groupType": "Environmentalists",
+          "baseEffect": 5
+        },
+        {
+          "groupType": "Poor",
+          "baseEffect": 10
+        },
+        {
+          "groupType": "MiddleClass",
+          "baseEffect": 7
+        }
+      ]
+    },
+    {
+      "id": "policy_army_budget_name",
+      "nameTable": "Obrana",
+      "nameKey": "policy_army_budget_name",
+      "nameKeyId": 29672534023,
+      "descriptionTable": "Obrana",
+      "descriptionKey": "policy_des_army_budget",
+      "descriptionKeyId": 29672534024,
+      "income": 80,
+      "cost": 0,
+      "actionPointCost": 1,
+      "hdpEffect": 10,
+      "crimeEffect": 0,
+      "healthEffect": 0,
+      "educationEffect": 0,
+      "povertyEffect": 0,
+      "groupEffects": [
+        {
+          "groupType": "Capitalists",
+          "baseEffect": 10
+        },
+        {
+          "groupType": "Nationalists",
+          "baseEffect": -10
+        },
+        {
+          "groupType": "Conservatives",
+          "baseEffect": -5
+        }
+      ]
+    },
+    {
+      "id": "policy_vehicle_tax_name",
+      "nameTable": "Doprava",
+      "nameKey": "policy_vehicle_tax_name",
+      "nameKeyId": 3329151135748,
+      "descriptionTable": "Doprava",
+      "descriptionKey": "policy_des_vehicle_tax",
+      "descriptionKeyId": 3329151135749,
+      "income": 100,
+      "cost": 0,
+      "actionPointCost": 2,
+      "hdpEffect": 10,
+      "crimeEffect": 0,
+      "healthEffect": 0,
+      "educationEffect": 0,
+      "povertyEffect": -5,
+      "groupEffects": [
+        {
+          "groupType": "Poor",
+          "baseEffect": -7
+        },
+        {
+          "groupType": "Environmentalists",
+          "baseEffect": 5
+        },
+        {
+          "groupType": "Capitalists",
+          "baseEffect": -10
+        },
+        {
+          "groupType": "MiddleClass",
+          "baseEffect": -5
+        }
+      ]
+    },
+    {
+      "id": "policy_parking_fees_name",
+      "nameTable": "Doprava",
+      "nameKey": "policy_parking_fees_name",
+      "nameKeyId": 3329151135752,
+      "descriptionTable": "Doprava",
+      "descriptionKey": "policy_des_parking_fees",
+      "descriptionKeyId": 3329151135753,
+      "income": 25,
+      "cost": 0,
+      "actionPointCost": 1,
+      "hdpEffect": 3,
+      "crimeEffect": 0,
+      "healthEffect": 0,
+      "educationEffect": 0,
+      "povertyEffect": -3,
+      "groupEffects": [
+        {
+          "groupType": "Environmentalists",
+          "baseEffect": 3
+        },
+        {
+          "groupType": "Capitalists",
+          "baseEffect": -3
+        }
+      ]
+    },
+    {
+      "id": "policy_labor_laws",
+      "nameTable": "GameText",
+      "nameKey": "policy_labor_laws",
+      "nameKeyId": 24230188428488704,
+      "descriptionTable": "GameText",
+      "descriptionKey": "policy_des_labor_laws",
+      "descriptionKeyId": 24230305235660800,
+      "income": 0,
+      "cost": 500,
+      "actionPointCost": 3,
+      "hdpEffect": 0,
+      "crimeEffect": 0,
+      "healthEffect": 0,
+      "educationEffect": 0,
+      "povertyEffect": 0,
+      "groupEffects": [
+        {
+          "groupType": "Socialists",
+          "baseEffect": 30
+        },
+        {
+          "groupType": "Capitalists",
+          "baseEffect": -30
+        }
+      ]
+    },
+    {
+      "id": "policy_Border_Guard",
+      "nameTable": "GameText",
+      "nameKey": "policy_Border_Guard",
+      "nameKeyId": 198243373740032,
+      "descriptionTable": "GameText",
+      "descriptionKey": "policy_Border_GuardText",
+      "descriptionKeyId": 198378229002240,
+      "income": 350,
+      "cost": 0,
+      "actionPointCost": 2,
+      "hdpEffect": 25,
+      "crimeEffect": 0,
+      "healthEffect": 0,
+      "educationEffect": 0,
+      "povertyEffect": 0,
+      "groupEffects": []
+    },
+    {
+      "id": "policy_border_control",
+      "nameTable": "GameText",
+      "nameKey": "policy_border_control",
+      "nameKeyId": 25564649774575616,
+      "descriptionTable": "GameText",
+      "descriptionKey": "policy_des_border_control",
+      "descriptionKeyId": 25564887264456704,
+      "income": 0,
+      "cost": 150,
+      "actionPointCost": 2,
+      "hdpEffect": 5,
+      "crimeEffect": -2,
+      "healthEffect": 0,
+      "educationEffect": 0,
+      "povertyEffect": 0,
+      "groupEffects": []
+    },
+    {
+      "id": "policy_foreign_aid",
+      "nameTable": "GameText",
+      "nameKey": "policy_foreign_aid",
+      "nameKeyId": 25565961769644032,
+      "descriptionTable": "GameText",
+      "descriptionKey": "policy_des_foreign_aid",
+      "descriptionKeyId": 25566243073224704,
+      "income": 0,
+      "cost": 75,
+      "actionPointCost": 1,
+      "hdpEffect": -5,
+      "crimeEffect": 0,
+      "healthEffect": 0,
+      "educationEffect": 0,
+      "povertyEffect": 0,
+      "groupEffects": [
+        {
+          "groupType": "Liberals",
+          "baseEffect": 5
+        },
+        {
+          "groupType": "Nationalists",
+          "baseEffect": -10
+        }
+      ]
+    },
+    {
+      "id": "text_incomeTax",
+      "nameTable": "GameText",
+      "nameKey": "text_incomeTax",
+      "nameKeyId": 192327064678400,
+      "descriptionTable": "GameText",
+      "descriptionKey": "polici_incomeTaxDes",
+      "descriptionKeyId": 192875818053632,
+      "income": 500,
+      "cost": 0,
+      "actionPointCost": 2,
+      "hdpEffect": 50,
+      "crimeEffect": 0,
+      "healthEffect": 0,
+      "educationEffect": 0,
+      "povertyEffect": -10,
+      "groupEffects": [
+        {
+          "groupType": "Poor",
+          "baseEffect": 5
+        },
+        {
+          "groupType": "Capitalists",
+          "baseEffect": -15
+        },
+        {
+          "groupType": "Socialists",
+          "baseEffect": 20
+        },
+        {
+          "groupType": "MiddleClass",
+          "baseEffect": -5
+        }
+      ]
+    },
+    {
+      "id": "policy_deffens",
+      "nameTable": "GameText",
+      "nameKey": "policy_deffens",
+      "nameKeyId": 200874057986048,
+      "descriptionTable": "GameText",
+      "descriptionKey": "policy_deffensText",
+      "descriptionKeyId": 201016496549888,
+      "income": 0,
+      "cost": 500,
+      "actionPointCost": 3,
+      "hdpEffect": 20,
+      "crimeEffect": -5,
+      "healthEffect": 0,
+      "educationEffect": 0,
+      "povertyEffect": -2,
+      "groupEffects": []
+    },
+    {
+      "id": "policy_Healt_invest",
+      "nameTable": "GameText",
+      "nameKey": "policy_Healt_invest",
+      "nameKeyId": 199177105502208,
+      "descriptionTable": "GameText",
+      "descriptionKey": "policy_Healt_investText",
+      "descriptionKeyId": 199518236635136,
+      "income": 0,
+      "cost": 750,
+      "actionPointCost": 1,
+      "hdpEffect": -60,
+      "crimeEffect": 0,
+      "healthEffect": 10,
+      "educationEffect": 0,
+      "povertyEffect": 0,
+      "groupEffects": []
+    },
+    {
+      "id": "policy_pension_budget",
+      "nameTable": "GameText",
+      "nameKey": "policy_pension_budget",
+      "nameKeyId": 25580655381245952,
+      "descriptionTable": "GameText",
+      "descriptionKey": "policy_des_pension_budget",
+      "descriptionKeyId": 25580727015763968,
+      "income": 0,
+      "cost": 300,
+      "actionPointCost": 2,
+      "hdpEffect": -1,
+      "crimeEffect": 0,
+      "healthEffect": 5,
+      "educationEffect": 0,
+      "povertyEffect": -5,
+      "groupEffects": [
+        {
+          "groupType": "Socialists",
+          "baseEffect": 10
+        },
+        {
+          "groupType": "Poor",
+          "baseEffect": 15
+        }
+      ]
+    },
+    {
+      "id": "policy_airport_tax_name",
+      "nameTable": "Doprava",
+      "nameKey": "policy_airport_tax_name",
+      "nameKeyId": 3329151135750,
+      "descriptionTable": "Doprava",
+      "descriptionKey": "policy_des_airport_tax",
+      "descriptionKeyId": 3329151135751,
+      "income": 100,
+      "cost": 0,
+      "actionPointCost": 2,
+      "hdpEffect": 5,
+      "crimeEffect": 0,
+      "healthEffect": 0,
+      "educationEffect": 0,
+      "povertyEffect": 0,
+      "groupEffects": [
+        {
+          "groupType": "Poor",
+          "baseEffect": -7
+        },
+        {
+          "groupType": "Environmentalists",
+          "baseEffect": 5
+        },
+        {
+          "groupType": "Capitalists",
+          "baseEffect": -7
+        },
+        {
+          "groupType": "MiddleClass",
+          "baseEffect": -5
+        }
+      ]
+    },
+    {
+      "id": "policy_export_subsidy",
+      "nameTable": "GameText",
+      "nameKey": "policy_export_subsidy",
+      "nameKeyId": 25574595509547008,
+      "descriptionTable": "GameText",
+      "descriptionKey": "policy_des_export_subsidy",
+      "descriptionKeyId": 25576789117956096,
+      "income": 0,
+      "cost": 50,
+      "actionPointCost": 2,
+      "hdpEffect": 10,
+      "crimeEffect": 0,
+      "healthEffect": 0,
+      "educationEffect": 0,
+      "povertyEffect": -2,
+      "groupEffects": [
+        {
+          "groupType": "Capitalists",
+          "baseEffect": 10
+        }
+      ]
+    },
+    {
+      "id": "policy_turism_tex",
+      "nameTable": "GameText",
+      "nameKey": "policy_turism_tex",
+      "nameKeyId": 25568240509841408,
+      "descriptionTable": "GameText",
+      "descriptionKey": "policy_des_turism_tex",
+      "descriptionKeyId": 25568483322294272,
+      "income": 30,
+      "cost": 0,
+      "actionPointCost": 1,
+      "hdpEffect": 5,
+      "crimeEffect": 0,
+      "healthEffect": 0,
+      "educationEffect": 0,
+      "povertyEffect": 0,
+      "groupEffects": [
+        {
+          "groupType": "Capitalists",
+          "baseEffect": -5
+        }
+      ]
+    },
+    {
+      "id": "policy_health_tax",
+      "nameTable": "GameText",
+      "nameKey": "policy_health_tax",
+      "nameKeyId": 25576914846412800,
+      "descriptionTable": "GameText",
+      "descriptionKey": "policy_des_health_tax",
+      "descriptionKeyId": 25578208726282240,
+      "income": 500,
+      "cost": 0,
+      "actionPointCost": 1,
+      "hdpEffect": -5,
+      "crimeEffect": 0,
+      "healthEffect": 10,
+      "educationEffect": 0,
+      "povertyEffect": 0,
+      "groupEffects": [
+        {
+          "groupType": "Poor",
+          "baseEffect": -10
+        },
+        {
+          "groupType": "MiddleClass",
+          "baseEffect": -5
+        },
+        {
+          "groupType": "Socialists",
+          "baseEffect": 7
+        }
+      ]
+    },
+    {
+      "id": "policy_mental_health",
+      "nameTable": "GameText",
+      "nameKey": "policy_mental_health",
+      "nameKeyId": 25652815445553152,
+      "descriptionTable": "GameText",
+      "descriptionKey": "policy_des_mental_health",
+      "descriptionKeyId": 25653251334402048,
+      "income": 0,
+      "cost": 50,
+      "actionPointCost": 1,
+      "hdpEffect": 0,
+      "crimeEffect": 0,
+      "healthEffect": 5,
+      "educationEffect": 0,
+      "povertyEffect": 0,
+      "groupEffects": [
+        {
+          "groupType": "Liberals",
+          "baseEffect": 10
+        },
+        {
+          "groupType": "Conservatives",
+          "baseEffect": -10
+        }
+      ]
+    },
+    {
+      "id": "policy_competition_law",
+      "nameTable": "GameText",
+      "nameKey": "policy_competition_law",
+      "nameKeyId": 24220283277602816,
+      "descriptionTable": "GameText",
+      "descriptionKey": "policy_des_competition_law",
+      "descriptionKeyId": 24220515201642496,
+      "income": 0,
+      "cost": 100,
+      "actionPointCost": 1,
+      "hdpEffect": 0,
+      "crimeEffect": 0,
+      "healthEffect": 0,
+      "educationEffect": 0,
+      "povertyEffect": 0,
+      "groupEffects": [
+        {
+          "groupType": "Capitalists",
+          "baseEffect": 10
+        },
+        {
+          "groupType": "MiddleClass",
+          "baseEffect": -10
+        }
+      ]
+    },
+    {
+      "id": "policy_work_safety_law",
+      "nameTable": "GameText",
+      "nameKey": "policy_work_safety_law",
+      "nameKeyId": 24227214486597632,
+      "descriptionTable": "GameText",
+      "descriptionKey": "policy_des_work_safety_law",
+      "descriptionKeyId": 24228639308443648,
+      "income": 0,
+      "cost": 180,
+      "actionPointCost": 3,
+      "hdpEffect": 0,
+      "crimeEffect": 0,
+      "healthEffect": 5,
+      "educationEffect": 0,
+      "povertyEffect": 0,
+      "groupEffects": [
+        {
+          "groupType": "Poor",
+          "baseEffect": 5
+        }
+      ]
+    },
+    {
+      "id": "policy_rail_budget_name",
+      "nameTable": "Doprava",
+      "nameKey": "policy_rail_budget_name",
+      "nameKeyId": 3329151135756,
+      "descriptionTable": "Doprava",
+      "descriptionKey": "policy_des_rail_budget",
+      "descriptionKeyId": 3329151135757,
+      "income": 0,
+      "cost": 80,
+      "actionPointCost": 2,
+      "hdpEffect": 5,
+      "crimeEffect": 0,
+      "healthEffect": 0,
+      "educationEffect": 0,
+      "povertyEffect": -2,
+      "groupEffects": [
+        {
+          "groupType": "Environmentalists",
+          "baseEffect": 2
+        },
+        {
+          "groupType": "Poor",
+          "baseEffect": 7
+        },
+        {
+          "groupType": "MiddleClass",
+          "baseEffect": 10
+        }
+      ]
+    },
+    {
+      "id": "policy_right_to_privacy",
+      "nameTable": "GameText",
+      "nameKey": "policy_right_to_privacy",
+      "nameKeyId": 24269472309112832,
+      "descriptionTable": "GameText",
+      "descriptionKey": "policy_des_prisons",
+      "descriptionKeyId": 24260913676611584,
+      "income": 0,
+      "cost": 25,
+      "actionPointCost": 1,
+      "hdpEffect": -5,
+      "crimeEffect": 0,
+      "healthEffect": 0,
+      "educationEffect": 0,
+      "povertyEffect": 0,
+      "groupEffects": [
+        {
+          "groupType": "Liberals",
+          "baseEffect": 10
+        }
+      ]
+    },
+    {
+      "id": "policy_state_schools",
+      "nameTable": "GameText",
+      "nameKey": "policy_state_schools",
+      "nameKeyId": 25656990296371200,
+      "descriptionTable": "GameText",
+      "descriptionKey": "policy_des_state_schools",
+      "descriptionKeyId": 25657123012538368,
+      "income": 0,
+      "cost": 400,
+      "actionPointCost": 3,
+      "hdpEffect": 0,
+      "crimeEffect": 0,
+      "healthEffect": 0,
+      "educationEffect": 20,
+      "povertyEffect": -10,
+      "groupEffects": [
+        {
+          "groupType": "Poor",
+          "baseEffect": 10
+        },
+        {
+          "groupType": "Socialists",
+          "baseEffect": 10
+        },
+        {
+          "groupType": "Capitalists",
+          "baseEffect": -10
+        }
+      ]
+    },
+    {
+      "id": "policy_recycling",
+      "nameTable": "GameText",
+      "nameKey": "policy_recycling",
+      "nameKeyId": 24232565642555392,
+      "descriptionTable": "GameText",
+      "descriptionKey": "policy_des_recycling",
+      "descriptionKeyId": 24232775588442112,
+      "income": 0,
+      "cost": 10,
+      "actionPointCost": 1,
+      "hdpEffect": 0,
+      "crimeEffect": 0,
+      "healthEffect": 2,
+      "educationEffect": 0,
+      "povertyEffect": 0,
+      "groupEffects": [
+        {
+          "groupType": "Environmentalists",
+          "baseEffect": 15
+        }
+      ]
+    },
+    {
+      "id": "policy_payroll_tax",
+      "nameTable": "GameText",
+      "nameKey": "policy_payroll_tax",
+      "nameKeyId": 24206223911874560,
+      "descriptionTable": "GameText",
+      "descriptionKey": "policy_dec_payroll_tax",
+      "descriptionKeyId": 24210632389619712,
+      "income": 250,
+      "cost": 0,
+      "actionPointCost": 2,
+      "hdpEffect": 50,
+      "crimeEffect": 0,
+      "healthEffect": 0,
+      "educationEffect": 0,
+      "povertyEffect": -5,
+      "groupEffects": [
+        {
+          "groupType": "Poor",
+          "baseEffect": -5
+        },
+        {
+          "groupType": "Capitalists",
+          "baseEffect": -10
+        },
+        {
+          "groupType": "Socialists",
+          "baseEffect": 10
+        }
+      ]
+    },
+    {
+      "id": "policy_road_budget_name",
+      "nameTable": "Doprava",
+      "nameKey": "policy_road_budget_name",
+      "nameKeyId": 3329151135754,
+      "descriptionTable": "Doprava",
+      "descriptionKey": "policy_des_road_budget",
+      "descriptionKeyId": 3329151135755,
+      "income": 0,
+      "cost": 100,
+      "actionPointCost": 2,
+      "hdpEffect": 5,
+      "crimeEffect": 0,
+      "healthEffect": 0,
+      "educationEffect": 0,
+      "povertyEffect": 0,
+      "groupEffects": [
+        {
+          "groupType": "Environmentalists",
+          "baseEffect": -7
+        },
+        {
+          "groupType": "Capitalists",
+          "baseEffect": 10
+        },
+        {
+          "groupType": "MiddleClass",
+          "baseEffect": 5
+        }
+      ]
+    },
+    {
+      "id": "policy_intelligence_services",
+      "nameTable": "GameText",
+      "nameKey": "policy_intelligence_services",
+      "nameKeyId": 24267930768175104,
+      "descriptionTable": "GameText",
+      "descriptionKey": "policy_des_intelligence_services",
+      "descriptionKeyId": 24268131713085440,
+      "income": 0,
+      "cost": 30,
+      "actionPointCost": 1,
+      "hdpEffect": 0,
+      "crimeEffect": -10,
+      "healthEffect": 0,
+      "educationEffect": 0,
+      "povertyEffect": 0,
+      "groupEffects": [
+        {
+          "groupType": "Liberals",
+          "baseEffect": -10
+        },
+        {
+          "groupType": "Nationalists",
+          "baseEffect": 10
+        }
+      ]
+    },
+    {
+      "id": "polocy_CGT",
+      "nameTable": "GameText",
+      "nameKey": "polocy_CGT",
+      "nameKeyId": 24216089086849024,
+      "descriptionTable": "GameText",
+      "descriptionKey": "polocy_des_CGT",
+      "descriptionKeyId": 24216271971086336,
+      "income": 50,
+      "cost": 0,
+      "actionPointCost": 1,
+      "hdpEffect": 30,
+      "crimeEffect": 0,
+      "healthEffect": 0,
+      "educationEffect": 0,
+      "povertyEffect": -2,
+      "groupEffects": [
+        {
+          "groupType": "Wealthy",
+          "baseEffect": -5
+        },
+        {
+          "groupType": "Capitalists",
+          "baseEffect": -10
+        },
+        {
+          "groupType": "Socialists",
+          "baseEffect": 12
+        }
+      ]
+    },
+    {
+      "id": "policy_fine_revenue_desc",
+      "nameTable": "GameText",
+      "nameKey": "policy_fine_revenue_desc",
+      "nameKeyId": 24463682656202752,
+      "descriptionTable": "GameText",
+      "descriptionKey": "policy_des_fine_revenue_desc",
+      "descriptionKeyId": 24463899078094848,
+      "income": 30,
+      "cost": 0,
+      "actionPointCost": 1,
+      "hdpEffect": 5,
+      "crimeEffect": -5,
+      "healthEffect": 0,
+      "educationEffect": 0,
+      "povertyEffect": -5,
+      "groupEffects": [
+        {
+          "groupType": "Liberals",
+          "baseEffect": -5
+        },
+        {
+          "groupType": "Conservatives",
+          "baseEffect": 5
+        },
+        {
+          "groupType": "Poor",
+          "baseEffect": -5
+        }
+      ]
+    },
+    {
+      "id": "policy_gender_transition",
+      "nameTable": "GameText",
+      "nameKey": "policy_gender_transition",
+      "nameKeyId": 24266553069334528,
+      "descriptionTable": "GameText",
+      "descriptionKey": "policy_des_gender_transition",
+      "descriptionKeyId": 24266721533554688,
+      "income": 0,
+      "cost": 50,
+      "actionPointCost": 2,
+      "hdpEffect": 0,
+      "crimeEffect": 0,
+      "healthEffect": 0,
+      "educationEffect": 0,
+      "povertyEffect": 0,
+      "groupEffects": [
+        {
+          "groupType": "Liberals",
+          "baseEffect": 15
+        },
+        {
+          "groupType": "Conservatives",
+          "baseEffect": -10
+        },
+        {
+          "groupType": "Conservatives",
+          "baseEffect": 10
+        },
+        {
+          "groupType": "Religious",
+          "baseEffect": -20
+        }
+      ]
+    },
+    {
+      "id": "policy_welfare_budget",
+      "nameTable": "GameText",
+      "nameKey": "policy_welfare_budget",
+      "nameKeyId": 25583416613203968,
+      "descriptionTable": "GameText",
+      "descriptionKey": "policy_des_welfare_budget",
+      "descriptionKeyId": 25583556434522112,
+      "income": 0,
+      "cost": 200,
+      "actionPointCost": 2,
+      "hdpEffect": -6,
+      "crimeEffect": 0,
+      "healthEffect": 0,
+      "educationEffect": 0,
+      "povertyEffect": -10,
+      "groupEffects": [
+        {
+          "groupType": "Socialists",
+          "baseEffect": 10
+        },
+        {
+          "groupType": "Poor",
+          "baseEffect": 15
+        },
+        {
+          "groupType": "MiddleClass",
+          "baseEffect": 3
+        },
+        {
+          "groupType": "Capitalists",
+          "baseEffect": -7
+        }
+      ]
+    },
+    {
+      "id": "policy_road_toll_name",
+      "nameTable": "Doprava",
+      "nameKey": "policy_road_toll_name",
+      "nameKeyId": 3329151135746,
+      "descriptionTable": "Doprava",
+      "descriptionKey": "policy_des_road_toll",
+      "descriptionKeyId": 3329151135747,
+      "income": 65,
+      "cost": 0,
+      "actionPointCost": 2,
+      "hdpEffect": 7,
+      "crimeEffect": 0,
+      "healthEffect": 0,
+      "educationEffect": 0,
+      "povertyEffect": -2,
+      "groupEffects": [
+        {
+          "groupType": "Environmentalists",
+          "baseEffect": 5
+        },
+        {
+          "groupType": "Wealthy",
+          "baseEffect": -5
+        },
+        {
+          "groupType": "Capitalists",
+          "baseEffect": -1
+        }
+      ]
+    },
+    {
+      "id": "policy_defense_research_income_name",
+      "nameTable": "Obrana",
+      "nameKey": "policy_defense_research_income_name",
+      "nameKeyId": 29672534019,
+      "descriptionTable": "Obrana",
+      "descriptionKey": "policy_des_defense_research_income",
+      "descriptionKeyId": 29672534020,
+      "income": 0,
+      "cost": 20,
+      "actionPointCost": 1,
+      "hdpEffect": 5,
+      "crimeEffect": 0,
+      "healthEffect": 0,
+      "educationEffect": 0,
+      "povertyEffect": 0,
+      "groupEffects": [
+        {
+          "groupType": "Capitalists",
+          "baseEffect": 10
+        }
+      ]
+    },
+    {
+      "id": "policy_RoudTex",
+      "nameTable": "GameText",
+      "nameKey": "policy_RoudTex",
+      "nameKeyId": 200295395028992,
+      "descriptionTable": "GameText",
+      "descriptionKey": "policy_RoudTexText",
+      "descriptionKeyId": 200470041653248,
+      "income": 100,
+      "cost": 0,
+      "actionPointCost": 3,
+      "hdpEffect": 20,
+      "crimeEffect": 0,
+      "healthEffect": 0,
+      "educationEffect": 0,
+      "povertyEffect": 10,
+      "groupEffects": []
+    },
+    {
+      "id": "policy_hospital_budget",
+      "nameTable": "GameText",
+      "nameKey": "policy_hospital_budget",
+      "nameKeyId": 25578428981768192,
+      "descriptionTable": "GameText",
+      "descriptionKey": "policy_des_hospital_budget",
+      "descriptionKeyId": 25579528908632064,
+      "income": 0,
+      "cost": 250,
+      "actionPointCost": 3,
+      "hdpEffect": -7,
+      "crimeEffect": 0,
+      "healthEffect": 20,
+      "educationEffect": 0,
+      "povertyEffect": -5,
+      "groupEffects": [
+        {
+          "groupType": "Poor",
+          "baseEffect": 10
+        },
+        {
+          "groupType": "Socialists",
+          "baseEffect": 12
+        },
+        {
+          "groupType": "Capitalists",
+          "baseEffect": -2
+        }
+      ]
+    },
+    {
+      "id": "policy_military_land_name",
+      "nameTable": "Obrana",
+      "nameKey": "policy_military_land_name",
+      "nameKeyId": 29672534017,
+      "descriptionTable": "Obrana",
+      "descriptionKey": "policy_des_military_land",
+      "descriptionKeyId": 29672534018,
+      "income": 0,
+      "cost": 50,
+      "actionPointCost": 1,
+      "hdpEffect": -5,
+      "crimeEffect": 0,
+      "healthEffect": 0,
+      "educationEffect": 0,
+      "povertyEffect": 0,
+      "groupEffects": [
+        {
+          "groupType": "Nationalists",
+          "baseEffect": 10
+        },
+        {
+          "groupType": "Conservatives",
+          "baseEffect": 5
+        }
+      ]
+    },
+    {
+      "id": "policy_id_cards",
+      "nameTable": "GameText",
+      "nameKey": "policy_id_cards",
+      "nameKeyId": 24265391133880320,
+      "descriptionTable": "GameText",
+      "descriptionKey": "policy_des_id_cards",
+      "descriptionKeyId": 24265552354537472,
+      "income": 0,
+      "cost": 100,
+      "actionPointCost": 3,
+      "hdpEffect": 0,
+      "crimeEffect": -10,
+      "healthEffect": 0,
+      "educationEffect": 0,
+      "povertyEffect": 0,
+      "groupEffects": [
+        {
+          "groupType": "Liberals",
+          "baseEffect": -10
+        },
+        {
+          "groupType": "Conservatives",
+          "baseEffect": 5
+        }
+      ]
+    },
+    {
+      "id": "policy_vice_tax",
+      "nameTable": "GameText",
+      "nameKey": "policy_vice_tax",
+      "nameKeyId": 25654296546570240,
+      "descriptionTable": "GameText",
+      "descriptionKey": "policy_des_vice_tax",
+      "descriptionKeyId": 25654479158177792,
+      "income": 50,
+      "cost": 0,
+      "actionPointCost": 1,
+      "hdpEffect": 5,
+      "crimeEffect": 0,
+      "healthEffect": 5,
+      "educationEffect": 0,
+      "povertyEffect": 0,
+      "groupEffects": [
+        {
+          "groupType": "Capitalists",
+          "baseEffect": -10
+        },
+        {
+          "groupType": "Environmentalists",
+          "baseEffect": 10
+        }
+      ]
+    },
+    {
+      "id": "policy_police_force",
+      "nameTable": "GameText",
+      "nameKey": "policy_police_force",
+      "nameKeyId": 24262079743455232,
+      "descriptionTable": "GameText",
+      "descriptionKey": "policy_des_police_force",
+      "descriptionKeyId": 24262483675901952,
+      "income": 0,
+      "cost": 450,
+      "actionPointCost": 2,
+      "hdpEffect": -4,
+      "crimeEffect": -12,
+      "healthEffect": 0,
+      "educationEffect": 0,
+      "povertyEffect": 0,
+      "groupEffects": []
+    },
+    {
+      "id": "policy_prisons",
+      "nameTable": "GameText",
+      "nameKey": "policy_prisons",
+      "nameKeyId": 24260600139804672,
+      "descriptionTable": "GameText",
+      "descriptionKey": "policy_des_prisons",
+      "descriptionKeyId": 24260913676611584,
+      "income": 0,
+      "cost": 500,
+      "actionPointCost": 2,
+      "hdpEffect": -5,
+      "crimeEffect": -10,
+      "healthEffect": 0,
+      "educationEffect": 0,
+      "povertyEffect": 0,
+      "groupEffects": [
+        {
+          "groupType": "Liberals",
+          "baseEffect": 5
+        },
+        {
+          "groupType": "Conservatives",
+          "baseEffect": 10
+        }
+      ]
+    },
+    {
+      "id": "policy_science_funding",
+      "nameTable": "GameText",
+      "nameKey": "policy_science_funding",
+      "nameKeyId": 25658301913952256,
+      "descriptionTable": "GameText",
+      "descriptionKey": "policy_des_science_funding",
+      "descriptionKeyId": 25658494273122304,
+      "income": 0,
+      "cost": 10,
+      "actionPointCost": 1,
+      "hdpEffect": 2,
+      "crimeEffect": 0,
+      "healthEffect": 0,
+      "educationEffect": 0,
+      "povertyEffect": 0,
+      "groupEffects": []
+    },
+    {
+      "id": "policy_navy_budget_name",
+      "nameTable": "Obrana",
+      "nameKey": "policy_navy_budget_name",
+      "nameKeyId": 29672534025,
+      "descriptionTable": "Obrana",
+      "descriptionKey": "policy_des_navy_budget",
+      "descriptionKeyId": 29672534026,
+      "income": 0,
+      "cost": 50,
+      "actionPointCost": 2,
+      "hdpEffect": -12,
+      "crimeEffect": 0,
+      "healthEffect": 0,
+      "educationEffect": 0,
+      "povertyEffect": 0,
+      "groupEffects": [
+        {
+          "groupType": "Nationalists",
+          "baseEffect": 10
+        },
+        {
+          "groupType": "Liberals",
+          "baseEffect": -10
+        }
+      ]
+    },
+    {
+      "id": "policy_police_force",
+      "nameTable": "GameText",
+      "nameKey": "policy_police_force",
+      "nameKeyId": 24262079743455232,
+      "descriptionTable": "GameText",
+      "descriptionKey": "policy_des_police_force",
+      "descriptionKeyId": 24262483675901952,
+      "income": 0,
+      "cost": 100,
+      "actionPointCost": 2,
+      "hdpEffect": 0,
+      "crimeEffect": 0,
+      "healthEffect": 0,
+      "educationEffect": 0,
+      "povertyEffect": 0,
+      "groupEffects": [
+        {
+          "groupType": "Liberals",
+          "baseEffect": 5
+        },
+        {
+          "groupType": "Conservatives",
+          "baseEffect": -3
+        }
+      ]
+    },
+    {
+      "id": "policy_Corporation_Tax",
+      "nameTable": "GameText",
+      "nameKey": "policy_Corporation_Tax",
+      "nameKeyId": 24218456624656384,
+      "descriptionTable": "GameText",
+      "descriptionKey": "policy_des_Corporation_Tax",
+      "descriptionKeyId": 24218660262309888,
+      "income": 80,
+      "cost": 0,
+      "actionPointCost": 1,
+      "hdpEffect": 33,
+      "crimeEffect": 0,
+      "healthEffect": 0,
+      "educationEffect": 0,
+      "povertyEffect": 0,
+      "groupEffects": [
+        {
+          "groupType": "Wealthy",
+          "baseEffect": -10
+        },
+        {
+          "groupType": "Capitalists",
+          "baseEffect": -10
+        },
+        {
+          "groupType": "Socialists",
+          "baseEffect": 13
+        }
+      ]
+    },
+    {
+      "id": "policy_fuel_tax_name",
+      "nameTable": "Doprava",
+      "nameKey": "policy_fuel_tax_name",
+      "nameKeyId": 3329151135744,
+      "descriptionTable": "Doprava",
+      "descriptionKey": "policy_des_fuel_tax",
+      "descriptionKeyId": 3329151135745,
+      "income": 80,
+      "cost": 0,
+      "actionPointCost": 3,
+      "hdpEffect": 15,
+      "crimeEffect": 0,
+      "healthEffect": 0,
+      "educationEffect": -2,
+      "povertyEffect": 5,
+      "groupEffects": [
+        {
+          "groupType": "Environmentalists",
+          "baseEffect": 10
+        },
+        {
+          "groupType": "Wealthy",
+          "baseEffect": -10
+        },
+        {
+          "groupType": "Capitalists",
+          "baseEffect": -5
+        }
+      ]
+    },
+    {
+      "id": "policy_airforce_budget_name",
+      "nameTable": "Obrana",
+      "nameKey": "policy_airforce_budget_name",
+      "nameKeyId": 29672534027,
+      "descriptionTable": "Obrana",
+      "descriptionKey": "policy_des_airforce_budget",
+      "descriptionKeyId": 29672534028,
+      "income": 0,
+      "cost": 60,
+      "actionPointCost": 2,
+      "hdpEffect": -10,
+      "crimeEffect": 0,
+      "healthEffect": 0,
+      "educationEffect": 0,
+      "povertyEffect": 0,
+      "groupEffects": [
+        {
+          "groupType": "Nationalists",
+          "baseEffect": 10
+        },
+        {
+          "groupType": "Liberals",
+          "baseEffect": -10
+        }
+      ]
+    },
+    {
+      "id": "policy_Corporation_Tax",
+      "nameTable": "GameText",
+      "nameKey": "policy_Corporation_Tax",
+      "nameKeyId": 24218456624656384,
+      "descriptionTable": "GameText",
+      "descriptionKey": "policy_des_Corporation_Tax",
+      "descriptionKeyId": 24218660262309888,
+      "income": 0,
+      "cost": 95,
+      "actionPointCost": 2,
+      "hdpEffect": -5,
+      "crimeEffect": 0,
+      "healthEffect": 0,
+      "educationEffect": 0,
+      "povertyEffect": 0,
+      "groupEffects": [
+        {
+          "groupType": "Capitalists",
+          "baseEffect": -10
+        },
+        {
+          "groupType": "Environmentalists",
+          "baseEffect": 15
+        }
+      ]
+    },
+    {
+      "id": "policy_drogs_regilation",
+      "nameTable": "GameText",
+      "nameKey": "policy_drogs_regilation",
+      "nameKeyId": 24461115742154752,
+      "descriptionTable": "GameText",
+      "descriptionKey": "policy_des_drogs_regilation",
+      "descriptionKeyId": 24461524368027648,
+      "income": 0,
+      "cost": 25,
+      "actionPointCost": 1,
+      "hdpEffect": 0,
+      "crimeEffect": -5,
+      "healthEffect": 0,
+      "educationEffect": 0,
+      "povertyEffect": 0,
+      "groupEffects": [
+        {
+          "groupType": "Liberals",
+          "baseEffect": 10
+        },
+        {
+          "groupType": "Conservatives",
+          "baseEffect": -10
+        },
+        {
+          "groupType": "Religious",
+          "baseEffect": 20
+        }
+      ]
+    },
+    {
+      "id": "policy_judges_salaries",
+      "nameTable": "GameText",
+      "nameKey": "policy_judges_salaries",
+      "nameKeyId": 197093358497792,
+      "descriptionTable": "GameText",
+      "descriptionKey": "policy_judges_salariesText",
+      "descriptionKeyId": 197413237092352,
+      "income": 0,
+      "cost": 1000,
+      "actionPointCost": 1,
+      "hdpEffect": -10,
+      "crimeEffect": -20,
+      "healthEffect": 0,
+      "educationEffect": 0,
+      "povertyEffect": 0,
+      "groupEffects": []
+    },
+    {
+      "id": "policy_art_subsidies",
+      "nameTable": "GameText",
+      "nameKey": "policy_art_subsidies",
+      "nameKeyId": 25659322589442048,
+      "descriptionTable": "GameText",
+      "descriptionKey": "policy_des_art_subsidies",
+      "descriptionKeyId": 25659598251683840,
+      "income": 0,
+      "cost": 10,
+      "actionPointCost": 1,
+      "hdpEffect": 0,
+      "crimeEffect": 0,
+      "healthEffect": 0,
+      "educationEffect": 7,
+      "povertyEffect": 0,
+      "groupEffects": [
+        {
+          "groupType": "Liberals",
+          "baseEffect": 7
+        },
+        {
+          "groupType": "Capitalists",
+          "baseEffect": -5
+        }
+      ]
+    }
+  ]
+}

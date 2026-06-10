@@ -2,6 +2,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Localization;
+using UnityEngine.Localization.Settings;
 using System.Collections.Generic;
 
 public class PolyciPanelUI : MonoBehaviour
@@ -104,6 +105,19 @@ public class PolyciPanelUI : MonoBehaviour
 
     private Dictionary<GroupType, StatBarUI> groupBars = new Dictionary<GroupType, StatBarUI>();
 
+    private void OnEnable()
+    {
+        LocalizationSettings.SelectedLocaleChanged += OnLocaleChanged;
+    }
+
+    private void OnLocaleChanged(UnityEngine.Localization.Locale locale)
+    {
+        if (currentItem == null) return;
+
+        GenerateStatBars(currentItem);
+        GenerateGroupBars(currentItem);
+    }
+
     // ===== SETUP =====
     public void Setup(PolicyItem item)
     {
@@ -148,6 +162,7 @@ public class PolyciPanelUI : MonoBehaviour
 
     private void OnDisable()
     {
+        LocalizationSettings.SelectedLocaleChanged -= OnLocaleChanged;
         if (currentItem != null)
         {
             currentItem.name.StringChanged -= UpdateNameText;
@@ -167,11 +182,11 @@ public class PolyciPanelUI : MonoBehaviour
         }
 
         // Místo item.maxWidthHdp použijeme natvrdo initialBarWidth
-        hdpBar = CreateBar(statBarsParent, "HDP", item.savedHdpEffect, item.hdpEffect, initialBarWidth);
-        crimeBar = CreateBar(statBarsParent, "Zlocin", item.savedCrimeEffect, item.crimeEffect, initialBarWidth);
-        healthBar = CreateBar(statBarsParent, "Zdravi", item.savedHealthEffect, item.healthEffect, initialBarWidth);
-        educationBar = CreateBar(statBarsParent, "Vzdelanost", item.savedEducationEffect, item.educationEffect, initialBarWidth);
-        povertyBar = CreateBar(statBarsParent, "Chudoba", item.savedPovertyEffect, item.povertyEffect, initialBarWidth);
+        hdpBar = CreateBar(statBarsParent, LocalizedEnumNames.GetStatName(StatType.HDP), item.savedHdpEffect, item.hdpEffect, initialBarWidth);
+        crimeBar = CreateBar(statBarsParent, LocalizedEnumNames.GetStatName(StatType.Crime), item.savedCrimeEffect, item.crimeEffect, initialBarWidth);
+        healthBar = CreateBar(statBarsParent, LocalizedEnumNames.GetStatName(StatType.Health), item.savedHealthEffect, item.healthEffect, initialBarWidth);
+        educationBar = CreateBar(statBarsParent, LocalizedEnumNames.GetStatName(StatType.Education), item.savedEducationEffect, item.educationEffect, initialBarWidth);
+        povertyBar = CreateBar(statBarsParent, LocalizedEnumNames.GetStatName(StatType.Poverty), item.savedPovertyEffect, item.povertyEffect, initialBarWidth);
     }
 
     // ===== GENEROVANI GROUP BARU =====
@@ -185,7 +200,7 @@ public class PolyciPanelUI : MonoBehaviour
         {
             if (ge.baseEffect == 0f) continue;
 
-            string groupName = GetGroupName(ge.groupType);
+            string groupName = LocalizedEnumNames.GetGroupName(ge.groupType);
             float scaleMax = Mathf.Abs(ge.baseEffect) * 2f;
 
             // Místo ge.maxWidth pøedáme initialBarWidth

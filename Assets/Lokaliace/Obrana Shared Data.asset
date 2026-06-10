@@ -1,0 +1,100 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: Obrana Shared Data
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.SharedTableData
+  m_TableCollectionName: Obrana
+  m_TableCollectionNameGuidString: 76e354ae07cb248479fc278c10c338cb
+  m_Entries:
+  - m_Id: 29626396672
+    m_Key: policy_arms_export_name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29672534016
+    m_Key: policy_des_arms_export
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29672534017
+    m_Key: policy_military_land_name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29672534018
+    m_Key: policy_des_military_land
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29672534019
+    m_Key: policy_defense_research_income_name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29672534020
+    m_Key: policy_des_defense_research_income
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29672534021
+    m_Key: policy_nato_contrib_income_name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29672534022
+    m_Key: policy_des_nato_contrib_income
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29672534023
+    m_Key: policy_army_budget_name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29672534024
+    m_Key: policy_des_army_budget
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29672534025
+    m_Key: policy_navy_budget_name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29672534026
+    m_Key: policy_des_navy_budget
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29672534027
+    m_Key: policy_airforce_budget_name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29672534028
+    m_Key: policy_des_airforce_budget
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29672534029
+    m_Key: policy_cyber_defense_name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29672534030
+    m_Key: policy_des_cyber_defense
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29672534031
+    m_Key: policy_veteran_support_name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29672534032
+    m_Key: policy_des_veteran_support
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 3738732256021708802
+  references:
+    version: 2
+    RefIds:
+    - rid: 3738732256021708802
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1780944171045

@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: SocialGroupPanel_cs
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.StringTable
+  m_LocaleId:
+    m_Code: cs
+  m_SharedData: {fileID: 11400000, guid: 2673527b07f43784a84b683bb1b2ffc0, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 19975303168
+    m_Localized: "Neutr\xE1ln\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20025634816
+    m_Localized: "Spokojen\xFD"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20025634817
+    m_Localized: "Nespokojen\xFD"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20025634818
+    m_Localized: "Prohr\xE1v\xE1"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20025634819
+    m_Localized: "V\xEDt\u011Bz\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20025634824
+    m_Localized: Stav
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1136255758336
+    m_Localized: Spokojenost
+    m_Metadata:
+      m_Items: []
+  - m_Id: 952562020352
+    m_Localized: "Zastoupen\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 820810543104
+    m_Localized: Skupina
+    m_Metadata:
+      m_Items: []
+  - m_Id: 732679827456
+    m_Localized: "pot\u0159eba > 50% pro vyhru"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 356085854208
+    m_Localized: "Celkov\xE1 podpora"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 167124070400
+    m_Localized: Socialni skupiny
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

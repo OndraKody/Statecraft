@@ -1,9 +1,11 @@
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Localization.Settings;
 
 public class SocialGroupRowUI : MonoBehaviour
 {
+    private const string LocalizationTable = "SocialGroupPanel";
     [SerializeField] private TextMeshProUGUI nameText;
     [SerializeField] private TextMeshProUGUI shareText;
     [SerializeField] private RectTransform satBarFill;
@@ -20,6 +22,16 @@ public class SocialGroupRowUI : MonoBehaviour
     // Reference na skupinu pro cleanup
     private SocialGroupItem currentGroup;
 
+    private void OnEnable()
+    {
+        LocalizationSettings.SelectedLocaleChanged += OnLocaleChanged;
+    }
+
+    private void OnLocaleChanged(UnityEngine.Localization.Locale locale)
+    {
+        if (currentGroup != null)
+            UpdateSatisfaction(currentGroup);
+    }
     public void Setup(SocialGroupItem group)
     {
         // Odhlasime predchozi lokalizaci
@@ -43,6 +55,8 @@ public class SocialGroupRowUI : MonoBehaviour
 
     private void OnDisable()
     {
+        LocalizationSettings.SelectedLocaleChanged -= OnLocaleChanged;
+
         if (currentGroup != null && currentGroup.localizedName != null)
             currentGroup.localizedName.StringChanged -= OnNameChanged;
     }
@@ -51,6 +65,11 @@ public class SocialGroupRowUI : MonoBehaviour
     {
         if (currentGroup != null && currentGroup.localizedName != null)
             currentGroup.localizedName.StringChanged -= OnNameChanged;
+    }
+
+    private static string GetLocalizedText(string key)
+    {
+        return LocalizationSettings.StringDatabase.GetLocalizedString(LocalizationTable, key);
     }
 
     public void UpdateSatisfaction(SocialGroupItem group)
@@ -67,9 +86,9 @@ public class SocialGroupRowUI : MonoBehaviour
         Color c;
         string badge;
 
-        if (sat >= 60f) { c = colorHappy; badge = "Spokojeni"; }
-        else if (sat >= 45f) { c = colorNeutral; badge = "Neutralni"; }
-        else { c = colorUnhappy; badge = "Nespokojeni"; }
+        if (sat >= 60f) { c = colorHappy; badge = GetLocalizedText("ui_satisfied_name"); }
+        else if (sat >= 45f) { c = colorNeutral; badge = GetLocalizedText("ui_neutral_name"); }
+        else { c = colorUnhappy; badge = GetLocalizedText("ui_dissatisfied_name"); }
 
         satBarFillImage.color = c;
         badgeText.text = badge;

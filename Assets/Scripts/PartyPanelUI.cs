@@ -17,6 +17,7 @@ public class PartyPanelUI : MonoBehaviour
     [Header("Èíselné údaje")]
     public TextMeshProUGUI seatsText;
     public TextMeshProUGUI powerText;
+    public TextMeshProUGUI electionCountdownText;
 
     [Header("Nastavení")]
     [SerializeField] private string tableName = "StringTable";
@@ -27,7 +28,13 @@ public class PartyPanelUI : MonoBehaviour
     // Panel se aktualizuje pokaždé, když se zapne (SetActive(true))
     private void OnEnable()
     {
+        UnityEngine.Localization.Settings.LocalizationSettings.SelectedLocaleChanged += OnLocaleChanged;
         RefreshPanel();
+    }
+
+    private void OnLocaleChanged(UnityEngine.Localization.Locale locale)
+    {
+        RefreshElectionCountdown();
     }
 
     public void RefreshPanel()
@@ -62,8 +69,44 @@ public class PartyPanelUI : MonoBehaviour
         // 3. Èísla (Ty se nepøekládají, tak je dáme rovnou)
         seatsText.text = party.seats.ToString();
         powerText.text = party.power.ToString() + " %";
+        RefreshElectionCountdown();
     }
 
+    public void RefreshElectionCountdown()
+    {
+        if (TurnManeger.Instance == null) return;
+        if (electionCountdownText == null) CreateElectionCountdownText();
+        if (electionCountdownText == null) return;
+
+        int turns = ElectionManager.GetTurnsUntilNextElection(TurnManeger.Instance.currentTurn);
+        bool english = UnityEngine.Localization.Settings.LocalizationSettings.SelectedLocale != null &&
+            UnityEngine.Localization.Settings.LocalizationSettings.SelectedLocale.Identifier.Code.StartsWith("en");
+        electionCountdownText.text = english
+            ? $"Next election in: {turns} turns"
+            : $"Pristi volby za: {turns} kol";
+    }
+
+    private void CreateElectionCountdownText()
+    {
+        if (powerText == null || powerText.transform.parent == null) return;
+
+        GameObject textObject = new GameObject("ElectionCountdownText", typeof(RectTransform));
+        textObject.layer = powerText.gameObject.layer;
+        textObject.transform.SetParent(powerText.transform.parent, false);
+        electionCountdownText = textObject.AddComponent<TextMeshProUGUI>();
+        electionCountdownText.font = powerText.font;
+        electionCountdownText.fontSize = powerText.fontSize;
+        electionCountdownText.color = powerText.color;
+        electionCountdownText.alignment = powerText.alignment;
+
+        RectTransform source = powerText.rectTransform;
+        RectTransform target = electionCountdownText.rectTransform;
+        target.anchorMin = source.anchorMin;
+        target.anchorMax = source.anchorMax;
+        target.pivot = source.pivot;
+        target.sizeDelta = new Vector2(Mathf.Max(source.sizeDelta.x, 380f), source.sizeDelta.y);
+        target.anchoredPosition = source.anchoredPosition + new Vector2(0f, -55f);
+    }
     // Pomocná funkce, aby kód nebyl moc dlouhý
     private LocalizedString CreateLoc(string key, TextMeshProUGUI targetText)
     {
@@ -82,6 +125,7 @@ public class PartyPanelUI : MonoBehaviour
 
     private void OnDisable()
     {
+        UnityEngine.Localization.Settings.LocalizationSettings.SelectedLocaleChanged -= OnLocaleChanged;
         Cleanup();
     }
 

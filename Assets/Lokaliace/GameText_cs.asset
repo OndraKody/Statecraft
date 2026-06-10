@@ -401,6 +401,176 @@ MonoBehaviour:
       mohou odradit lidi od poru\u0161ov\xE1n\xED pravidel."
     m_Metadata:
       m_Items: []
+  - m_Id: 25564649774575616
+    m_Localized: "Hrani\u010Dn\xED kontroly"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25564887264456704
+    m_Localized: "Hrani\u010Dn\xED kontroly jsou opat\u0159en\xED, kter\xE1 sleduj\xED
+      pohyb lid\xED a zbo\u017E\xED p\u0159es st\xE1tn\xED hranice. P\u0159\xEDsn\u011Bj\u0161\xED
+      kontroly mohou zv\xFD\u0161it bezpe\u010Dnost, ale zpomalit cestov\xE1n\xED
+      a obchod."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25565961769644032
+    m_Localized: "Zahrani\u010Dn\xED pomoc"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25566243073224704
+    m_Localized: "Zahrani\u010Dn\xED pomoc jsou pen\xEDze, vybaven\xED nebo slu\u017Eby,
+      kter\xE9 st\xE1t poskytuje jin\xFDm zem\xEDm. M\u016F\u017Ee zlep\u0161ovat
+      vztahy mezi st\xE1ty a pom\xE1hat p\u0159i kriz\xEDch."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25568240509841408
+    m_Localized: "Turistick\xE1 da\u0148"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25568483322294272
+    m_Localized: "Turistick\xE1 da\u0148 je poplatek, kter\xFD plat\xED n\xE1v\u0161t\u011Bvn\xEDci
+      p\u0159i pobytu v dan\xE9 zemi nebo oblasti. Vy\u0161\u0161\xED da\u0148 zvy\u0161uje
+      p\u0159\xEDjmy st\xE1tu, ale m\u016F\u017Ee odradit n\u011Bkter\xE9 turisty."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25574595509547008
+    m_Localized: "Exportn\xED dotace"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25576789117956096
+    m_Localized: "Exportn\xED dotace jsou finan\u010Dn\xED podpory pro firmy, kter\xE9
+      prod\xE1vaj\xED sv\xE9 v\xFDrobky do zahrani\u010D\xED. Pom\xE1haj\xED zv\xFD\u0161it
+      konkurenceschopnost dom\xE1c\xEDch podnik\u016F na sv\u011Btov\xFDch trz\xEDch."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25576914846412800
+    m_Localized: "Zdravotn\xED poji\u0161t\u011Bn\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25578208726282240
+    m_Localized: "Da\u0148 na zdravotn\xED poji\u0161t\u011Bn\xED je povinn\xFD p\u0159\xEDsp\u011Bvek,
+      kter\xFD pom\xE1h\xE1 financovat zdravotn\xED p\xE9\u010Di. Vy\u0161\u0161\xED
+      da\u0148 zvy\u0161uje p\u0159\xEDjmy zdravotn\xEDho syst\xE9mu, ale sni\u017Euje
+      p\u0159\xEDjem poplatn\xEDk\u016F."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25578428981768192
+    m_Localized: "Rozpo\u010Det nemocnic"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25579528908632064
+    m_Localized: "Rozpo\u010Det nemocnic ur\u010Duje, kolik pen\u011Bz je k dispozici
+      na provoz a vybaven\xED nemocnic. Vy\u0161\u0161\xED rozpo\u010Det m\u016F\u017Ee
+      zlep\u0161it kvalitu a dostupnost zdravotn\xED p\xE9\u010De."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25580655381245952
+    m_Localized: "Penzijn\xED rozpo\u010Det"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25580727015763968
+    m_Localized: "Rozpo\u010Det na d\u016Fchody ur\u010Duje, kolik pen\u011Bz st\xE1t
+      vy\u010Dlen\xED na vypl\xE1cen\xED d\u016Fchod\u016F. Vy\u0161\u0161\xED rozpo\u010Det
+      m\u016F\u017Ee znamenat vy\u0161\u0161\xED d\u016Fchody pro seniory."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25582450648215552
+    m_Localized: "Podpora p\xE9\u010De o d\u011Bti"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25582568529129472
+    m_Localized: "Podpora p\xE9\u010De o d\u011Bti zahrnuje finan\u010Dn\xED pomoc
+      a slu\u017Eby pro rodiny s d\u011Btmi. Vy\u0161\u0161\xED podpora m\u016F\u017Ee
+      rodi\u010D\u016Fm usnadnit p\xE9\u010Di o d\u011Bti a n\xE1vrat do pr\xE1ce."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25583416613203968
+    m_Localized: "Soci\xE1ln\xED d\xE1vky"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25583556434522112
+    m_Localized: "Soci\xE1ln\xED rozpo\u010Det ur\u010Duje, kolik pen\u011Bz st\xE1t
+      vynalo\u017E\xED na d\xE1vky a pomoc lidem v obt\xED\u017En\xE9 situaci. Vy\u0161\u0161\xED
+      rozpo\u010Det znamen\xE1 v\u011Bt\u0161\xED podporu pro pot\u0159ebn\xE9 ob\u010Dany."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25652815445553152
+    m_Localized: "Programy du\u0161evn\xEDho zdrav\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25653251334402048
+    m_Localized: "Programy du\u0161evn\xEDho zdrav\xED poskytuj\xED podporu lidem
+      s psychick\xFDmi probl\xE9my a pom\xE1haj\xED p\u0159edch\xE1zet jejich vzniku.
+      Vy\u0161\u0161\xED podpora zlep\u0161uje dostupnost p\xE9\u010De a prevence."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25654296546570240
+    m_Localized: "Da\u0148 z ne\u0159est\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25654479158177792
+    m_Localized: "Da\u0148 z ne\u0159est\xED je zvl\xE1\u0161tn\xED da\u0148 na v\xFDrobky,
+      jako jsou cigarety, alkohol nebo hazard. Vy\u0161\u0161\xED da\u0148 zdra\u017Euje
+      tyto produkty a zvy\u0161uje p\u0159\xEDjmy st\xE1tu."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25656990296371200
+    m_Localized: "St\xE1tn\xED \u0161koly"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25657123012538368
+    m_Localized: "St\xE1tn\xED \u0161koly jsou \u0161koly financovan\xE9 a spravovan\xE9
+      st\xE1tem. Jsou dostupn\xE9 v\u0161em ob\u010Dan\u016Fm bez p\u0159\xEDm\xE9ho
+      placen\xED \u0161koln\xE9ho."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25658301913952256
+    m_Localized: "Financov\xE1n\xED v\u011Bdy"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25658494273122304
+    m_Localized: "Financov\xE1n\xED v\u011Bdy ur\u010Duje, kolik pen\u011Bz st\xE1t
+      investuje do v\xFDzkumu a v\xFDvoje. Vy\u0161\u0161\xED financov\xE1n\xED m\u016F\u017Ee
+      v\xE9st k nov\xFDm objev\u016Fm a technologick\xE9mu pokroku."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25659322589442048
+    m_Localized: "Dotace na um\u011Bn\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25659598251683840
+    m_Localized: "Dotace na um\u011Bn\xED jsou finan\u010Dn\xED p\u0159\xEDsp\u011Bvky
+      pro um\u011Blce a kulturn\xED projekty. Pom\xE1haj\xED vytv\xE1\u0159et a zachov\xE1vat
+      kulturn\xED tvorbu."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 26067368067133440
+    m_Localized: "Po\u010Det kol"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 26422026086313984
+    m_Localized: "V\xEDt\u011Bzstv\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 26422233125548032
+    m_Localized: Prohra
+    m_Metadata:
+      m_Items: []
+  - m_Id: 26422450382106624
+    m_Localized: "Pokra\u010Dovat"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 26423465391091712
+    m_Localized: Quit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 26427659766394880
+    m_Localized: "Detail st\xE1tu"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 26428229793280000
+    m_Localized: "Politick\xE9 napady"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

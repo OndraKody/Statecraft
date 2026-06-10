@@ -11,13 +11,29 @@ public class ProjectButtonUI : MonoBehaviour
     [SerializeField]
     private GameObject content;
 
+    public ProjectItem ProjectData => projectData;
+
     private Button button;
+    private Image backgroundImage;
+    private Color defaultColor;
+    [SerializeField] private Color activeColor = new Color(0.36f, 0.72f, 0.36f, 1f);
 
     private void Awake()
     {
         button = GetComponent<Button>();
-        button.onClick.AddListener(OnClick);
+        backgroundImage = GetComponent<Image>();
 
+        if (backgroundImage != null)
+            defaultColor = backgroundImage.color;
+
+        if (button != null)
+            button.onClick.AddListener(OnClick);
+
+    }
+
+    private void OnEnable()
+    {
+        RefreshVisualState();
     }
 
     private void OnClick()
@@ -31,5 +47,13 @@ public class ProjectButtonUI : MonoBehaviour
             Debug.LogWarning("PolicyButtonUI: Chybí data nebo panel");
         }
         content.SetActive(true);
+    }
+
+    public void RefreshVisualState()
+    {
+        bool isActive = GameManager.Instance != null && GameManager.Instance.IsProjectActive(projectData);
+
+        if (backgroundImage != null)
+            backgroundImage.color = isActive ? activeColor : defaultColor;
     }
 }

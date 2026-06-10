@@ -1,4 +1,5 @@
 using System.IO;
+using System;
 using UnityEngine;
 
 public static class SaveManager
@@ -16,9 +17,19 @@ public static class SaveManager
     public static SaveData Load(int slot)
     {
         if (!File.Exists(GetPath(slot))) return null;
-        string json = File.ReadAllText(GetPath(slot));
-        Debug.Log($"Hra byla NAÈTENA z: {GetPath(slot)}");
-        return JsonUtility.FromJson<SaveData>(json);
+        try
+        {
+            string json = File.ReadAllText(GetPath(slot));
+            SaveData data = JsonUtility.FromJson<SaveData>(json);
+            if (data == null) throw new InvalidDataException("Save soubor neobsahuje platná data.");
+            Debug.Log($"Hra byla NAÈTENA z: {GetPath(slot)}");
+            return data;
+        }
+        catch (Exception exception)
+        {
+            Debug.LogError($"Save ve slotu {slot + 1} nelze naèíst: {exception.Message}");
+            return null;
+        }
     }
 
     public static void Delete(int slot)

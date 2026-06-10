@@ -1,0 +1,104 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Obrana_en
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.StringTable
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 76e354ae07cb248479fc278c10c338cb, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 29626396672
+    m_Localized: Arms Export
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29672534016
+    m_Localized: Revenue from weapons sales abroad. This boosts the national defense
+      industry and improves trade balance.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29672534017
+    m_Localized: Military Land Lease
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29672534018
+    m_Localized: Revenue from leasing military facilities to international allies.
+      It strengthens strategic partnerships and brings extra funding.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29672534019
+    m_Localized: Defense Research Grants
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29672534020
+    m_Localized: Income from defense research programs and advanced technology development.
+      This accelerates military innovation and modernization.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29672534021
+    m_Localized: NATO Contributions Income
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29672534022
+    m_Localized: Income from NATO partnerships and joint security funds. These resources
+      are dedicated to enhancing collective defense capabilities.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29672534023
+    m_Localized: Army Budget
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29672534024
+    m_Localized: Funding for ground forces, tactical equipment, and regular troops.
+      A well-funded army ensures sovereignty and territorial defense.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29672534025
+    m_Localized: Navy Budget
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29672534026
+    m_Localized: Funding for naval forces, coastal defense ships, and maritime security.
+      It protects vital shipping lanes and territorial waters.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29672534027
+    m_Localized: Air Force Budget
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29672534028
+    m_Localized: Funding for air force development, jet fighters, and airspace control.
+      Maintaining air superiority is crucial for modern warfare.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29672534029
+    m_Localized: Cyber Defense
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29672534030
+    m_Localized: Funding for cyber security infrastructure and digital threat neutralizing.
+      This protects critical national networks from external hack attacks.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29672534031
+    m_Localized: Veteran Support
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29672534032
+    m_Localized: Benefits and medical care for military veterans. Providing strong
+      welfare improves public morale and military recruitment rates.
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

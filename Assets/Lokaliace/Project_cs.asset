@@ -1,0 +1,338 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Project_cs
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.StringTable
+  m_LocaleId:
+    m_Code: cs
+  m_SharedData: {fileID: 11400000, guid: f26ed778c65762f4c8895826394f20a8, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 78758473728
+    m_Localized: "Da\u0148ov\xE1 reforma"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999680
+    m_Localized: "Komplexn\xED reforma da\u0148ov\xE9ho syst\xE9mu zam\u011B\u0159en\xE1
+      na zjednodu\u0161en\xED v\xFDb\u011Bru dan\xED a sn\xED\u017Een\xED da\u0148ov\xFDch
+      \xFAnik\u016F. Po dokon\u010Den\xED zvy\u0161uje st\xE1tn\xED p\u0159\xEDjmy
+      a zlep\u0161uje HDP."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999681
+    m_Localized: "Sni\u017Eov\xE1n\xED n\xE1rodn\xEDho dluhu"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999682
+    m_Localized: "Program systematick\xE9ho sni\u017Eov\xE1n\xED n\xE1rodn\xEDho
+      dluhu prost\u0159ednictv\xEDm \u0161krt\u016F v rozpo\u010Dtu a optimalizace
+      st\xE1tn\xEDch v\xFDdaj\u016F. Dlouhodob\u011B zlep\u0161uje finan\u010Dn\xED
+      stabilitu zem\u011B."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999683
+    m_Localized: "Podpora digit\xE1ln\xED ekonomiky"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999684
+    m_Localized: "Investice do digit\xE1ln\xED infrastruktury a podpora technologick\xFDch
+      firem. Stimuluje hospod\xE1\u0159sk\xFD r\u016Fst a vytv\xE1\u0159\xED nov\xE1
+      pracovn\xED m\xEDsta v technologick\xE9m sektoru."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999685
+    m_Localized: "Protikorup\u010Dn\xED fond"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999686
+    m_Localized: "Z\u0159\xEDzen\xED speci\xE1ln\xEDho fondu a agentury pro boj s
+      korupc\xED ve ve\u0159ejn\xE9 spr\xE1v\u011B. Zlep\u0161uje d\u016Fv\u011Bru
+      ve\u0159ejnosti ve st\xE1tn\xED instituce a zvy\u0161uje efektivitu rozpo\u010Dtu."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999687
+    m_Localized: "Program podpory mal\xFDch a st\u0159edn\xEDch podnik\u016F"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999688
+    m_Localized: "Granty a n\xEDzko\xFAro\u010Den\xE9 p\u016Fj\u010Dky pro mal\xE9
+      a st\u0159edn\xED podniky. Podporuje podnik\xE1n\xED, sni\u017Euje nezam\u011Bstnanost
+      a posiluje st\u0159edn\xED t\u0159\xEDdu."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999689
+    m_Localized: Reforma policie
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999690
+    m_Localized: "Modernizace vybaven\xED policie a zaveden\xED nov\xFDch vy\u0161et\u0159ovac\xEDch
+      metod. Po dokon\u010Den\xED vede k v\xFDrazn\xE9mu sn\xED\u017Een\xED kriminality
+      a zv\xFD\u0161en\xED bezpe\u010Dnosti obyvatel."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999691
+    m_Localized: "Reforma v\u011Bze\u0148sk\xE9ho syst\xE9mu"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999692
+    m_Localized: "Komplexn\xED reforma v\u011Bze\u0148sk\xE9ho syst\xE9mu se zam\u011B\u0159en\xEDm
+      na rehabilitaci a reintegraci v\u011Bz\u0148\u016F. Sni\u017Euje recidivu a
+      dlouhodob\u011B sni\u017Euje kriminalitu."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999693
+    m_Localized: "Digitalizace soudnictv\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999694
+    m_Localized: "Zaveden\xED elektronick\xE9ho soudn\xEDho \u0159\xEDzen\xED a digit\xE1ln\xED
+      spr\xE1vy kauz. Urychluje chod justice a zvy\u0161uje d\u016Fv\u011Bru ve\u0159ejnosti
+      v soudy."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999695
+    m_Localized: "Prevence kriminality ml\xE1de\u017Ee"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999696
+    m_Localized: "Programy zam\u011B\u0159en\xE9 na prevenci krimin\xE1ln\xEDho chov\xE1n\xED
+      u mlad\xFDch lid\xED prost\u0159ednictv\xEDm vzd\u011Bl\xE1v\xE1n\xED a volno\u010Dasov\xFDch
+      aktivit. Dlouhodob\u011B sni\u017Euje kriminalitu a podporuje chud\u0161\xED
+      komunity."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999697
+    m_Localized: "Modernizace hrani\u010Dn\xED technologie"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999698
+    m_Localized: "Investice do modern\xED technologie pro hrani\u010Dn\xED kontrolu
+      v\u010Detn\u011B sledovac\xEDch syst\xE9m\u016F a biometrick\xE9 identifikace.
+      Posiluje n\xE1rodn\xED bezpe\u010Dnost a sni\u017Euje neleg\xE1ln\xED migraci."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999699
+    m_Localized: "Nov\xE1 obchodn\xED dohoda"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999700
+    m_Localized: "Vyjedn\xE1n\xED a uzav\u0159en\xED nov\xE9 obchodn\xED dohody s
+      kl\xED\u010Dov\xFDmi partnery. Zvy\u0161uje export, stimuluje r\u016Fst HDP
+      a vytv\xE1\u0159\xED nov\xE1 pracovn\xED m\xEDsta ve v\xFDrobn\xEDm sektoru."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999701
+    m_Localized: "Roz\u0161\xED\u0159en\xED s\xEDt\u011B ambas\xE1d"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999702
+    m_Localized: "Otev\u0159en\xED nov\xFDch ambas\xE1d a konzul\xE1t\u016F ve strategicky
+      d\u016Fle\u017Eit\xFDch zem\xEDch. Posiluje diplomatick\xE9 vazby a vytv\xE1\u0159\xED
+      lep\u0161\xED podm\xEDnky pro obchod a investice."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999703
+    m_Localized: "Program rozvojov\xE9 pomoci"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999704
+    m_Localized: "C\xEDlen\xE1 pomoc rozvojov\xFDm zem\xEDm v podob\u011B finan\u010Dn\xED
+      podpory a odborn\xE9 asistence. Zlep\u0161uje mezin\xE1rodn\xED reputaci a
+      posiluje diplomatick\xE9 vztahy se zem\u011Bmi p\u0159\xEDjemci."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999705
+    m_Localized: "Kampa\u0148 na podporu cestovn\xEDho ruchu"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999706
+    m_Localized: "Mezin\xE1rodn\xED marketingov\xE1 kampa\u0148 propaguj\xEDc\xED
+      zemi jako atraktivn\xED turistickou destinaci. Zvy\u0161uje p\u0159\xEDjezd
+      turist\u016F, podporuje HDP a vytv\xE1\u0159\xED pracovn\xED m\xEDsta v pohostinstv\xED."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999707
+    m_Localized: "Po\u0159\xE1d\xE1n\xED mezin\xE1rodn\xEDho summitu"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999708
+    m_Localized: "Organizace mezin\xE1rodn\xEDho summitu sdru\u017Euj\xEDc\xEDho
+      sv\u011Btov\xE9 l\xEDdry a odborn\xEDky. Zvy\u0161uje mezin\xE1rodn\xED profil
+      zem\u011B a vytv\xE1\u0159\xED p\u0159\xEDle\u017Eitosti pro nov\xE9 dohody
+      a partnerstv\xED."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999709
+    m_Localized: "V\xFDstavba nov\xFDch nemocnic"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999710
+    m_Localized: "Program v\xFDstavby a modernizace nemocnic a zdravotnick\xFDch
+      za\u0159\xEDzen\xED po cel\xE9 zemi. V\xFDrazn\u011B zlep\u0161uje dostupnost
+      a kvalitu zdravotn\xED p\xE9\u010De pro v\u0161echny ob\u010Dany."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999711
+    m_Localized: "Iniciativa du\u0161evn\xEDho zdrav\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999712
+    m_Localized: "Celost\xE1tn\xED iniciativa pro zlep\u0161en\xED slu\u017Eeb du\u0161evn\xEDho
+      zdrav\xED v\u010Detn\u011B nov\xFDch poradensk\xFDch center a preventivn\xEDch
+      program\u016F. Sni\u017Euje soci\xE1ln\xED nerovnost a zlep\u0161uje blahobyt
+      nejzraniteln\u011Bj\u0161\xEDch."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999713
+    m_Localized: "Program soci\xE1ln\xEDho bydlen\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999714
+    m_Localized: "V\xFDstavba dostupn\xE9ho bydlen\xED pro rodiny s n\xEDzk\xFDmi
+      p\u0159\xEDjmy a bezdomovce. Sni\u017Euje chudobu a soci\xE1ln\xED vylou\u010Den\xED
+      a z\xE1rove\u0148 zlep\u0161uje \u017Eivotn\xED standard nejzraniteln\u011Bj\u0161\xEDch
+      skupin."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999715
+    m_Localized: "Reforma d\u016Fchodov\xE9ho syst\xE9mu"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999716
+    m_Localized: "Komplexn\xED reforma d\u016Fchodov\xE9ho syst\xE9mu pro zaji\u0161t\u011Bn\xED
+      jeho dlouhodob\xE9 udr\u017Eitelnosti. Garantuje p\u0159im\u011B\u0159en\xE9
+      d\u016Fchody pro budouc\xED generace a stabilizuje st\xE1tn\xED finance."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999717
+    m_Localized: "Roz\u0161\xED\u0159en\xED p\xE9\u010De o d\u011Bti"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999718
+    m_Localized: "V\xFDstavba nov\xFDch jesl\xED a mate\u0159sk\xFDch \u0161kol a
+      zv\xFD\u0161en\xED dotac\xED na p\xE9\u010Di o d\u011Bti. Umo\u017E\u0148uje
+      v\xEDce rodi\u010D\u016Fm n\xE1vrat do pr\xE1ce a sni\u017Euje d\u011Btskou
+      chudobu."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999719
+    m_Localized: "V\xFDstavba d\xE1lnic"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999720
+    m_Localized: "V\xFDstavba nov\xFDch \xFAsek\u016F d\xE1lnic propojuj\xEDc\xEDch
+      kl\xED\u010Dov\xE9 hospod\xE1\u0159sk\xE9 regiony zem\u011B. Podporuje hospod\xE1\u0159sk\xFD
+      r\u016Fst sn\xED\u017Een\xEDm p\u0159epravn\xEDch \u010Das\u016F a n\xE1klad\u016F
+      pro firmy i ob\u010Dany."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999721
+    m_Localized: "Modernizace \u017Eeleznice"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999722
+    m_Localized: "Komplexn\xED modernizace \u017Eelezni\u010Dn\xED s\xEDt\u011B v\u010Detn\u011B
+      trat\xED, n\xE1dra\u017E\xED a kolejov\xFDch vozidel. \u010Cin\xED \u017Eelezni\u010Dn\xED
+      dopravu rychlej\u0161\xED a spolehliv\u011Bj\u0161\xED, \u010D\xEDm\u017E podporuje
+      p\u0159esun ze silnice na \u017Eeleznici."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999723
+    m_Localized: "Flotila elektrick\xFDch autobus\u016F"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999724
+    m_Localized: "Nahrazen\xED star\xFDch dieselov\xFDch autobus\u016F modern\xEDmi
+      elektrick\xFDmi vozidly ve ve\u0159ejn\xE9 doprav\u011B. Sni\u017Euje zne\u010Di\u0161t\u011Bn\xED
+      ovzdu\u0161\xED, sni\u017Euje provozn\xED n\xE1klady a zlep\u0161uje kvalitu
+      \u017Eivota ve m\u011Bstech."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999725
+    m_Localized: "Chytr\xFD dopravn\xED syst\xE9m"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999726
+    m_Localized: "Implementace inteligentn\xEDch syst\xE9m\u016F \u0159\xEDzen\xED
+      dopravy ve velk\xFDch m\u011Bstech pomoc\xED senzor\u016F a um\u011Bl\xE9 inteligence.
+      Sni\u017Euje dopravn\xED z\xE1cpy, sni\u017Euje emise a zlep\u0161uje bezpe\u010Dnost
+      silni\u010Dn\xEDho provozu."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999727
+    m_Localized: "N\xE1rodn\xED cyklistick\xE1 s\xED\u0165"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999728
+    m_Localized: "V\xFDstavba celost\xE1tn\xED s\xEDt\u011B cyklostezek propojuj\xEDc\xEDch
+      m\u011Bsta a regiony. Propaguje zdravou dopravu, sni\u017Euje automobilov\xFD
+      provoz a zlep\u0161uje kvalitu ovzdu\u0161\xED v cel\xE9 zemi."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999729
+    m_Localized: "Modernizace arm\xE1dy"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999730
+    m_Localized: "Komplexn\xED modernizace vybaven\xED ozbrojen\xFDch sil v\u010Detn\u011B
+      nov\xFDch zbra\u0148ov\xFDch syst\xE9m\u016F a komunika\u010Dn\xED technologie.
+      V\xFDrazn\u011B zvy\u0161uje obrannou zp\u016Fsobilost zem\u011B a odrazuje
+      potenci\xE1ln\xED agresory."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999731
+    m_Localized: "Centrum kybernetick\xE9 obrany"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999732
+    m_Localized: "Z\u0159\xEDzen\xED n\xE1rodn\xEDho centra kybernetick\xE9 obrany
+      pro ochranu kritick\xE9 infrastruktury p\u0159ed digit\xE1ln\xEDmi \xFAtoky.
+      Posiluje n\xE1rodn\xED bezpe\u010Dnost a sni\u017Euje riziko ni\u010Div\xFDch
+      kybernetick\xFDch \xFAtok\u016F."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999733
+    m_Localized: "Spole\u010Dn\xE9 cvi\u010Den\xED NATO"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999734
+    m_Localized: "Organizace rozs\xE1hl\xFDch spole\u010Dn\xFDch vojensk\xFDch cvi\u010Den\xED
+      s alian\u010Dn\xEDmi partnery NATO. Posiluje alia\u010Dn\xED vazby, zlep\u0161uje
+      interoperabilitu sil a zvy\u0161uje n\xE1rodn\xED bezpe\u010Dnost."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999735
+    m_Localized: "Program podpory veter\xE1n\u016F"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999736
+    m_Localized: "Komplexn\xED program podpory vojensk\xFDch veter\xE1n\u016F zahrnuj\xEDc\xED
+      zdravotn\xED p\xE9\u010Di, psychologickou podporu a reintegraci do civiln\xEDho
+      \u017Eivota. Zlep\u0161uje blahobyt veter\xE1n\u016F a posiluje d\u016Fv\u011Bru
+      ve\u0159ejnosti v arm\xE1du."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999737
+    m_Localized: "Opevn\u011Bn\xED hranic"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78812999738
+    m_Localized: "Pos\xEDlen\xED fyzick\xE9 ochrany hranic prost\u0159ednictv\xEDm
+      modern\xEDch sledovac\xEDch syst\xE9m\u016F a zv\xFD\u0161en\xE9ho po\u010Dtu
+      p\u0159\xEDslu\u0161n\xEDk\u016F pohrani\u010Dn\xED str\xE1\u017Ee. Sni\u017Euje
+      neleg\xE1ln\xED p\u0159echody a posiluje n\xE1rodn\xED bezpe\u010Dnost."
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

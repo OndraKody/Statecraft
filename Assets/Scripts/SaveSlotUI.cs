@@ -36,7 +36,17 @@ public class SaveSlotUI : MonoBehaviour
         if (hasSave)
         {
             SaveData data = SaveManager.Load(slotIndex);
-
+            if (data == null)
+            {
+                emptyState.SetActive(true);
+                occupiedState.SetActive(false);
+                mainButton.onClick.AddListener(() => {
+                    SaveManager.Delete(slotIndex);
+                    GameSession.CurrentSaveSlot = slotIndex;
+                    scenaLouder.OpenPartySelect();
+                });
+                return;
+            }
             // Kontrola, jestli klíè není prázdný
             if (!string.IsNullOrEmpty(data.partyNameKey))
             {

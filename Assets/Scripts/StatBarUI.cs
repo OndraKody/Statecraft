@@ -32,7 +32,7 @@ public class StatBarUI : MonoBehaviour
     {
         if (isDestroyed) return;
 
-        statNameText.text = name;
+        SetName(name);
         maxBarWidth = maxWidth;
         savedEffect = savedValue;
         this.scaleMax = Mathf.Max(scaleMax, 1f); // min 1 aby nedoslo k deleni nulou
@@ -65,6 +65,12 @@ public class StatBarUI : MonoBehaviour
 
     public float GetMaxWidth() => maxBarWidth;
     public float GetSavedEffect() => savedEffect;
+
+    public void SetName(string name)
+    {
+        if (isDestroyed || statNameText == null) return;
+        statNameText.text = name;
+    }
 
     private void UpdateBars(float value)
     {

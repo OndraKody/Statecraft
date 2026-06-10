@@ -1,0 +1,116 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Doprava_cs
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.StringTable
+  m_LocaleId:
+    m_Code: cs
+  m_SharedData: {fileID: 11400000, guid: 130ccb611245b1c4fbaa06537fdf0f69, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 3329151135744
+    m_Localized: "Da\u0148 z paliva"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3329151135745
+    m_Localized: "Zav\xE1d\xED da\u0148 na ve\u0161ker\xE1 paliva pro vozidla prod\xE1van\xE1
+      v zemi. T\xEDm se sni\u017Euje celkov\xE1 hustota dopravy a generuj\xED se
+      v\xFDznamn\xE9 p\u0159\xEDjmy pro dopravn\xED infrastrukturu."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3329151135746
+    m_Localized: "M\xFDtn\xE9"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3329151135747
+    m_Localized: "Vy\u017Eaduje od \u0159idi\u010D\u016F placen\xED poplatk\u016F
+      za vyu\u017E\xEDv\xE1n\xED hlavn\xEDch d\xE1lnic a silnic. Tyto finan\u010Dn\xED
+      prost\u0159edky jsou p\u0159\xEDmo reinvestov\xE1ny do \xFAdr\u017Eby a oprav
+      silni\u010Dn\xED s\xEDt\u011B."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3329151135748
+    m_Localized: "Da\u0148 z vozidel"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3329151135749
+    m_Localized: "Ro\u010Dn\xED da\u0148 uvalen\xE1 na vlastnictv\xED soukrom\xFDch
+      a komer\u010Dn\xEDch vozidel. Vy\u0161\u0161\xED sazby mohou odradit ob\u010Dany
+      od n\xE1kupu automobil\u016F s vysok\xFDmi emisemi."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3329151135750
+    m_Localized: "Leti\u0161tn\xED da\u0148"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3329151135751
+    m_Localized: "\xDA\u010Dtuje dodate\u010Dnou da\u0148 z letenek pro leteckou
+      dopravu a komer\u010Dn\xED lety. Pom\xE1h\xE1 kompenzovat dopad letectv\xED
+      na \u017Eivotn\xED prost\u0159ed\xED a financuje ekologick\xE9 iniciativy."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3329151135752
+    m_Localized: "Parkovn\xE9"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3329151135753
+    m_Localized: "Zav\xE1d\xED placen\xE9 parkovac\xED z\xF3ny ve ve\u0159ejn\xFDch
+      prostorech a centrech m\u011Bst. Tento p\u0159\xEDjem plyne p\u0159\xEDmo do
+      m\u011Bstsk\xFDch rozpo\u010Dt\u016F a reguluje m\u011Bstskou dopravu."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3329151135754
+    m_Localized: "Silni\u010Dn\xED infrastruktura"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3329151135755
+    m_Localized: "Poskytuje rozs\xE1hl\xE9 finan\u010Dn\xED prost\u0159edky na v\xFDstavbu
+      a modernizaci silnic a d\xE1lnic. Spr\xE1vn\xE1 \xFAdr\u017Eba zvy\u0161uje
+      bezpe\u010Dnost a urychluje dodavatelsk\xE9 \u0159et\u011Bzce."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3329151135756
+    m_Localized: "\u017Delezni\u010Dn\xED s\xED\u0165"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3329151135757
+    m_Localized: "Vy\u010Dle\u0148uje st\xE1tn\xED prost\u0159edky na roz\u0161\xED\u0159en\xED
+      a \xFAdr\u017Ebu \u017Eelezni\u010Dn\xED infrastruktury. Robustn\xED \u017Eelezni\u010Dn\xED
+      s\xED\u0165 p\u0159esouv\xE1 n\xE1klad z d\xE1lnic na ekologickou vlakovou
+      dopravu."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3329151135758
+    m_Localized: "Ve\u0159ejn\xE1 doprava"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3329151135759
+    m_Localized: "Poskytuje finan\u010Dn\xED dotace na zaji\u0161t\u011Bn\xED cenov\u011B
+      dostupn\xE9 a p\u0159\xEDstupn\xE9 ve\u0159ejn\xE9 dopravy pro ka\u017Ed\xE9ho.
+      Vysok\xE1 m\xEDra vyu\u017Eit\xED v\xFDrazn\u011B sni\u017Euje dopravn\xED
+      z\xE1cpy ve m\u011Bstech."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3329151135760
+    m_Localized: "Cyklistick\xE1 infrastruktura"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3329151135761
+    m_Localized: "Investuje do v\xFDstavby a propojen\xED vyhrazen\xFDch cyklostezek
+      nap\u0159\xED\u010D m\u011Bsty. To podporuje zdrav\u011Bj\u0161\xED \u017Eivotn\xED
+      styl a nab\xEDz\xED \u010Distou alternativu k \u0159\xEDzen\xED aut."
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

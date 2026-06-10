@@ -1,7 +1,7 @@
-using TMPro;
+ï»¿using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.Localization; // Dùležité!
+using UnityEngine.Localization; // DÅ¯leÅ¾itÃ©!
 
 public class PartySlotUI : MonoBehaviour
 {
@@ -15,28 +15,22 @@ public class PartySlotUI : MonoBehaviour
     private JsonLouder.Party partyData;
 
     // --- LOKALIZACE ---
-    [SerializeField] private string tableName = "StringTable"; // Název tvé tabulky v Unity
+    [SerializeField] private string tableName = "StringTable"; // NÃ¡zev tvÃ© tabulky v Unity
     private LocalizedString localizedName;
 
     public void Setup(JsonLouder.Party data)
     {
         partyData = data;
 
-        // Nastavení lokalizace jména
-        CleanupSubscriptions();
-        if (!string.IsNullOrEmpty(data.name))
-        {
-            localizedName = new LocalizedString(tableName, data.name);
-            localizedName.StringChanged += UpdateNameText;
-        }
+        SetupLocalization();
 
-        // Nastavení barvy loga
+        // NastavenÃ­ barvy loga
         if (ColorUtility.TryParseHtmlString(data.partyColor, out Color color))
             logoImage.color = color;
         else
             logoImage.color = Color.white;
 
-        // Akce tlaèítka
+        // Akce tlaÄÃ­tka
         selectButton.onClick.RemoveAllListeners();
         selectButton.onClick.AddListener(() => OnSelected(data));
     }
@@ -55,6 +49,23 @@ public class PartySlotUI : MonoBehaviour
     private void CleanupSubscriptions()
     {
         if (localizedName != null) localizedName.StringChanged -= UpdateNameText;
+    }
+
+    private void SetupLocalization()
+    {
+        CleanupSubscriptions();
+
+        if (partyData == null || string.IsNullOrEmpty(partyData.name))
+            return;
+
+        localizedName = new LocalizedString(tableName, partyData.name);
+        localizedName.StringChanged += UpdateNameText;
+        localizedName.RefreshString();
+    }
+
+    private void OnEnable()
+    {
+        SetupLocalization();
     }
 
     private void OnDisable()

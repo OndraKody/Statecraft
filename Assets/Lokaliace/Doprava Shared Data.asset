@@ -1,0 +1,100 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: Doprava Shared Data
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.SharedTableData
+  m_TableCollectionName: Doprava
+  m_TableCollectionNameGuidString: 130ccb611245b1c4fbaa06537fdf0f69
+  m_Entries:
+  - m_Id: 3329151135744
+    m_Key: policy_fuel_tax_name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3329151135745
+    m_Key: policy_des_fuel_tax
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3329151135746
+    m_Key: policy_road_toll_name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3329151135747
+    m_Key: policy_des_road_toll
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3329151135748
+    m_Key: policy_vehicle_tax_name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3329151135749
+    m_Key: policy_des_vehicle_tax
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3329151135750
+    m_Key: policy_airport_tax_name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3329151135751
+    m_Key: policy_des_airport_tax
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3329151135752
+    m_Key: policy_parking_fees_name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3329151135753
+    m_Key: policy_des_parking_fees
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3329151135754
+    m_Key: policy_road_budget_name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3329151135755
+    m_Key: policy_des_road_budget
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3329151135756
+    m_Key: policy_rail_budget_name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3329151135757
+    m_Key: policy_des_rail_budget
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3329151135758
+    m_Key: policy_public_transit_name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3329151135759
+    m_Key: policy_des_public_transit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3329151135760
+    m_Key: policy_cycling_infra_name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3329151135761
+    m_Key: policy_des_cycling_infra
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 3738732256021708800
+  references:
+    version: 2
+    RefIds:
+    - rid: 3738732256021708800
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1780933022767

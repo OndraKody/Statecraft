@@ -2,9 +2,11 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
+using UnityEngine.Localization.Settings;
 
 public class SocialGroupPanelUI : MonoBehaviour
 {
+    private const string LocalizationTable = "SocialGroupPanel";
     [Header("Support karta")]
     [SerializeField] private TextMeshProUGUI supportPercentText;
     [SerializeField] private TextMeshProUGUI supportLabelText;
@@ -25,6 +27,17 @@ public class SocialGroupPanelUI : MonoBehaviour
 
     private void OnEnable()
     {
+        LocalizationSettings.SelectedLocaleChanged += OnLocaleChanged;
+        RefreshPanel();
+    }
+
+    private void OnDisable()
+    {
+        LocalizationSettings.SelectedLocaleChanged -= OnLocaleChanged;
+    }
+
+    private void OnLocaleChanged(UnityEngine.Localization.Locale locale)
+    {
         RefreshPanel();
     }
 
@@ -42,7 +55,7 @@ public class SocialGroupPanelUI : MonoBehaviour
         supportPercentText.text = support.ToString("0") + " %";
 
         if (supportLabelText != null)
-            supportLabelText.text = "celkova podpora";
+            supportLabelText.text = GetLocalizedText("ui_bar_popularity");
 
         // Sirka support baru
         if (supportBarFill != null)
@@ -57,7 +70,7 @@ public class SocialGroupPanelUI : MonoBehaviour
 
         if (statusBadgeText != null)
         {
-            statusBadgeText.text = winning ? "Vitez" : "Prohrava";
+            statusBadgeText.text = GetLocalizedText(winning ? "ui_winning_name" : "ui_losing_name");
             statusBadgeText.color = winning ? colorWin : colorLose;
         }
 
@@ -72,6 +85,11 @@ public class SocialGroupPanelUI : MonoBehaviour
             for (int i = 0; i < rows.Count && i < groups.Count; i++)
                 rows[i].UpdateSatisfaction(groups[i]);
         }
+    }
+
+    private static string GetLocalizedText(string key)
+    {
+        return LocalizationSettings.StringDatabase.GetLocalizedString(LocalizationTable, key);
     }
 
     private void GenerateRows(List<SocialGroupItem> groups)

@@ -1,0 +1,94 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Events_en
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.StringTable
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: dada0a710277e264d937eeb1c884202c, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 26006712320
+    m_Localized: Political Scandal
+    m_Metadata:
+      m_Items: []
+  - m_Id: 26069626880
+    m_Localized: A major corruption scandal has emerged involving several ministers.
+      The public is demanding action. How will you respond?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 26069626881
+    m_Localized: Dismiss the ministers and launch an investigation
+    m_Metadata:
+      m_Items: []
+  - m_Id: 26069626882
+    m_Localized: Defend the ministers and downplay the scandal
+    m_Metadata:
+      m_Items: []
+  - m_Id: 26069626883
+    m_Localized: Natural Disaster - Floods
+    m_Metadata:
+      m_Items: []
+  - m_Id: 26069626884
+    m_Localized: Severe floods have hit several regions of the country causing significant
+      damage to infrastructure and homes. Thousands of people need help. What is
+      your response?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 26069626885
+    m_Localized: Provide emergency aid and begin reconstruction
+    m_Metadata:
+      m_Items: []
+  - m_Id: 26069626886
+    m_Localized: Declare a state of emergency and request international help
+    m_Metadata:
+      m_Items: []
+  - m_Id: 26069626887
+    m_Localized: Economic Boom
+    m_Metadata:
+      m_Items: []
+  - m_Id: 26069626888
+    m_Localized: The economy is growing rapidly and tax revenues have exceeded expectations.
+      This unexpected surplus gives you the opportunity to invest. Where will you
+      direct the funds?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 26069626889
+    m_Localized: Invest in public services and education
+    m_Metadata:
+      m_Items: []
+  - m_Id: 26069626890
+    m_Localized: Reduce taxes to stimulate further growth
+    m_Metadata:
+      m_Items: []
+  - m_Id: 26069626891
+    m_Localized: General Strike
+    m_Metadata:
+      m_Items: []
+  - m_Id: 26069626892
+    m_Localized: Workers across the country have announced a general strike demanding
+      higher wages and better working conditions. The economy is at risk. How will
+      you respond to the strikers?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 26069626893
+    m_Localized: Negotiate with union leaders and agree on wage increases
+    m_Metadata:
+      m_Items: []
+  - m_Id: 26069626894
+    m_Localized: Refuse negotiations and threaten legal consequences
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

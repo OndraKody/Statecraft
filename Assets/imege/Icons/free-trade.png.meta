@@ -1,0 +1,559 @@
+fileFormatVersion: 2
+guid: 6c3e19fe1b5907f4abbeaec72e3c63ec
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5935817589374719524
+    second: free-trade_0
+  - first:
+      213: 1285970896629339997
+    second: free-trade_1
+  - first:
+      213: 8854676893647135984
+    second: free-trade_2
+  - first:
+      213: -7127901734197862852
+    second: free-trade_3
+  - first:
+      213: -931684088148582157
+    second: free-trade_4
+  - first:
+      213: 6032495855858338252
+    second: free-trade_5
+  - first:
+      213: -2879222338261735469
+    second: free-trade_6
+  - first:
+      213: -5103665450201141571
+    second: free-trade_7
+  - first:
+      213: -2034846648764256856
+    second: free-trade_8
+  - first:
+      213: -1249590476009668870
+    second: free-trade_9
+  - first:
+      213: 1617115819772260717
+    second: free-trade_10
+  - first:
+      213: 2536364430832113456
+    second: free-trade_11
+  - first:
+      213: 2363878741372888802
+    second: free-trade_12
+  - first:
+      213: 6092855820146454512
+    second: free-trade_13
+  - first:
+      213: -1868026419130003898
+    second: free-trade_14
+  - first:
+      213: -928299286262608316
+    second: free-trade_15
+  - first:
+      213: -3270625370064487623
+    second: free-trade_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: free-trade_0
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 411
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4261232f5a2406250800000000000000
+      internalID: 5935817589374719524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free-trade_1
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 429
+        width: 58
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d57151597bfa8d110800000000000000
+      internalID: 1285970896629339997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free-trade_2
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 411
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f462be78b122ea70800000000000000
+      internalID: 8854676893647135984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free-trade_3
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 383
+        width: 114
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3ede33532b941d90800000000000000
+      internalID: -7127901734197862852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free-trade_4
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 355
+        width: 52
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f02503124ef113f0800000000000000
+      internalID: -931684088148582157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free-trade_5
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 291
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc9c375f40bb7b350800000000000000
+      internalID: 6032495855858338252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free-trade_6
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 351
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d72a82c982fa08d0800000000000000
+      internalID: -2879222338261735469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free-trade_7
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 291
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbea35c30532c29b0800000000000000
+      internalID: -5103665450201141571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free-trade_8
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 355
+        width: 52
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ad230801c5c2c3e0800000000000000
+      internalID: -2034846648764256856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free-trade_9
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 271
+        width: 114
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afe7bba251098aee0800000000000000
+      internalID: -1249590476009668870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free-trade_10
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 191
+        width: 162
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d61b03e2546217610800000000000000
+      internalID: 1617115819772260717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free-trade_11
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 287
+        width: 58
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0371fa8f20af23320800000000000000
+      internalID: 2536364430832113456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free-trade_12
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 79
+        width: 450
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e6e0afd03f2ec020800000000000000
+      internalID: 2363878741372888802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free-trade_13
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 159
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ff208b461c2e8450800000000000000
+      internalID: 6092855820146454512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free-trade_14
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 159
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64e06b87edf6316e0800000000000000
+      internalID: -1868026419130003898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free-trade_15
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 159
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44e811da7b40e13f0800000000000000
+      internalID: -928299286262608316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free-trade_16
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 31
+        width: 327
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93bfcefed876c92d0800000000000000
+      internalID: -3270625370064487623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      free-trade_0: 5935817589374719524
+      free-trade_1: 1285970896629339997
+      free-trade_10: 1617115819772260717
+      free-trade_11: 2536364430832113456
+      free-trade_12: 2363878741372888802
+      free-trade_13: 6092855820146454512
+      free-trade_14: -1868026419130003898
+      free-trade_15: -928299286262608316
+      free-trade_16: -3270625370064487623
+      free-trade_2: 8854676893647135984
+      free-trade_3: -7127901734197862852
+      free-trade_4: -931684088148582157
+      free-trade_5: 6032495855858338252
+      free-trade_6: -2879222338261735469
+      free-trade_7: -5103665450201141571
+      free-trade_8: -2034846648764256856
+      free-trade_9: -1249590476009668870
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

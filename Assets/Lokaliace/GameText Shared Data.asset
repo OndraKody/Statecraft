@@ -355,6 +355,150 @@ MonoBehaviour:
     m_Key: policy_des_fine_revenue_desc
     m_Metadata:
       m_Items: []
+  - m_Id: 25564649774575616
+    m_Key: policy_border_control
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25564887264456704
+    m_Key: policy_des_border_control
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25565961769644032
+    m_Key: policy_foreign_aid
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25566243073224704
+    m_Key: policy_des_foreign_aid
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25568240509841408
+    m_Key: policy_turism_tex
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25568483322294272
+    m_Key: policy_des_turism_tex
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25574595509547008
+    m_Key: policy_export_subsidy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25576789117956096
+    m_Key: policy_des_export_subsidy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25576914846412800
+    m_Key: policy_health_tax
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25578208726282240
+    m_Key: policy_des_health_tax
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25578428981768192
+    m_Key: policy_hospital_budget
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25579528908632064
+    m_Key: policy_des_hospital_budget
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25580655381245952
+    m_Key: policy_pension_budget
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25580727015763968
+    m_Key: policy_des_pension_budget
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25582440707715072
+    m_Key: New Entry
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25582450648215552
+    m_Key: policy_childcare
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25582568529129472
+    m_Key: policy_des_childcare
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25583416613203968
+    m_Key: policy_welfare_budget
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25583556434522112
+    m_Key: policy_des_welfare_budget
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25652815445553152
+    m_Key: policy_mental_health
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25653251334402048
+    m_Key: policy_des_mental_health
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25654296546570240
+    m_Key: policy_vice_tax
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25654479158177792
+    m_Key: policy_des_vice_tax
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25656990296371200
+    m_Key: policy_state_schools
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25657123012538368
+    m_Key: policy_des_state_schools
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25658301913952256
+    m_Key: policy_science_funding
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25658494273122304
+    m_Key: policy_des_science_funding
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25659322589442048
+    m_Key: policy_art_subsidies
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25659598251683840
+    m_Key: policy_des_art_subsidies
+    m_Metadata:
+      m_Items: []
+  - m_Id: 26067368067133440
+    m_Key: text_number_of_rounds
+    m_Metadata:
+      m_Items: []
+  - m_Id: 26422026086313984
+    m_Key: election_win
+    m_Metadata:
+      m_Items: []
+  - m_Id: 26422233125548032
+    m_Key: election_def
+    m_Metadata:
+      m_Items: []
+  - m_Id: 26422450382106624
+    m_Key: election_btn
+    m_Metadata:
+      m_Items: []
+  - m_Id: 26423465391091712
+    m_Key: election_quite
+    m_Metadata:
+      m_Items: []
+  - m_Id: 26427659766394880
+    m_Key: text_detail_state
+    m_Metadata:
+      m_Items: []
+  - m_Id: 26428229793280000
+    m_Key: text_idea
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

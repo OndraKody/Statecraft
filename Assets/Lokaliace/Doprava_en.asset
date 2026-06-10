@@ -1,0 +1,108 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Doprava_en
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.StringTable
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 130ccb611245b1c4fbaa06537fdf0f69, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 3329151135744
+    m_Localized: Fuel Tax
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3329151135745
+    m_Localized: Imposes a tax on all vehicle fuels sold within the country. This
+      reduces overall traffic density and generates significant revenue for transport
+      infrastructure.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3329151135746
+    m_Localized: Road Toll
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3329151135747
+    m_Localized: Requires drivers to pay fees for using major highways and roads.
+      This funding is directly reinvested into road maintenance and repairs.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3329151135748
+    m_Localized: Vehicle Tax
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3329151135749
+    m_Localized: An annual tax levied on the ownership of private and commercial
+      vehicles. Higher rates can discourage citizens from buying emission-heavy cars.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3329151135750
+    m_Localized: Airport Tax
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3329151135751
+    m_Localized: Charges an additional tax on air travel tickets and commercial flights.
+      It helps offset the environmental impact of aviation and funds green initiatives.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3329151135752
+    m_Localized: Parking Fees
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3329151135753
+    m_Localized: Implements paid parking zones in public spaces and city centers.
+      This revenue flows directly into municipal budgets and regulates town traffic.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3329151135754
+    m_Localized: Road Infrastructure
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3329151135755
+    m_Localized: Provides extensive funding for the construction and modernization
+      of roads and highways. Proper maintenance improves safety and speeds up supply
+      chains.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3329151135756
+    m_Localized: Rail Network
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3329151135757
+    m_Localized: Allocates national funds to expand and maintain railway infrastructure.
+      A robust rail network shifts cargo from highways to eco-friendly train transport.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3329151135758
+    m_Localized: Public Transit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3329151135759
+    m_Localized: Provides financial subsidies to make public transport affordable
+      and accessible for everyone. High adoption drastically reduces urban traffic
+      congestion.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3329151135760
+    m_Localized: Cycling Infrastructure
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3329151135761
+    m_Localized: Invests in building and connecting dedicated cycling paths across
+      cities. This encourages a healthier lifestyle and offers a clean alternative
+      to driving.
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

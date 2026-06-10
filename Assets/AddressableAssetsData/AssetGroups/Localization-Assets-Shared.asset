@@ -15,8 +15,23 @@ MonoBehaviour:
   m_GroupName: Localization-Assets-Shared
   m_GUID: aa50fa1c92967a3448bd446627c11732
   m_SerializeEntries:
+  - m_GUID: 130ccb611245b1c4fbaa06537fdf0f69
+    m_Address: Assets/Lokaliace/Test Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 244db5f28625dfb459404b74015f7eef
     m_Address: Assets/Lokaliace/MenuText Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2673527b07f43784a84b683bb1b2ffc0
+    m_Address: Assets/Lokaliace/SocialGroupPanel Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 76e354ae07cb248479fc278c10c338cb
+    m_Address: Assets/Lokaliace/Obrana Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -27,6 +42,21 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: ce32fcbbbcb29104d9b66bf17d8ff267
     m_Address: Assets/Lokaliace/jsonParty Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: dada0a710277e264d937eeb1c884202c
+    m_Address: Assets/Lokaliace/Events Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f26ed778c65762f4c8895826394f20a8
+    m_Address: Assets/Lokaliace/Project Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fb3d5ff7cd3efd84cb93c09ce9688c48
+    m_Address: Assets/Lokaliace/Stats Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0

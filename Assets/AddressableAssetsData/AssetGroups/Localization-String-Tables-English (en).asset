@@ -15,8 +15,20 @@ MonoBehaviour:
   m_GroupName: Localization-String-Tables-English (en)
   m_GUID: bcab302212cc5604a94d32ad4a17a333
   m_SerializeEntries:
+  - m_GUID: 4deb0b5cde14e5e4d891ff5a91456007
+    m_Address: Events_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 7963c26350e96b847947807cfc32db06
     m_Address: jsonParty_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9e7949707f0214a4289ea00efaafec4b
+    m_Address: Obrana_en
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-en
@@ -28,8 +40,33 @@ MonoBehaviour:
     - Locale-en
     - Preload
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b0af3577733bbde43bdb43977aead1c2
+    m_Address: Project_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: ed8e4c064494f0f45ae85c375511c872
     m_Address: MenuText_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f0c250f4bc4af834fbf44c441987ad0f
+    m_Address: Stats_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f9cea65c38ce8884d91ffc479959f348
+    m_Address: Doprava_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fe9122cc37bcbc64b9a8f766668f9243
+    m_Address: SocialGroupPanel_en
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-en

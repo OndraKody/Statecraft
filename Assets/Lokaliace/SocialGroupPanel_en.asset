@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: SocialGroupPanel_en
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.StringTable
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 2673527b07f43784a84b683bb1b2ffc0, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 19975303168
+    m_Localized: Neutral
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20025634816
+    m_Localized: Satisfied
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20025634817
+    m_Localized: Dissatisfied
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20025634818
+    m_Localized: Losing
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20025634819
+    m_Localized: Winning
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20025634824
+    m_Localized: Status
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1136255758336
+    m_Localized: Satisfaction
+    m_Metadata:
+      m_Items: []
+  - m_Id: 952562020352
+    m_Localized: Representation
+    m_Metadata:
+      m_Items: []
+  - m_Id: 820810543104
+    m_Localized: Group
+    m_Metadata:
+      m_Items: []
+  - m_Id: 732679827456
+    m_Localized: need > 50% to win
+    m_Metadata:
+      m_Items: []
+  - m_Id: 356085854208
+    m_Localized: Overall support
+    m_Metadata:
+      m_Items: []
+  - m_Id: 167124070400
+    m_Localized: Social groups
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []
