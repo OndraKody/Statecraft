@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
     private double income;
     private double deficit;
     private double dept;
-    private double actionPoints = 10000;
+    private double actionPoints = 500;
     private string gamePhase;
     private List<ActiveProject> activeProjects = new List<ActiveProject>();
 
@@ -190,7 +190,25 @@ public class GameManager : MonoBehaviour
             totalPower += g.power;
             weightedSum += g.satisfaction * g.power;
         }
-        return totalPower == 0f ? 0f : weightedSum / totalPower;
+
+        if (totalPower == 0f) return 0f;
+
+        float groupSupport = weightedSum / totalPower;
+        return Mathf.Clamp(groupSupport - GetStatisticSupportPenalty(), 0f, 100f);
+    }
+
+    public float GetStatisticSupportPenalty()
+    {
+        const float threshold = 40f;
+
+        float penalty = 0f;
+        penalty += Mathf.Max(0f, threshold - hdp);
+        penalty += Mathf.Max(0f, threshold - health);
+        penalty += Mathf.Max(0f, threshold - education);
+        penalty += Mathf.Max(0f, crime - threshold);
+        penalty += Mathf.Max(0f, poverty - threshold);
+
+        return penalty;
     }
 
     public bool IsWinning() => GetTotalSupport() > 50f;

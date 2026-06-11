@@ -10,9 +10,6 @@ public class TurnManeger : MonoBehaviour
 
     public int currentTurn = 1;
 
-    [Header("Turn settings")]
-    public float actionPointsPerTurn = 20f;
-
     private void Awake()
     {
         if (Instance == null) Instance = this;
@@ -42,7 +39,8 @@ public class TurnManeger : MonoBehaviour
     private void StartNewTurn()
     {
         currentTurn++;
-        GameManager.Instance.AddActionPoints(actionPointsPerTurn);
+        int generatedActionPoints = Mathf.RoundToInt(Mathf.Clamp(GameManager.Instance.GetTotalSupport(), 0f, 100f));
+        GameManager.Instance.AddActionPoints(generatedActionPoints);
 
         if (ElectionManager.IsElectionTurn(currentTurn))
             ElectionManager.Instance.ShowElection();
@@ -52,7 +50,7 @@ public class TurnManeger : MonoBehaviour
         var partyPanel = FindObjectOfType<PartyPanelUI>(true);
         if (partyPanel != null) partyPanel.RefreshElectionCountdown();
 
-        Debug.Log($"Zacalo kolo {currentTurn}");
+        Debug.Log($"Zacalo kolo {currentTurn}, vygenerovano {generatedActionPoints} akcnich bodu.");
     }
 
     private void UpdateProjects()
@@ -192,6 +190,13 @@ public class ElectionManager : MonoBehaviour
 
     private void ReturnToMenu()
     {
+        if (!lastElectionWon && GameSession.CurrentSaveSlot != -1)
+        {
+            SaveManager.Delete(GameSession.CurrentSaveSlot);
+            GameSession.CurrentSaveSlot = -1;
+            GameSession.SelectedParty = null;
+        }
+
         Time.timeScale = 1f;
         SceneManager.LoadScene("MeinMenu");
     }

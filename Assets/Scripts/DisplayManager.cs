@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -13,6 +14,7 @@ public sealed class DisplayManager : MonoBehaviour
     private int lastScreenWidth;
     private int lastScreenHeight;
     private bool lastFullscreen;
+    private Coroutine canvasRefreshCoroutine;
 
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
     private static void Create()
@@ -59,13 +61,13 @@ public sealed class DisplayManager : MonoBehaviour
             Screen.fullScreen == lastFullscreen)
             return;
 
-        ConfigureCanvasScalers();
+        ScheduleCanvasRefresh();
         RememberDisplayState();
     }
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        ConfigureCanvasScalers();
+        ScheduleCanvasRefresh();
     }
 
     private void ApplyDisplayMode(bool useFullscreen)
@@ -88,6 +90,46 @@ public sealed class DisplayManager : MonoBehaviour
 
         PlayerPrefs.SetInt(FullscreenPreference, useFullscreen ? 1 : 0);
         PlayerPrefs.Save();
+        ScheduleCanvasRefresh();
+    }
+
+    private void ScheduleCanvasRefresh()
+    {
+        if (canvasRefreshCoroutine != null)
+            StopCoroutine(canvasRefreshCoroutine);
+
+        canvasRefreshCoroutine = StartCoroutine(RefreshCanvasesAfterResize());
+    }
+
+    private IEnumerator RefreshCanvasesAfterResize()
+    {
+        // SetResolution is applied asynchronously. Waiting for two frames ensures
+        // the canvases receive the final fullscreen/window dimensions.
+        yield return null;
+        yield return new WaitForEndOfFrame();
+
+        ConfigureCanvasScalers();
+        Canvas.ForceUpdateCanvases();
+
+        Canvas[] canvases = FindObjectsByType<Canvas>(
+            FindObjectsInactive.Include,
+            FindObjectsSortMode.None);
+
+        foreach (Canvas canvas in canvases)
+        {
+            if (canvas.renderMode == RenderMode.WorldSpace || !canvas.isRootCanvas)
+                continue;
+
+            RectTransform root = canvas.transform as RectTransform;
+            if (root == null)
+                continue;
+
+            root.ForceUpdateRectTransforms();
+            LayoutRebuilder.ForceRebuildLayoutImmediate(root);
+        }
+
+        Canvas.ForceUpdateCanvases();
+        canvasRefreshCoroutine = null;
     }
 
     private static void ConfigureCanvasScalers()

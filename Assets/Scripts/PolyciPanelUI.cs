@@ -90,6 +90,7 @@ public class PolyciPanelUI : MonoBehaviour
     [SerializeField] private GameObject statBarPrefab;
     [SerializeField] private Transform statBarsParent;
     [SerializeField] private float initialBarWidth = 200f;
+    [SerializeField] private float groupBarFullValue = 100f;
 
     // ===== DATA =====
     private PolicyItem currentItem;
@@ -201,10 +202,16 @@ public class PolyciPanelUI : MonoBehaviour
             if (ge.baseEffect == 0f) continue;
 
             string groupName = LocalizedEnumNames.GetGroupName(ge.groupType);
-            float scaleMax = Mathf.Abs(ge.baseEffect) * 2f;
 
-            // Místo ge.maxWidth pøedáme initialBarWidth
-            StatBarUI bar = CreateBar(statBarsParent, groupName, ge.savedEffect, ge.baseEffect, initialBarWidth, scaleMax);
+            // Vsechny skupiny pouzivaji stejne meritko, aby napr. +10 bylo
+            // dvakrat sirsi nez +5.
+            StatBarUI bar = CreateBar(
+                statBarsParent,
+                groupName,
+                ge.savedEffect,
+                ge.baseEffect,
+                initialBarWidth,
+                groupBarFullValue);
             if (bar != null)
                 groupBars[ge.groupType] = bar;
         }
